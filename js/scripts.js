@@ -74,28 +74,32 @@ function getBarsChart() {
 }
 
 function getMapParams() {
-    // if( $(".object_map").length > 0) {
-    //     filtersCoord = $(".filter_nav").offset().top + $(".filter_nav").height();
-    //     mapCoord = $(".object_map").offset().top;        
-    //     if(filtersCoord >= mapCoord) {            
-    //         $(".map_scroll").addClass("fixed");
-    //         $(".map_scroll").css({
-    //             "top" : $(".filter_nav").height() + "px"
-    //         });
-    //         mapScrollBootmCoord = filtersCoord + $(".map_scroll").height();
-    //         bottomCoord = $(".bottom_coord").offset().top;
-    //         if( mapScrollBootmCoord >= bottomCoord ) {
-    //             $(".map_scroll").addClass("bottom_position");
-    //         } else {
-    //             $(".map_scroll").removeClass("bottom_position");
-    //         }
-    //     } else {
-    //         $(".map_scroll").removeClass("fixed");
-    //         $(".map_scroll").css({
-    //             "top" : 0
-    //         });
-    //     }
-    // }
+    if( $(".object_map").length > 0) {
+        filtersCoord = $(".filter_nav").offset().top + $(".filter_nav").height();
+        mapCoord = $(".object_map").offset().top;        
+        if(filtersCoord >= mapCoord) {            
+            $(".map_scroll").addClass("fixed");
+            $(".map_scroll").css({
+                "top" : $(".filter_nav").height() + "px"
+            });
+            mapScrollBootmCoord = filtersCoord + $(".map_scroll").height();
+            bottomCoord = $(".bottom_coord").offset().top;
+            if( mapScrollBootmCoord >= bottomCoord ) {
+                $(".map_scroll").addClass("bottom_position");
+            } else {
+                $(".map_scroll").removeClass("bottom_position");
+            }
+        } else {
+            $(".map_scroll").removeClass("fixed");
+            $(".map_scroll").css({
+                "top" : 0
+            });
+        }
+        if($("#mapWrapp").length > 0) {
+            mapWidth = $("#mapWrapp").offset().left + $("#mapWrapp").width();
+            $(".map_scroll").width(mapWidth);
+        }
+    }
 }
 
 function getfilterNavParams() {
@@ -119,14 +123,18 @@ function getCardParams() {
     });
 }
 
-function getMapParams2() {
-    if($("#mapWrapp").length > 0) {
-        mapWidth = $("#mapWrapp").offset().left + $("#mapWrapp").width();
-        $(".objectMap").css({
-            "width" : mapWidth + "px"
-        });
-    }
-}
+// function getMapParams2() {
+//     if($("#mapWrapp").length > 0) {
+//         mapWidth = $("#mapWrapp").offset().left + $("#mapWrapp").width();
+//         console.log(mapWidth);
+//         $(".map_scroll").css({
+//             "width" : mapWidth + "px !important"
+//         });
+//         // $(".objectMap").css({
+//         //     "width" : mapWidth + "px !important"
+//         // });
+//     }
+// }
 
 var w = window,
 d = document,
@@ -173,13 +181,17 @@ $(window).resize(function() {
     getBarsChart();
     getfilterNavParams();
     getCardParams();
-    getMapParams2();
+    // getMapParams2();
     // -------------
     $(".promo_slider .slide").css({
         "height" : $(".promo_slider").height() + "px"
     });
 
     // -------------
+
+    $("#searcCityInput").css({
+        "width" : $("#searchCityWidth").width() + "px"
+    });
 });
 
 $(document).scroll(function() {
@@ -187,7 +199,7 @@ $(document).scroll(function() {
     getMapParams();
     getfilterNavParams();
     getCardParams();
-    getMapParams2();
+    // getMapParams2();
 });
 
 $(document).ready(function() {
@@ -197,10 +209,14 @@ $(document).ready(function() {
     getBarsChart();
     getfilterNavParams();
     getCardParams();
-    getMapParams2();
+    // getMapParams2();
     // -------------
 
-    $(".scroll_y").mCustomScrollbar();
+    $("#searcCityInput").css({
+        "width" : $("#searchCityWidth").width() + "px"
+    });
+
+    // $(".scroll_y").mCustomScrollbar();
 
     $(".top_menu").each(function() {
         $(this).find(".main_nav > li ul").each(function() {
@@ -1364,6 +1380,16 @@ $(document).on("click", ".respmenubtn", function(e){
             $("[data-popup]").fadeOut(300);
         }
       }
+    });
+
+    // -------------
+
+    $("#showMap").on("click", function(e) {
+        e.preventDefault();
+        parentBlock = $("#mapTempl").toggleClass("mapVisible");
+        mapWidth = $("#mapWrapp").offset().left + $("#mapWrapp").width();
+        $(".map_scroll").width(mapWidth);
+        getMapParams();
     });
 
 
