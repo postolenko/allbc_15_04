@@ -7290,9 +7290,11 @@ body.fixed {
 }
 
 .gradient_box .row {
-    max-width: 1140px;
+    /*max-width: 1140px;*/
+    max-width: 100%;
     margin: 0 auto;
-    padding: 0;
+    /*padding: 0;*/
+    padding: 0 25px;
 }
 
 .gradient_templ {
@@ -7466,4 +7468,13 @@ body.fixed {
 
 .blue_pill:hover {
     background: #ff7e00;
+}
+
+.footer .row {
+    max-width: 100%;
+    padding: 0 25px;
+}
+
+.footer__main {
+    max-width: 100%;
 }
