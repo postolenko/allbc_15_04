@@ -187,11 +187,6 @@ $(window).resize(function() {
         "height" : $(".promo_slider").height() + "px"
     });
 
-    // -------------
-
-    $("#searcCityInput").css({
-        "width" : $("#searchCityWidth").width() + "px"
-    });
 });
 
 $(document).scroll(function() {
@@ -211,10 +206,6 @@ $(document).ready(function() {
     getCardParams();
     // getMapParams2();
     // -------------
-
-    $("#searcCityInput").css({
-        "width" : $("#searchCityWidth").width() + "px"
-    });
 
     // $(".scroll_y").mCustomScrollbar();
 

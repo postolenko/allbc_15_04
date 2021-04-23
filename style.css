@@ -6974,7 +6974,7 @@ body.fixed {
 .city_search {
     display: flex;
     display: -webkit-flex;
-    /*max-width: 250px;*/
+    max-width: 230px;
     border-radius: 3px;
     -webkit-border-radius: 3px;
     border: 1px solid #cdcece;
@@ -7059,7 +7059,7 @@ body.fixed {
 .orange_num {
     font-size: 32px;
     line-height: 32px;
-    color: #FF4E00;
+    color: #ff0000;
 }
 
 .objects_search_result > div:nth-child(2) p {
@@ -7385,7 +7385,7 @@ body.fixed {
 }
 
 .gradient_templ > .col:nth-child(1) {
-    width: 21%;
+    width: 22%;
 }
 
 .gradient_templ > .col:nth-child(2) {
@@ -7399,7 +7399,7 @@ body.fixed {
 
 .gradient_templ > .col:nth-child(4) {
     width: 16%;
-    padding: 12px 0 0 0;
+    padding: 7px 0 0 0;
     text-align: right;
 }
 
@@ -7411,7 +7411,8 @@ body.fixed {
 
 .g_two_cols_1 > div:nth-child(1) {
     width: calc(100% - 75px);
-    padding-top: 10px;
+    /*padding-top: 10px;*/
+    padding-top: 12px;
 }
 
 .g_two_cols_1 > div:nth-child(2) {
@@ -7420,17 +7421,22 @@ body.fixed {
     padding-top: 4px;
 }
 
+.g_two_cols_1 > div:nth-child(2) img {
+    margin-top: -10px;
+}
+
 .g_two_cols_1 h3 {
     font-weight: normal;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 16px;
     color: #fff;
 }
 
 .g_two_cols_2 {
     display: flex;
     display: -webkit-flex;
-    margin: 10px 0 6px 0;
+    /*margin: 10px 0 6px 0;*/
+    margin: 8px 0 8px 0;
 }
 
 .g_two_cols_2 > div:nth-child(1) {
@@ -7472,7 +7478,8 @@ body.fixed {
 }
 
 .checkbox_2 {
-    margin: 5px 0;
+    /*margin: 5px 0;*/
+    margin: 2px 0;
     cursor: pointer;
 }
 
