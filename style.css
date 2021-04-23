@@ -52,6 +52,73 @@
     font-style: normal;
 }
 
+
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Regular.eot');
+    src: url('fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Roboto-Regular.woff2') format('woff2'),
+        url('fonts/Roboto-Regular.woff') format('woff'),
+        url('fonts/Roboto-Regular.ttf') format('truetype'),
+        url('Regular.svg#fonts/Roboto-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Bold.eot');
+    src: url('fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Roboto-Bold.woff2') format('woff2'),
+        url('fonts/Roboto-Bold.woff') format('woff'),
+        url('fonts/Roboto-Bold.ttf') format('truetype'),
+        url('fonts/Roboto-Bold.svg#fonts/Roboto-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Medium.eot');
+    src: url('fonts/Roboto-Medium.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Roboto-Medium.woff2') format('woff2'),
+        url('fonts/Roboto-Medium.woff') format('woff'),
+        url('fonts/Roboto-Medium.ttf') format('truetype'),
+        url('fonts/Roboto-Medium.svg#fonts/Roboto-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Italic.eot');
+    src: url('fonts/Roboto-Italic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Roboto-Italic.woff2') format('woff2'),
+        url('fonts/Roboto-Italic.woff') format('woff'),
+        url('fonts/Roboto-Italic.ttf') format('truetype'),
+        url('fonts/Roboto-Italic.svg#fonts/Roboto-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Light.eot');
+    src: url('fonts/Roboto-Light.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Roboto-Light.woff2') format('woff2'),
+        url('fonts/Roboto-Light.woff') format('woff'),
+        url('fonts/Roboto-Light.ttf') format('truetype'),
+        url('fonts/Roboto-Light.svg#fonts/Roboto-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
 /*-------------------------------------------*/
 /* BASIC SETUP */
 /*-------------------------------------------*/
@@ -66,7 +133,8 @@
 
 html {
     -webkit-text-size-adjust: 100%;
-    font-family: "Proxima Nova";
+    /*font-family: "Proxima Nova";*/
+    font-family: 'Roboto';
     font-size: 16px;    
     line-height: 22px;
     font-weight: normal;
@@ -215,7 +283,8 @@ section:last-child {
 
 h1 {
     -webkit-text-size-adjust: 100%;
-    font-family: "Proxima Nova";
+    /*font-family: "Proxima Nova";*/
+    font-family: 'Roboto';
     font-size: 50px;    
 	line-height: 56px;
     font-weight: 800;
@@ -226,7 +295,8 @@ h2 {
     -webkit-text-size-adjust: 100%;
     padding: 10px 0;
     text-align: center;
-    font-family: "Proxima Nova";
+    /*font-family: "Proxima Nova";*/
+    font-family: 'Roboto';
     font-size: 34px;
     line-height: 40px;
     font-weight: bold;
@@ -235,7 +305,8 @@ h2 {
 
 h3 {
     -webkit-text-size-adjust: 100%;
-    font-family: "Proxima Nova";
+    /*font-family: "Proxima Nova";*/
+    font-family: 'Roboto';
     font-size: 22px;
     line-height: 27px;
     font-weight: bold;
@@ -244,7 +315,8 @@ h3 {
 
 h4 {
     -webkit-text-size-adjust: 100%;
-    font-family: "Proxima Nova";
+    /*font-family: "Proxima Nova";*/
+    font-family: 'Roboto';
     font-size: 16px;
     line-height: 22px;
     font-weight: bold;
@@ -253,7 +325,8 @@ h4 {
 
 h5 {
     -webkit-text-size-adjust: 100%;
-    font-family: "Proxima Nova";
+    /*font-family: "Proxima Nova";*/
+    font-family: 'Roboto';
     font-size: 14px;
     line-height: 20px;
     font-weight: 600;    
@@ -262,7 +335,8 @@ h5 {
 
 p {
     -webkit-text-size-adjust: 100%;
-    font-family: "Proxima Nova";
+    /*font-family: "Proxima Nova";*/
+    font-family: 'Roboto';
     font-size: 16px;    
     line-height: 20px;
     font-weight: normal;
@@ -272,7 +346,8 @@ p {
 a {
     text-decoration: none;
     -webkit-text-size-adjust: 100%;
-    font-family: "Proxima Nova";
+    /*font-family: "Proxima Nova";*/
+    font-family: 'Roboto';
     font-size: 16px;    
     line-height: 22px;
     font-weight: normal;
@@ -282,7 +357,8 @@ a {
 li {
     list-style: none;
     -webkit-text-size-adjust: 100%;
-    font-family: "Proxima Nova";
+    /*font-family: "Proxima Nova";*/
+    font-family: 'Roboto';
     font-size: 16px;    
     line-height: 22px;
     font-weight: normal;
@@ -7290,11 +7366,11 @@ body.fixed {
 }
 
 .gradient_box .row {
-    /*max-width: 1140px;*/
-    max-width: 100%;
+    max-width: 1140px;
+    /*max-width: 100%;*/
     margin: 0 auto;
-    /*padding: 0;*/
-    padding: 0 25px;
+    padding: 0;
+    /*padding: 0 25px;*/
 }
 
 .gradient_templ {
@@ -7470,11 +7546,11 @@ body.fixed {
     background: #ff7e00;
 }
 
-.footer .row {
+/*.footer .row {
     max-width: 100%;
     padding: 0 25px;
-}
+}*/
 
-.footer__main {
+/*.footer__main {
     max-width: 100%;
-}
+}*/
