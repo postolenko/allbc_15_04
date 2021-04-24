@@ -1383,5 +1383,27 @@ $(document).on("click", ".respmenubtn", function(e){
         getMapParams();
     });
 
+    // -------------
+
+    $(".slideBtn").on("click", function(e) {
+        e.preventDefault();
+        $(this).toggleClass("active");
+        parentBlock = $(this).closest(".bc_card");
+        slideBlock = parentBlock.find(".slide_block");
+        if($(this).hasClass("active")) {
+            slideBlock.slideDown(300);
+        } else {
+            slideBlock.slideUp(300);
+        }
+    });
+
+    // $(".bc_card").on("mouseover", function() {
+    //     gh = $(this).find(".gh");
+    //     gh.css({
+    //         "height" : $(this).find(".inner_wrapp").height() + 6 + "px"
+    //     });
+    //     console.log(gh.height());
+    // });
+
 
 });
