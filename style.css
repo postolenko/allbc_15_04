@@ -6686,7 +6686,8 @@ body.fixed {
 /*-- Map Cards Templ --*/
 
 .map_section {
-    overflow-x: hidden;
+/*    overflow-x: hidden;
+    overflow-y: none;*/
     position: relative;
     z-index: 2;
 }
@@ -6703,7 +6704,6 @@ body.fixed {
     display: -webkit-flex;
     flex-direction: column;
     -webkit-flex-direction: column;
-    /*outline: 1px solid red;*/
 }
 
 /*.map_cardst_templ .right_col {
@@ -6721,6 +6721,16 @@ body.fixed {
 
 .map_cardst_templ.mapVisible .right_col {
     width: 50vw;
+}
+
+.map_cardst_templ.mapVisible .two_cols_templ {
+    margin-bottom: 20px;
+}
+
+.map_cardst_templ.mapVisible .two_cols_templ .left,
+.map_cardst_templ.mapVisible .two_cols_templ .right {
+    width: 100%;
+    padding: 10px 0;
 }
 
 /*.map_cardst_templ.mapVisible .objectMap {
@@ -7551,7 +7561,7 @@ body.fixed {
     display: inline-block;
     vertical-align: top;
     margin-top: 3px;
-    color: #10abe3;
+    color: #a0a0a0;
     font-size: 15px;
     line-height: 20px;
     line-height: 17px;
