@@ -7031,6 +7031,10 @@ body.fixed {
     z-index: 3;
 }
 
+.objects_cards_new:hover {
+    z-index: 5;
+}
+
 .bc_card {
     width: 270px;
     margin: 15px;
@@ -7047,7 +7051,7 @@ body.fixed {
 
 .bc_card:hover {
     position: relative;
-    z-index: 2;
+    z-index: 10;
 }
 
 .objects_cards_new .bc_card {
