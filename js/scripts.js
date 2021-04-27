@@ -1441,4 +1441,16 @@ $(document).on("click", ".respmenubtn", function(e){
         });
     }
 
+    // ------------
+
+    $('a[href^="#"]').on('click', function (e) {
+        e.preventDefault();
+        var hrefAttr = $(this).attr("href");
+        if( hrefAttr.length > 0 && hrefAttr != "#" ) {
+            $('html, body').stop().animate({
+                'scrollTop': $(hrefAttr).offset().top - 100
+            }, 500);
+        }
+    });
+
 });
