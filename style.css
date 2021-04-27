@@ -1499,10 +1499,6 @@ img.logo_black {
     background: #ffffff !important;
 }
 
-.header_main .menu_btn_2 .sp_2 span {
-    color: #ffffff !important;
-}
-
 .logo_city {
     display: inline-block;
     vertical-align: top;
@@ -1518,7 +1514,8 @@ img.logo_black {
 .menu_btn_2 {
     display: flex;
     display: -webkit-flex;
-    margin-top: 18px;
+    /*margin-top: 18px;*/
+    margin-top: 5px;
     cursor: pointer;
     background: transparent;
     border: 1px solid transparent;
@@ -1528,10 +1525,6 @@ img.logo_black {
 
 .menu_btn_2 .sp_1 {
     width: 30px;
-}
-
-.menu_btn_2 .sp_2 {
-    width: calc(100% - 30px);
 }
 
 .menu_btn_2 .sp_1 span {
@@ -1565,7 +1558,7 @@ img.logo_black {
     margin-bottom: 0;
 }
 
-.menu_btn_2 .sp_2 span {
+/*.menu_btn_2 .sp_2 span {
     font-size: 14px;
     line-height: 14px;
     color: #000;
@@ -1596,17 +1589,17 @@ img.logo_black {
 
 .menu_btn_2:hover .sp_2 span {
     color: #3eb060;
-}
+}*/
 
 .menu_btn_2.active .sp_1 span,
 .menu_btn_2:active .sp_1 span {
     background: #3eb060;
 }
 
-.menu_btn_2:active .sp_2 span,
+/*.menu_btn_2:active .sp_2 span,
 .menu_btn_2.active .sp_2 span {
     color: #3eb060;
-}
+}*/
 
 .menu_btn_2.active .sp_1 span:nth-child(1) {
     -webkit-transform: rotate(45deg);
@@ -3819,7 +3812,11 @@ body.fixed {
     vertical-align: top;
     cursor: pointer;
     position: relative;
+    padding-top: 2px;
     padding-right: 48px;
+    color: #a0a0a0;
+    font-size: 15px;
+    line-height: 17px;
 }
 
 .map_checkbox label:after {
@@ -8149,3 +8146,68 @@ body.fixed {
 }
 
 /*-- /Slider Companies --*/
+
+/*-- Header --*/
+
+.inline_2 {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.lang_list {
+    display: flex;
+    display: -webkit-flex;
+    margin: 3px -7px;
+}
+
+.lang_list li {
+    padding: 0 7px;
+    position: relative;
+}
+
+.lang_list li:after {
+    display: block;
+    content: "";
+    width: 1px;
+    height: 16px;
+    background-color: #fff;
+    position: absolute;
+    top: 2px;
+    right: 0;
+}
+
+.lang_list li:last-child:after {
+    display: none;
+}
+
+.lang_list li a {
+    text-transform: uppercase;
+    font-family: "Roboto";
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+.bell_btn {
+    position: relative;
+    padding-left: 40px;
+}
+
+.bell_btn:before {
+    display: block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-image: url(img/bell.svg);
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    top: 11px;
+    left: 10px;
+}
+
+
+
+/*-- /Header --*/
