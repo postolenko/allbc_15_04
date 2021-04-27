@@ -6708,7 +6708,7 @@ body.fixed {
 
 .map_cardst_templ .left_col {
     width: 100%;
-    padding-right: 15px;
+    /*padding-right: 15px;*/
     display: flex;
     display: -webkit-flex;
     flex-direction: column;
@@ -6726,6 +6726,7 @@ body.fixed {
 
 .map_cardst_templ.mapVisible .left_col {
     width: 50%;
+    padding-right: 15px;
 }
 
 .map_cardst_templ.mapVisible .right_col {
@@ -7037,7 +7038,7 @@ body.fixed {
     display: -webkit-flex;
     flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
-    margin: 0 -15px;
+    margin: 0 -8px;
     position: relative;
     z-index: 3;
 }
@@ -7048,7 +7049,7 @@ body.fixed {
 
 .bc_card {
     width: 270px;
-    margin: 15px;
+    margin: 8px;
     /*height: 312px;*/
     height: 315px;
     /*overflow: hidden;*/
@@ -7066,11 +7067,11 @@ body.fixed {
 }
 
 .objects_cards_new .bc_card {
-    width: calc(25% - 30px);
+    width: calc(25% - 16px);
 }
 
 .mapVisible .objects_cards_new .bc_card {
-    width: calc(50% - 30px);
+    width: calc(50% - 16px);
 }
 
 .bc_card .inner_wrapp {
@@ -7124,13 +7125,20 @@ body.fixed {
 
 .bc_card  .object_card_date {
     position: absolute;
-    top: 11px;
+    bottom: 11px;
     right: 17px;
     font-size: 14px;
     line-height: 15px;
     font-weight: normal;
     color: #fff;
     z-index: 2;
+}
+
+.object_slider_wrapp .red_p {
+    position: absolute;
+    top: 11px;
+    right: 17px;
+    z-index: 3;
 }
 
 .bc_card .object_slider {
@@ -8260,10 +8268,10 @@ body.fixed {
 .red_pill {
     display: inline-block;
     vertical-align: top;
-    margin: 10px 0;
-    padding: 10px 10px 10px 10px;
+    margin: 15px 0;
+    padding: 5px 10px 5px 10px;
     background-color: #ff0000;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 20px;
     font-weight: 400;
     color: #fff;
