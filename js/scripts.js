@@ -751,16 +751,19 @@ $(document).on("click", ".respmenubtn", function(e){
     $(".dropdown_item_title").on('click', function(e) {
         e.preventDefault();
         parentBlock = $(this).closest(".dropdow_item_wrapp");
-        dropdowmMenu = parentBlock.find(".dropdown_item_menu");        
+        dropdowmMenu = parentBlock.find(".dropdown_item_menu");
+        mask = $("#map_box .mask");       
         if($(this).closest(".items_sect").length > 0) {
             $(".dropdown_item_menu").slideUp(300);
             $(".dropdow_item_wrapp").removeClass("visible");
+            maskHeight = $(document).height() - $("#map_box").offset().top;
             if(dropdowmMenu.is(":hidden")) {
                 $(".item_wrapp").removeClass("z_top");
                 parentBlock.closest(".item_wrapp").addClass("z_top");
-                $("#map_box .mask").addClass("visible");
+                mask.addClass("visible");
+                mask.height(maskHeight);
             } else {
-                $("#map_box .mask").removeClass("visible");
+                mask.removeClass("visible");
             }
             $("#filters_menu").removeClass("visible");
             $(".more_filter").removeClass("active");            

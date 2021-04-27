@@ -3415,14 +3415,20 @@ body.fixed {
     padding: 0;
 }
 
+#filters {
+    position: relative;
+    /*z-index: 5;*/
+    z-index: 4;
+}
+
 .filter_nav {
     background: #ffffff;
     position: relative;
     top: -1px;
     background-color: #ffffff;   
     padding: 3px 0 4px 0;
-    /*z-index: 5;*/
-    z-index: 4;
+    z-index: 5;
+    /*z-index: 4;*/
     border-bottom: 1px solid #e5e5e5;
     border-bottom: 1px solid #e5e5e5;
 }
@@ -4378,7 +4384,8 @@ body.fixed {
     top: 0;
     left: 0;
     background: rgba(255, 255, 255, .7);
-    z-index: 4;
+    /*z-index: 4;*/
+    z-index: 3;
 }
 
 #map_box .mask.visible {
@@ -8185,12 +8192,32 @@ body.fixed {
 }
 
 .lang_list li a {
+    border-bottom: 1px solid transparent;
     text-transform: uppercase;
     font-family: "Roboto";
     font-size: 15px;
     line-height: 18px;
     font-weight: normal;
-    color: #ffffff;
+    color: #fff;
+    -webkit-transition-property: border;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+    -moz-transition-property: border;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+    -ms-transition-property: border;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+    -o-transition-property: border;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+    transition-property: border;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.lang_list li a:hover {
+    border-bottom: 1px solid #fff;
 }
 
 .bell_btn {
