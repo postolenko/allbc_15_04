@@ -8186,7 +8186,8 @@ body.fixed {
 /*-- Slider Companies --*/
 
 .slider_companies_wrapp h2 {
-    padding: 18px 0 22px 0;
+    padding: 21px 0 19px 0;
+    font-size: 26px;
 }
 
 .slider_companies {
