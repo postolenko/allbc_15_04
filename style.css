@@ -7279,6 +7279,14 @@ body.fixed {
     background-size: contain;
 }
 
+.hover_inlines {
+    display: none;
+}
+
+.bc_card:hover .hover_inlines {
+    display: block;
+}
+
 .about_2 {
     display: inline-block;
     vertical-align: top;
