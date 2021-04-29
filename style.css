@@ -6668,7 +6668,7 @@ body.fixed {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 4;
+    z-index: 11;
 }
 
 .objects_adress p {
@@ -6683,11 +6683,16 @@ body.fixed {
     display: -webkit-flex;
     flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
-    margin: 50px -14px 10px -14px;
+    /*margin: 50px -14px 10px -14px;*/
+    margin: 50px -16px 10px -16px;
 }
 
 .map_objects_thumbs .object_card {
     width: calc(50% - 14px);
+}
+
+.map_objects_thumbs .bc_card {
+    width: calc(50% - 16px);
 }
 
 /*-- /Popup  --*/
@@ -6723,6 +6728,28 @@ body.fixed {
 /*.map_cardst_templ .objectMap {
     width: 0;
 }*/
+
+.white_pill {
+    display: inline-block;
+    vertical-align: top;
+    background-color: #fff;
+    border: 1px solid #d74343;
+    padding: 5px 15px;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: normal;
+    color: #d74343;
+}
+
+.map_scroll .white_pill {
+    width: auto;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    z-index: 2;
+}
 
 .map_cardst_templ.mapVisible .left_col {
     width: 50%;
@@ -7202,6 +7229,26 @@ body.fixed {
 
 .card_title_2 h3 .green {
     color: #9bc258;
+}
+
+.adres_text {
+    padding-left: 20px;
+    position: relative;
+}
+
+.adres_text:before {
+    display: block;
+    content: "";
+    width: 14px;
+    height: 20px;
+    background-image: url(img/pin.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
 }
 
 .card_title_descript p {
@@ -8143,7 +8190,7 @@ body.fixed {
 }
 
 .slider_companies {
-    margin-top: 29px;
+    margin-top: 21px;
 }
 
 .slider_companies .slick-arrow {
@@ -8151,7 +8198,7 @@ body.fixed {
 }
 
 .slider_companies .slide {
-    height: 80px;
+    height: 100px;
     position: relative;
 }
 
@@ -8271,6 +8318,10 @@ body.fixed {
     position: absolute;
     top: -2px;
     left: 10px;
+}
+
+.map_cardst_templ.mapVisible .bell_btn span {
+    display: none;
 }
 
 .red_pill {
