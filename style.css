@@ -7605,7 +7605,7 @@ body.fixed {
 }
 
 .reset_filters:hover {
-    color: #FF4E00;
+    color: #0caee5;
 }
 
 .objects_search_result {
@@ -8269,13 +8269,13 @@ body.fixed {
     display: inline-block;
     vertical-align: top;
     margin: 15px 0;
-    padding: 5px 10px 5px 10px;
+    padding: 6px 10px 4px 10px;
     background-color: #ff0000;
     font-size: 14px;
     line-height: 20px;
     font-weight: 400;
     color: #fff;
-    border: none;
+    border: 1px solid #ff0000;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
