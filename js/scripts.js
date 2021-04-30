@@ -764,6 +764,7 @@ $(document).on("click", ".respmenubtn", function(e){
             $("#mapTempl").removeClass("mapVisible");
         }
         getCardParams();
+        getMapParams();
     });
 
     if( $(".table_slider").length > 0 ) {
