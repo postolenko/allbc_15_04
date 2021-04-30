@@ -116,11 +116,32 @@ function getfilterNavParams() {
     }
 }
 
+// function getCardParams() {
+//     $(".object_card").each(function() {
+//         var innerWrapp = $(this).find(".inner_wrapp");
+//         $(this).height(innerWrapp.height());
+//     });
+// }
+
+
 function getCardParams() {
-    $(".object_card").each(function() {
-        var innerWrapp = $(this).find(".inner_wrapp");
-        $(this).height(innerWrapp.height());
-    });
+    // setTimeout(function() {
+        innerWrappHeightArr = [];
+        $(".bc_card").css({
+            "height" : "auto"
+        });
+        $(".bc_card").each(function() {
+            if(!$(this).hasClass("mouseenter")) {
+                innerWrapp = $(this).find(".inner_content");
+                innerWrappHeight = $(this).height();
+                innerWrappHeightArr.push(innerWrappHeight);
+            }
+        });
+        maxHeight = Math.max.apply(null, innerWrappHeightArr);
+        $(".bc_card").css({
+            "height" : maxHeight + "px"
+        });
+    // }, 1000);
 }
 
 // function getMapParams2() {
@@ -189,11 +210,20 @@ $(window).resize(function() {
 
 });
 
+$(window).on("load", function() {
+    // $('.bc_card').on('mouseenter', function() {
+    //     $(this).addClass("mouseenter");
+    // }).on('mouseleave', function(){
+    //     $(this).removeClass("mouseleave");
+    // });
+    getCardParams();
+});
+
 $(document).scroll(function() {
     getHeaderParams();
     getMapParams();
     getfilterNavParams();
-    getCardParams();
+    // getCardParams();
     // getMapParams2();
 });
 
@@ -203,11 +233,18 @@ $(document).ready(function() {
     getMapParams();
     getBarsChart();
     getfilterNavParams();
-    getCardParams();
+    // getCardParams();
     // getMapParams2();
     // -------------
 
     // $(".scroll_y").mCustomScrollbar();
+
+    $('.bc_card').on('mouseenter', function() {
+        // getCardParams();
+        $(this).addClass("mouseenter");        
+    }).on('mouseleave', function(){
+        $(this).removeClass("mouseenter");
+    });
 
     $(".top_menu").each(function() {
         $(this).find(".main_nav > li ul").each(function() {
@@ -546,43 +583,44 @@ $(document).on("click", ".respmenubtn", function(e){
             speed: 1200,
             slidesToShow: 3,
             slidesToScroll: 1,
-            responsive: [
-                {
-                  breakpoint: 1100,
-                  settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1
-                  }
-                },
-                {
-                  breakpoint: 900,
-                  settings: {
-                    slidesToShow: 4,
-                    slidesToScroll: 1
-                  }
-                },
-                {
-                  breakpoint: 768,
-                  settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1
-                  }
-                },
-                {
-                  breakpoint: 510,
-                  settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1
-                  }
-                },
-                {
-                  breakpoint: 400,
-                  settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                  }
-                }
-              ]
+            variableWidth: true
+            // responsive: [
+            //     {
+            //       breakpoint: 1100,
+            //       settings: {
+            //         slidesToShow: 2,
+            //         slidesToScroll: 1
+            //       }
+            //     },
+            //     {
+            //       breakpoint: 900,
+            //       settings: {
+            //         slidesToShow: 4,
+            //         slidesToScroll: 1
+            //       }
+            //     },
+            //     {
+            //       breakpoint: 768,
+            //       settings: {
+            //         slidesToShow: 3,
+            //         slidesToScroll: 1
+            //       }
+            //     },
+            //     {
+            //       breakpoint: 510,
+            //       settings: {
+            //         slidesToShow: 2,
+            //         slidesToScroll: 1
+            //       }
+            //     },
+            //     {
+            //       breakpoint: 400,
+            //       settings: {
+            //         slidesToShow: 1,
+            //         slidesToScroll: 1
+            //       }
+            //     }
+            //   ]
         });
     }
 
@@ -721,15 +759,11 @@ $(document).on("click", ".respmenubtn", function(e){
     $(".map_checkbox").on('click', function() {
         var mapCheckbox = $(this).find("input");
         if(mapCheckbox.prop("checked")) {
-            // $(".map_object_templ").addClass("map_show");
-            // $(".object_map").addClass("visible");
-            // $("html").scrollTop($("#map_box").offset().top - 20);
-            $("#mapTempl").addClass("mapVisible");           
+            $("#mapTempl").addClass("mapVisible");
         } else {
             $("#mapTempl").removeClass("mapVisible");
-            // $(".map_object_templ").removeClass("map_show");
-            // $(".object_map").removeClass("visible");
         }
+        getCardParams();
     });
 
     if( $(".table_slider").length > 0 ) {
@@ -1421,17 +1455,18 @@ $(document).on("click", ".respmenubtn", function(e){
             speed: 1200,
             slidesToShow: 3,
             slidesToScroll: 1,
+            variableWidth: true
             // appendArrows: $(".slider_4_controls"),
             // responsive: [
             //     {
-            //       breakpoint: 900,
+            //       breakpoint: 550,
             //       settings: {
             //         slidesToShow: 2,
             //         slidesToScroll: 1
             //       }
             //     },
             //     {
-            //       breakpoint: 620,
+            //       breakpoint: 400,
             //       settings: {
             //         slidesToShow: 1,
             //         slidesToScroll: 1

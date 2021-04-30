@@ -80,6 +80,20 @@ if( document.getElementById("object_map") ) {
             slideImgBox.find("img").attr("src", imagePath);
         });
 
+        innerWrappHeightArr = [];
+        $(".map_objects_thumbs .bc_card").css({
+            "height" : "auto"
+        });
+        $(".map_objects_thumbs .bc_card").each(function() {
+            innerWrapp = $(this).find(".inner_content");
+            innerWrappHeight = $(this).outerHeight();
+            innerWrappHeightArr.push(innerWrappHeight);
+        });
+        maxHeight = Math.max.apply(null, innerWrappHeightArr);
+        $(".map_objects_thumbs .bc_card").css({
+            "height" : maxHeight + "px"
+        });
+
 	}
 
 }
