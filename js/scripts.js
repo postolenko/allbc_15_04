@@ -125,23 +125,21 @@ function getfilterNavParams() {
 
 
 function getCardParams() {
-    // setTimeout(function() {
-        innerWrappHeightArr = [];
-        $(".bc_card").css({
-            "height" : "auto"
-        });
-        $(".bc_card").each(function() {
-            if(!$(this).hasClass("mouseenter")) {
-                innerWrapp = $(this).find(".inner_content");
-                innerWrappHeight = $(this).height();
-                innerWrappHeightArr.push(innerWrappHeight);
-            }
-        });
-        maxHeight = Math.max.apply(null, innerWrappHeightArr);
-        $(".bc_card").css({
-            "height" : maxHeight + "px"
-        });
-    // }, 1000);
+    innerWrappHeightArr = [];
+    $(".bc_card").css({
+        "height" : "auto"
+    });
+    $(".bc_card").each(function() {
+        if(!$(this).hasClass("mouseenter")) {
+            innerWrapp = $(this).find(".inner_content");
+            innerWrappHeight = $(this).height();
+            innerWrappHeightArr.push(innerWrappHeight);
+        }
+    });
+    maxHeight = Math.max.apply(null, innerWrappHeightArr);
+    $(".bc_card").css({
+        "height" : maxHeight + "px"
+    });
 }
 
 // function getMapParams2() {
