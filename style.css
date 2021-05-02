@@ -7654,6 +7654,10 @@ body.fixed {
     color: #0caee5;
 }
 
+.reset_filters_resp .reset_filters br {
+    display: block;
+}
+
 .objects_search_result {
     display: flex;
     display: -webkit-flex;

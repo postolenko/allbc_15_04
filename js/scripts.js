@@ -130,11 +130,11 @@ function getCardParams() {
         "height" : "auto"
     });
     $(".bc_card").each(function() {
-        if(!$(this).hasClass("mouseenter")) {
+        // if(!$(this).hasClass("mouseenter")) {
             innerWrapp = $(this).find(".inner_content");
             innerWrappHeight = $(this).height();
             innerWrappHeightArr.push(innerWrappHeight);
-        }
+        // }
     });
     maxHeight = Math.max.apply(null, innerWrappHeightArr);
     $(".bc_card").css({
