@@ -3820,11 +3820,11 @@ body.fixed {
     vertical-align: top;
     cursor: pointer;
     position: relative;
-    padding-top: 2px;
+    padding-top: 1px;
     padding-right: 48px;
     color: #a0a0a0;
-    font-size: 15px;
-    line-height: 17px;
+    font-size: 18px;
+    line-height: 18px;
 }
 
 .map_checkbox label:after {
