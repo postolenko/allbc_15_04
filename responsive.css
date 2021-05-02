@@ -163,21 +163,12 @@
 		padding: 10px 0 10px 0;
 	}
 
-	.gradient_templ > .col:nth-child(1) {
-	    width: 230px;
-	}
-
 	.gradient_templ > .col:nth-child(2) {
-	    width: calc(100% - 230px);
+		display: none;
 	}
 
 	.gradient_templ > .col:nth-child(3) {
-		width: 180px;
-	}
-
-	.gradient_templ > .col:nth-child(4) {
-	    width: 150px;
-	    text-align: center;
+	    width: 45%;
 	}
 
 	/*-- Footer --*/
@@ -228,18 +219,6 @@
 
 @media only screen and (max-width: 1040px) {
 
-	/*-- Section 8 --*/
-
-/*	.two_cols_templ .left {
-	    width: 63%;
-	}
-
-	.two_cols_templ .right {
-	    width: 37%;
-	}*/
-
-	/*-- /Section 8 --*/
-
 	/*-- Section 9 --*/
 
 	.charts_slide .left {
@@ -269,6 +248,30 @@
 
 	/*-- /Section 1 - Info Side Page --*/
 
+	/*-- Gradient Section --*/
+
+	.gradient_templ > .col:nth-child(1) {
+	    width: 30%;
+	}
+
+	.gradient_templ > .col:nth-child(2) {
+		display: block;
+	}
+
+	.gradient_templ > .col:nth-child(3) {
+	    width: 61%;
+	}
+
+	.gradient_templ > .col:nth-child(4) {
+	    width: 30%;
+	}
+
+	.gradient_templ > .col:nth-child(5) {
+	    width: 20%;
+	}
+
+	/*-- /Gradient Section --*/
+
 }
 
 @media only screen and (max-width: 1024px) {
@@ -287,66 +290,6 @@
 	    display: inline-block;
 	}
 
-/*	.w_half {
-	    width: 100% !important;
-	}*/
-
-/*	.object_card {
-	    width: calc(50% - 14px);
-	}*/
-
-/*	.object_map {
-	    position: relative;
-	    width: 100%;
-	    height: 0 !important;
-	    top: unset;
-	    bottom: unset;
-	    right: 0;
-	    z-index: 1;
-	    overflow: hidden;
-	}
-
-	.object_map.visible {
-		height: auto !important;
-	}
-
-	.map_scroll {
-	    display: block;
-	    width: 100%;
-	    height: 500px;
-	    position: relative;
-	    top: 0;
-	    right: 0;
-	}
-
-	.map_scroll.fixed {
-	    width: 100%;
-	    height: 500px;
-	    position: relative;
-	    top: 0 !important;
-	}*/
-
-/*	.map_scroll #object_map {
-	    display: block;
-	    width: 100%;
-	    height: 500px;
-	    position: relative;
-	}*/
-
-/*	.map_search_wrapp {
-	    top: 20px;
-	}
-
-	.map_object_header .left {
-	    width: 100%;
-	    float: none;
-	    padding-right: 0;
-	}
-
-	.map_object_header .right {
-		display: none;
-	}*/
-
 	/*-- /Section 1 - Info Side Page --*/
 
 	/*-- Section 3 - Info Side Page --*/
@@ -361,9 +304,9 @@
 
 	/*-- /Section 3 - Info Side Page --*/
 
-	.filter_resp {
+/*	.filter_resp {
 		padding-bottom: 165px;
-	}
+	}*/
 
 	.novisible_1024 {
 		display: none !important;
@@ -618,16 +561,8 @@
 
 	/*-- Header --*/
 
-	.header_site {
-		position: fixed;
-	}
-
 	.header_1 {
 	    position: absolute;
-	}
-
-	.header_site.js {
-		background: rgba(0, 0, 0, .8);
 	}
 
 	.header_site_inner.js {
@@ -652,12 +587,12 @@
 	}
 
 	.header_main .left {
-	    padding-top: 1px;
+		padding-top: 10px;
 	}
 
 	.logo_wrapp {
 	    margin: 3px 0;
-	    padding: 5px 19px 7px 0;
+		padding: 5px 0 7px 0;
 	}
 
 	.dropdown_title {
@@ -748,7 +683,7 @@
 	}
 
 	.filter_nav.fixed {
-		top: 60px;
+		top: 0;
 	}
 
 	/*-- /Header --*/
@@ -801,7 +736,11 @@
 	}
 
 	.header_main .inline {
-	    display: none;
+	    /*display: none;*/
+	}
+
+	.header_main .inline {
+	    padding: 14px 0;
 	}
 
 	.header_site .inline:after {
@@ -821,9 +760,9 @@
 	    width: 115px;
 	}
 
-	.filter_nav.fixed {
+/*	.filter_nav.fixed {
 	    top: 54px;
-	}
+	}*/
 
 	/*-- Section 1 --*/
 
@@ -1040,6 +979,36 @@
 
 	/*-- /Section 1 - Info Side Page New --*/
 
+	/*-- Gradient Section --*/
+
+	.gradient_templ > .col:nth-child(1) {
+	    width: 33%;
+	}
+
+	.gradient_templ > .col:nth-child(2) {
+	    display: block;
+	    width: 16%;
+	}
+
+	.gradient_templ > .col:nth-child(3) {
+	    width: 100%;
+	}
+
+	.gradient_templ > .col:nth-child(4) {
+	    width: 30%;
+	}
+
+	.gradient_templ > .col:nth-child(5) {
+	    width: 30%;
+	}
+
+	.gradient_templ .input_wrapp_2 {
+    	max-width: 480px;
+		margin: 5px auto;
+	}
+
+	/*-- /Gradient Section --*/
+
 	/*-- Footer --*/
 
 	.footer__main__right {
@@ -1051,13 +1020,6 @@
 }
 
 @media only screen and (max-width: 650px) {
-	.gradient_templ > .col:nth-child(1) {
-	    width: 230px;
-	}
-
-	.gradient_templ > .col:nth-child(2) {
-	    width: 100%;
-	}
 	.map_objects_thumbs .bc_card {
 	    width: 100%;
 	    max-width: 480px;
@@ -1066,6 +1028,31 @@
 	.map_objects_thumbs {
 	    margin: 50px 0 10px 0;
 	}
+
+	/*-- Gradient Section --*/
+
+	.gradient_templ > .col:nth-child(1) {
+	    width: 50%;
+	    max-width: 240px;
+	}
+
+	.gradient_templ > .col:nth-child(2) {
+	    width: 50%;
+	    max-width: 70px;
+	}
+
+	.gradient_templ > .col:nth-child(4) {
+	    width: 50%;
+	    max-width: 180px;
+	}
+
+	.gradient_templ > .col:nth-child(5) {
+		width: 50%;
+		max-width: 147px;
+	}
+
+	/*-- /Gradient Section --*/
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -1104,15 +1091,15 @@
 	}
 
 	.header_main .left {
-	    width: calc(50% - 120px) !important;
+	    width: calc(50% - 70px) !important;
 	}
 
 	.header_main .center {
-	    width: 240px !important;
+	    width: 140px !important;
 	}
 
 	.header_main .right {
-	    width: calc(50% - 120px) !important;
+	    width: calc(50% - 70px) !important;
 	}
 
 	.menu_btn_2 .sp_2 {
@@ -1124,13 +1111,13 @@
 		line-height: 33px;
 	}
 
-	.header_main .center {
+/*	.header_main .center {
 	    width: calc(100% - 100px) !important;
 	}
 
 	.header_main .left {
 	    width: 50px !important;
-	}
+	}*/
 
 	.logo_city {
 	    min-width: 140px;
@@ -1258,6 +1245,33 @@
 	.objects_cards_new .bc_card {
 	    width: 100%;
 	    margin: 8px 0;
+	}
+
+	.gradient_templ > .col:nth-child(1) {
+	    width: 196px;
+	}
+
+	.g_two_cols_1 > div:nth-child(2) img {
+	    margin-left: 14px;
+	}
+
+	.gradient_templ > .col:nth-child(4) {
+	    padding-left: 0;
+	    width: 60%;
+	}
+
+	.gradient_templ > .col:nth-child(5) {
+	    width: 40%;
+	}
+
+	.gradient_templ .blue_pill {
+	    padding: 10px 10px 10px 10px;
+	    font-size: 14px;
+	}
+
+	.g_two_cols_1 h3 {
+	    font-size: 14px;
+	    line-height: 15px;
 	}
 
 }
@@ -1396,7 +1410,7 @@
 	/*-- Header --*/
 
 	.logo_wrapp {
-	    padding: 5px 11px 7px 0;
+	    padding: 5px 0 7px 0;
 	}
 
 	.header_1 .left {
@@ -1411,9 +1425,9 @@
 	    display: none;
 	}
 
-	.header_main .right {
+/*	.header_main .right {
 	    display: none;
-	}
+	}*/
 
 	.dropdowm_wrapp_2 {
 	    max-width: 125px;
@@ -1684,42 +1698,6 @@
 
 	/*-- Gradient Section --*/
 
-	.gradient_templ > .col:nth-child(1) {
-	    width: 230px;
-	}
-
-	.gradient_templ > .col:nth-child(2) {
-	    width: 100%;
-	}
-
-	.gradient_templ > .col:nth-child(3) {
-		width: 100%;
-	}
-
-	.gradient_templ > .col:nth-child(4) {
-	    width: 100%;
-	    padding: 10px 0 10px 0;
-	}
-
-	.g_two_cols_2 > div:nth-child(2) {
-	    width: 100%;
-	}
-
-	.checkbox_2 label {
-	    padding-top: 6px;
-	}
-
-	.g_two_cols_2 {
-		display: block;
-	}
-
-	.g_two_cols_2 > div:nth-child(1) {
-	    width: 100%;
-	    padding: 0 0 5px;
-	}
-
-	/*-- /Gradient Section --*/
-
 }
 
 @media only screen and (max-width: 450px) {
@@ -1735,18 +1713,32 @@
 	}
 
 	.logo_wrapp {
-	    padding-right: 7px;
+	    padding-right: 0;
 	}
 
 	.menu_btn_2 {
 		position: relative;
-		left: -10px;
+		left: -3px;
+		top: -3px;
 	}
 
 	/*-- /Header --*/
 
 	.map_object_header_2 p {
 		font-size: 13px;
+	}
+
+	.inlines_wrapp .inline {
+	    padding: 3px 5px;
+	}
+
+	.bell_btn {
+		padding: 0 5px 0 35px;
+		font-size: 14px;
+	}
+
+	.objects_search_result > div:nth-child(2) p {
+		font-size: 14px;
 	}
 
 	/*-- Footer --*/
