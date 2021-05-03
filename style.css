@@ -8115,8 +8115,10 @@ body.fixed {
 }
 
 .checkbox_2 label input {
+    transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
     position: absolute;
-    top: 4px;
+    top: 50%;
     left: 0;
 }
 

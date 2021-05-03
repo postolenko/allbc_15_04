@@ -130,11 +130,11 @@ function getCardParams() {
         "height" : "auto"
     });
     $(".bc_card").each(function() {
-        // if(!$(this).hasClass("mouseenter")) {
+        if( mouseover == false ) {
             innerWrapp = $(this).find(".inner_content");
             innerWrappHeight = $(this).height();
             innerWrappHeightArr.push(innerWrappHeight);
-        // }
+        }
     });
     maxHeight = Math.max.apply(null, innerWrappHeightArr);
     $(".bc_card").css({
@@ -209,11 +209,6 @@ $(window).resize(function() {
 });
 
 $(window).on("load", function() {
-    // $('.bc_card').on('mouseenter', function() {
-    //     $(this).addClass("mouseenter");
-    // }).on('mouseleave', function(){
-    //     $(this).removeClass("mouseleave");
-    // });
     getCardParams();
 });
 
@@ -233,16 +228,16 @@ $(document).ready(function() {
     getfilterNavParams();
     // getCardParams();
     // getMapParams2();
+
     // -------------
-
-    // $(".scroll_y").mCustomScrollbar();
-
-    $('.bc_card').on('mouseenter', function() {
-        // getCardParams();
-        $(this).addClass("mouseenter");        
+    mouseover = false;
+    $('.bc_card').on('mouseover', function() {
+        mouseover = true;
     }).on('mouseleave', function(){
-        $(this).removeClass("mouseenter");
+        mouseover = false;
     });
+
+    // -------------
 
     $(".top_menu").each(function() {
         $(this).find(".main_nav > li ul").each(function() {
