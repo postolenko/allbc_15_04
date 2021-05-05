@@ -74,7 +74,7 @@ function getBarsChart() {
 }
 
 function getMapParams() {
-    if( $(".object_map").length > 0) {
+    if( $(".object_map").length > 0 && bodyWidth > 767) {
         filtersCoord = $(".filter_nav").offset().top + $(".filter_nav").height();
         mapCoord = $(".object_map").offset().top;        
         if(filtersCoord >= mapCoord) {            
@@ -130,11 +130,11 @@ function getCardParams() {
         "height" : "auto"
     });
     $(".bc_card").each(function() {
-        if( mouseover == false ) {
+        // if( mouseover == false ) {
             innerWrapp = $(this).find(".inner_content");
             innerWrappHeight = $(this).height();
             innerWrappHeightArr.push(innerWrappHeight);
-        }
+        // }
     });
     maxHeight = Math.max.apply(null, innerWrappHeightArr);
     $(".bc_card").css({
@@ -154,6 +154,16 @@ function getCardParams() {
 //         // });
 //     }
 // }
+
+function debounce(func){
+  var timer;
+  return function(event){
+    if(timer) clearTimeout(timer);
+    timer = setTimeout(func,100,event);
+  };
+}
+
+window.addEventListener('resize', debounce(getCardParams));
 
 var w = window,
 d = document,
@@ -199,7 +209,7 @@ $(window).resize(function() {
     getMapParams();
     getBarsChart();
     getfilterNavParams();
-    getCardParams();
+    // getCardParams();
     // getMapParams2();
     // -------------
     $(".promo_slider .slide").css({
@@ -230,11 +240,29 @@ $(document).ready(function() {
     // getMapParams2();
 
     // -------------
-    mouseover = false;
-    $('.bc_card').on('mouseover', function() {
-        mouseover = true;
-    }).on('mouseleave', function(){
-        mouseover = false;
+    // mouseover = false;
+    // $('.bc_card').on('mouseover', function() {
+    //     mouseover = true;
+    // }).on('mouseleave', function(){
+    //     mouseover = false;
+    // });
+
+    $('.bc_card').on('mouseleave', function() {
+        innerWrappHeightArr = [];
+        $(".bc_card").each(function() {
+        // if( mouseover == false ) {
+            if( !$(this).not() ) {
+                innerWrapp = $(this).find(".inner_content");
+                innerWrappHeight = $(this).height();
+                innerWrappHeightArr.push(innerWrappHeight);
+            }
+        // }
+        });
+        maxHeight = Math.max.apply(null, innerWrappHeightArr);
+        $(".bc_card").css({
+            "height" : maxHeight + "px"
+        });
+        console.log(maxHeight);
     });
 
     // -------------
