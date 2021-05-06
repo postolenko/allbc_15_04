@@ -95,10 +95,6 @@ function getMapParams() {
                 "top" : 0
             });
         }
-        // if($("#mapWrapp").length > 0) {
-        //     mapWidth = $(window).width() - $("#mapWrapp").offset().left;
-        //     $(".map_scroll").width(mapWidth);
-        // }
     }
 }
 
@@ -115,14 +111,6 @@ function getfilterNavParams() {
         }
     }
 }
-
-// function getCardParams() {
-//     $(".object_card").each(function() {
-//         var innerWrapp = $(this).find(".inner_wrapp");
-//         $(this).height(innerWrapp.height());
-//     });
-// }
-
 
 function getCardParams() {
     innerWrappHeightArr = [];
@@ -787,11 +775,6 @@ $(document).on("click", ".respmenubtn", function(e){
         } else {
             $("#mapTempl").removeClass("mapVisible");
         }
-        // if( $("#mapTempl").hasClass("mapVisible") ) {
-        //     $('html, body').stop().animate({
-        //         'scrollTop': $("#mapTempl").offset().top - 40
-        //     }, 300);
-        // }
         getCardParams();
         getMapParams();
     });
@@ -1444,16 +1427,6 @@ $(document).on("click", ".respmenubtn", function(e){
 
     // -------------
 
-    // $("#showMap").on("click", function(e) {
-    //     e.preventDefault();
-    //     parentBlock = $("#mapTempl").toggleClass("mapVisible");
-    //     mapWidth = $("#mapWrapp").offset().left + $("#mapWrapp").width();
-    //     $(".map_scroll").width(mapWidth);
-    //     getMapParams();
-    // });
-
-    // -------------
-
     $(".slideBtn").on("click", function(e) {
         e.preventDefault();
         $(this).toggleClass("active");
@@ -1465,14 +1438,6 @@ $(document).on("click", ".respmenubtn", function(e){
             slideBlock.slideUp(300);
         }
     });
-
-    // $(".bc_card").on("mouseover", function() {
-    //     gh = $(this).find(".gh");
-    //     gh.css({
-    //         "height" : $(this).find(".inner_wrapp").height() + 6 + "px"
-    //     });
-    //     console.log(gh.height());
-    // });
 
     // ------------
 
