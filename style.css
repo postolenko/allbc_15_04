@@ -5433,6 +5433,21 @@ body.fixed {
     background-color: transparent !important;
 }
 
+.dropdow_item_wrapp.resp.active:before {
+    display: block;
+    content: "";
+    width: calc(100% + 50px);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -25px;
+    background-color: #f9f9f9;
+}
+
+.dropdow_item_wrapp.resp.active .dropdown_item_menu {
+    background-color: #f9f9f9;
+}
+
 .dropdow_item_wrapp.resp .dropdown_item_title:before {
     top: 26px;
     right: 0;

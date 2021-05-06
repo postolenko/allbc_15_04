@@ -818,10 +818,14 @@ $(document).on("click", ".respmenubtn", function(e){
         if(dropdowmMenu.is(":hidden")) {
             dropdowmMenu.slideDown(300);
             parentBlock.addClass("active");
+            // respParent = parentBlock.closest(".resp_filter_wrapp ");
+            // respParent.addClass("greyBg");
             getBarsChart();
         } else {
             dropdowmMenu.slideUp(300);
             parentBlock.removeClass("active");
+            // respParent = parentBlock.closest(".resp_filter_wrapp");
+            // respParent.removeClass("greyBg");
         }
     });
 
