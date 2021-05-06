@@ -783,7 +783,9 @@ $(document).on("click", ".respmenubtn", function(e){
         var mapCheckbox = $(this).find("input");
         if(mapCheckbox.prop("checked")) {
             $("#mapTempl").addClass("mapVisible");
-            $("html").scrollTop($("#mapTempl").offset().top - 20);
+            $('html, body').stop().animate({
+                'scrollTop': $("#mapTempl").offset().top - 40
+            }, 300);
         } else {
             $("#mapTempl").removeClass("mapVisible");
         }
