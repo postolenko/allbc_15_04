@@ -249,9 +249,11 @@ $(document).ready(function() {
 
     $('.bc_card').on('mouseover', function() {
         innerWrappHeightArr = [];
+        thisElem = $(this);
         $(".bc_card").each(function() {
         // if( mouseover == false ) {
-            if( !$(this).siblings() ) {
+            // if( !$(this).siblings() ) {
+            if( $(this) != thisElem ) {
                 innerWrapp = $(this).find(".inner_content");
                 innerWrappHeight = $(this).height();
                 innerWrappHeightArr.push(innerWrappHeight);
