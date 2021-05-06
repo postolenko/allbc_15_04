@@ -5400,7 +5400,7 @@ body.fixed {
     overflow-y: auto;
 /*    padding: 55px 25px 15px 25px;*/
     /*padding: 10px 25px 65px 25px;*/
-    padding: 65px 25px 131px 25px;
+    padding: 65px 25px 110px 25px;
     background: #ffffff;
     position: relative;
     z-index: 4;
@@ -5786,7 +5786,7 @@ body.fixed {
 
 .orange_pill_resp {
     width: 100%;
-    margin-top: 30px;
+    /*margin-top: 30px;*/
     /*margin: 20px 0;*/
 }
 

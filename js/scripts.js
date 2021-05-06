@@ -247,11 +247,11 @@ $(document).ready(function() {
     //     mouseover = false;
     // });
 
-    $('.bc_card').on('mouseleave', function() {
+    $('.bc_card').on('mouseover', function() {
         innerWrappHeightArr = [];
         $(".bc_card").each(function() {
         // if( mouseover == false ) {
-            if( !$(this).not() ) {
+            if( !$(this).siblings() ) {
                 innerWrapp = $(this).find(".inner_content");
                 innerWrappHeight = $(this).height();
                 innerWrappHeightArr.push(innerWrappHeight);
