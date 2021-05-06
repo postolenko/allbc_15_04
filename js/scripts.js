@@ -247,25 +247,25 @@ $(document).ready(function() {
     //     mouseover = false;
     // });
 
-    $('.bc_card').on('mouseover', function() {
-        innerWrappHeightArr = [];
-        thisElem = $(this);
-        $(".bc_card").each(function() {
-        // if( mouseover == false ) {
-            // if( !$(this).siblings() ) {
-            if( $(this) != thisElem ) {
-                innerWrapp = $(this).find(".inner_content");
-                innerWrappHeight = $(this).height();
-                innerWrappHeightArr.push(innerWrappHeight);
-            }
-        // }
-        });
-        maxHeight = Math.max.apply(null, innerWrappHeightArr);
-        $(".bc_card").css({
-            "height" : maxHeight + "px"
-        });
-        console.log(maxHeight);
-    });
+    // $('.bc_card').on('mouseover', function() {
+    //     innerWrappHeightArr = [];
+    //     thisElem = $(this);
+    //     $(".bc_card").each(function() {
+    //     // if( mouseover == false ) {
+    //         // if( !$(this).siblings() ) {
+    //         if( $(this) != thisElem ) {
+    //             innerWrapp = $(this).find(".inner_content");
+    //             innerWrappHeight = $(this).height();
+    //             innerWrappHeightArr.push(innerWrappHeight);
+    //         }
+    //     // }
+    //     });
+    //     maxHeight = Math.max.apply(null, innerWrappHeightArr);
+    //     $(".bc_card").css({
+    //         "height" : maxHeight + "px"
+    //     });
+    //     console.log(maxHeight);
+    // });
 
     // -------------
 
