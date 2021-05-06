@@ -304,10 +304,6 @@
 
 	/*-- /Section 3 - Info Side Page --*/
 
-/*	.filter_resp {
-		padding-bottom: 165px;
-	}*/
-
 	.novisible_1024 {
 		display: none !important;
 	}
@@ -736,10 +732,6 @@
 	}
 
 	.header_main .inline {
-	    /*display: none;*/
-	}
-
-	.header_main .inline {
 	    padding: 14px 0;
 	}
 
@@ -759,10 +751,6 @@
 	.logo img {
 	    width: 115px;
 	}
-
-/*	.filter_nav.fixed {
-	    top: 54px;
-	}*/
 
 	/*-- Section 1 --*/
 
@@ -860,10 +848,6 @@
 	.filter_nav {
 		padding-bottom: 0;
 	}
-
-/*	.filter_resp {
-		padding: 40px 15px 140px 15px
-	}*/
 
 	.filter_resp.scroll {
 	    padding-top: 50px;
@@ -1468,10 +1452,6 @@
 	    display: none;
 	}
 
-/*	.header_main .right {
-	    display: none;
-	}*/
-
 	.dropdowm_wrapp_2 {
 	    max-width: 125px;
 	}
@@ -1807,10 +1787,6 @@
 	.reset_filters br {
 		display: none;
 	}
-/*
-	.filter_nav.fixed {
-	    top: 54px;
-	}*/
 
 }
 
