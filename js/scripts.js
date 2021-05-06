@@ -783,12 +783,15 @@ $(document).on("click", ".respmenubtn", function(e){
         var mapCheckbox = $(this).find("input");
         if(mapCheckbox.prop("checked")) {
             $("#mapTempl").addClass("mapVisible");
-            $('html, body').stop().animate({
-                'scrollTop': $("#mapTempl").offset().top - 40
-            }, 300);
+            $("html").scrollTop($("#mapTempl").offset().top - 40);
         } else {
             $("#mapTempl").removeClass("mapVisible");
         }
+        // if( $("#mapTempl").hasClass("mapVisible") ) {
+        //     $('html, body').stop().animate({
+        //         'scrollTop': $("#mapTempl").offset().top - 40
+        //     }, 300);
+        // }
         getCardParams();
         getMapParams();
     });
