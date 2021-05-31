@@ -383,7 +383,8 @@ textarea:focus {
 .content_2 .row {
     max-width: 100%;
     /*max-width: 1900px;*/
-    max-width: 1250px;
+    /*max-width: 1250px;*/
+    max-width: 1600px;
     padding: 0 25px;
 }
 
