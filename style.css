@@ -388,6 +388,10 @@ textarea:focus {
     padding: 0 25px;
 }
 
+.padding_row {
+    padding: 0 25px;
+}
+
 .offset_ziro {
     font-size: 0;
     line-height: 0;
@@ -6844,6 +6848,231 @@ body.fixed {
     background-color: #4ab996;
 }
 
+.photo_gallery_bc_wrapp {
+    padding-bottom: 20px;
+}
+
+.title_two_cols {
+    display: flex;
+    display: -webkit-flex;
+    padding-bottom: 12px;
+}
+
+.title_two_cols > .col_1 {
+    width: 60%;
+}
+
+.title_two_cols > .col_2 {
+    width: 40%;
+    text-align: right;
+    padding-top: 13px;
+}
+
+.title_two_cols h3 {
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: bold;
+    color: #000;
+}
+
+.photo_gallery_bc {
+    display: flex;
+    display: -webkit-flex;
+    margin: 0 -5px;
+}
+
+.photo_gallery_bc > .col_1 {
+    width: 50%;
+    padding-right: 5px;
+}
+
+.photo_gallery_bc > .col_2 {
+    width: 50%;
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    margin-right: -5px;
+}
+
+.gal_img_box {
+    display: block;
+    height: 133px;
+    width: 100%;
+    margin: 5px;
+    background-color: #f6f6f6;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    background-size: cover;
+    background-position: center;
+}
+
+.photo_gallery_bc > .col_2 .gal_img_box {
+    width: calc(50% - 10px);
+    /*margin: 5px;*/
+}
+
+.gal_img_box.big {
+    height: 276px;
+    width: calc(100% - 5px);
+    /*margin: 5px 5px 5px 0;*/
+}
+
+.photo_gallery_bc_dropdown {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    margin: 0 -5px;
+}
+
+.photo_gallery_bc_dropdown .gal_img_box {
+    width: calc(25% - 10px);
+    margin: 5px;
+}
+
+.table_2_wrapp {
+    padding: 10px 0;
+}
+
+.inner_title {
+    padding-bottom: 18px;
+}
+
+.inner_title h3 {
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: bold;
+    color: #000;
+}
+
+.table_2 {
+    border: 1px solid #eceded;
+}
+
+.table_2_header {
+    display: flex;
+    display: -webkit-flex;
+    background-color: #f1f5f5;
+    border-bottom: 1px solid #eceded;
+    padding: 15px 0 15px 0;
+}
+
+.table_2_header .cell:nth-child(1) {
+    width: 37%;
+    padding-left: 25px;
+    padding-right: 10px;
+}
+
+.table_2_header .cell:nth-child(2) {
+    width: 63%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.table_2_header h3 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #000;
+}
+
+.table_2_row {
+    display: flex;
+    display: -webkit-flex;
+    background-color: #fff;
+    border-bottom: 1px solid #eceded;
+    padding: 12px 0 12px 0;
+}
+
+.table_2_row:last-child {
+    border-bottom: none;
+}
+
+.table_2_row .cell:nth-child(1) {
+    width: 37%;
+    padding-left: 25px;
+    padding-right: 10px;
+}
+
+.table_2_row .cell:nth-child(2) {
+    width: 63%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.table_2_row p {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #000;
+}
+
+.location_two_cols {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    padding: 30px 0 15px 0;
+}
+
+.location_two_cols > .col_1 {
+    width: 45%;
+    padding-right: 10px;
+}
+
+.location_two_cols > .col_2 {
+    width: 55%;
+    padding-left: 10px;
+}
+
+.card_inlines_2 {
+    padding: 2px 0;
+}
+
+.metro_wrapp_3 {
+    padding-top: 0;
+}
+
+.metro_wrapp_3 p {
+    font-size: 16px;
+    color: #000;
+}
+
+.walker_wrapp.walker_wrapp_2 p {
+    font-size: 16px;
+    color: #000;
+}
+
+.draw_wrapp {
+    padding-left: 60px;
+    position: relative;
+}
+
+.draw_wrapp p {
+    padding: 2px 0;
+    font-size: 14px;
+    color: #000;
+}
+
+.draw_wrapp:before {
+    display: block;
+    content: "";
+    width: 46px;
+    height: 46px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(img/car.svg);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#location_map {
+    height: 235px;
+    margin: 26px 0 26px;
+}
 
 /*-- /Section 3 - BC Page --*/
 

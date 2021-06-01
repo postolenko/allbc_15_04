@@ -1601,4 +1601,19 @@ $(document).on("click", ".respmenubtn", function(e){
         parent.find(".slick-next").trigger("click");
     });
 
+    // -----------
+
+    $(".photo_gallery_bc_wrapp [data-dropdown-link]").on("click", function() {
+        parent = $(this).closest(".photo_gallery_bc_wrapp");
+        dataFancyboxAttr = parent.find(".gal_img_box:eq(0)").attr('data-fancybox');
+        dropdownGalleryImgBox = parent.find(".photo_gallery_bc_dropdown .gal_img_box");
+        if($(this).hasClass("active")) {
+            dropdownGalleryImgBox.attr("data-fancybox", dataFancyboxAttr);
+        } else {
+            dropdownGalleryImgBox.attr("data-fancybox", "");
+        }
+    });
+
+
+
 });
