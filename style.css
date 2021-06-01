@@ -7388,10 +7388,267 @@ body.fixed {
     background-position: center;
 }
 
-
 /*-- /Section 3 - BC Page --*/
 
+/*-- Section 4 - BC Page --*/
 
+.grey_bg_2 {
+    background-color: #f7f7f7;
+}
+
+.contacts_box {
+    max-width: 775px;
+    margin: 25px 0 32px 0;
+}
+
+.contacts_box_header h2 {
+    padding: 7px 0;
+    text-align: left;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: bold;
+    color: #373737;
+}
+
+.contacts_box_two_cols {
+    display: flex;
+    display: -webkit-flex;
+}
+
+.contacts_box_two_cols > .col_1 {
+    width: 320px;
+    padding-right: 10px;
+}
+
+.contacts_box_two_cols > .col_2 {
+    width: calc(100% - 320px);
+    padding-left: 10px;
+}
+
+.grey_time {
+    padding-bottom: 6px;
+    font-size: 14px;
+    line-height: 18px;
+    color: #bcbcbc;
+}
+
+.soc_list_pills_2 li a {
+    background-color: #fff;
+}
+
+.contacts_form .input_wrapp textarea {
+    display: block;
+    width: 100%;
+    height: 65px;
+    padding: 7px 20px;
+    border: 1px solid #dfdfdf;
+    background-color: #fff;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    font-family: "Roboto";
+    font-style: 14px;
+    line-height: 20px;
+    font-weight: normal;
+    color: #000;
+}
+
+.contacts_form_footer {
+    display: flex;
+    display: -webkit-flex;
+    padding: 10px 0;
+}
+
+.contacts_form_footer > .col_1 {
+    width: 150px;
+    padding-right: 15px;
+}
+
+.contacts_form_footer > .col_2 {
+    width: calc(100% - 150px);
+}
+
+.contacts_form_footer > .col_1 .orange_pill {
+    width: 100%;
+}
+
+.upload_file {
+    margin: 2px 0;
+    padding-left: 25px;
+    position: relative;
+}
+
+.upload_file:before {
+    display: block;
+    content: "";
+    width: 19px;
+    height: 19px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(img/clip.svg);
+    position: absolute;
+    top: 1px;
+    left: 0;
+}
+
+.upload_file input {
+    display: block;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.upload_file label {
+    cursor: pointer;
+}
+
+.upload_file_title {
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #33312f;
+}
+
+.formats {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #33312f;
+}
+
+.inlines_3 {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    margin: 12px -10px;
+}
+
+.inlines_3 > div {
+    padding: 0 10px;
+}
+
+.socials_wrapp {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    padding-right: 23px;
+}
+
+.socials_wrapp > div:nth-child(1) {
+    padding-right: 10px;
+}
+
+.socials_wrapp h3 {
+    font-size: 20px;
+    line-height: 30px;
+    color: #33312f;
+    font-weight: 500;
+}
+
+.socials_list {
+    display: flex;
+    display: -webkit-flex;
+}
+
+.socials_list li {
+    padding: 5px;
+}
+
+.socials_list li a {
+    display: block;
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -webkit-transition-property: box-shadow;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: box-shadow;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: box-shadow;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: box-shadow;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: box-shadow;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.socials_list li a:hover {
+    -webkit-box-shadow: 0 2px 7px 0 rgba(0,0,0,.4);
+    -moz-box-shadow: 0 2px 7px 0 rgba(0,0,0,.4);
+    box-shadow: 0 2px 7px 0 rgba(0,0,0,.4);
+}
+
+.socials_list li a img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}
+
+.more_socials {
+
+}
+
+.icon_links {
+    display: inline-flex;
+    display: -webkit-inline-flex;
+    margin: 5px 0;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    color: #373737;
+    -webkit-transition-property: color;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: color;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: color;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: color;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: color;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.icon_links:hover {
+    color: #87c250;
+}
+
+.icon_links img {
+    margin-right: 10px;
+}
+
+.icon_links span:nth-child(2) {
+    padding-top: 3px;
+}
+
+
+/*-- /Section 4 - BC Page --*/
 
 
 
