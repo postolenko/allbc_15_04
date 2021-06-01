@@ -1614,6 +1614,12 @@ $(document).on("click", ".respmenubtn", function(e){
         }
     });
 
+    // --------------
 
+    $(".show_tel_link").on("click", function(e) {
+        e.preventDefault();
+        parent = $(this).closest(".tel_number_wrapp");
+        parent.addClass("telVisible");
+    });
 
 });
