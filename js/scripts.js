@@ -1622,4 +1622,23 @@ $(document).on("click", ".respmenubtn", function(e){
         parent.addClass("telVisible");
     });
 
+    // --------------
+
+
+    if( $(".sort_slider").length > 0 ) {
+        $(".sort_slider").not(".slick-initialized").slick({
+            dots: false,
+            arrows: true,
+            // autoplay: true,
+            autoplaySpeed: 4000,
+            speed: 1200,
+            // slidesToShow: 3,
+            slidesToScroll: 3,
+            variableWidth: true,
+            appendArrows: $(".sort_slider_arrows .row"),
+            prevArrow: '<button class="slick-prev sort_slider_arrow" aria-label="Previous" type="button"><img src="img/blue_arrow_left.png" alt="" /></button>',
+            nextArrow: '<button class="slick-next sort_slider_arrow" aria-label="Next" type="button"><img src="img/blue_arrow_right.png" alt="" /></button>'
+        });
+    }    
+
 });

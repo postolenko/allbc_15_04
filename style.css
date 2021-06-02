@@ -7647,14 +7647,360 @@ body.fixed {
     padding-top: 3px;
 }
 
-
 /*-- /Section 4 - BC Page --*/
 
+/*-- Section 5 - BC Page --*/
 
+.sect_5_bc_page {
+    padding: 25px 0 10px 0;
+    position: relative;
+    z-index: 3;
+}
 
+.h2_wrapp {
+    padding: 10px 0;
+}
 
+.h2_wrapp h2 {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 40px;
+    color: #373737;
+}
 
+.sort_links_wrapp {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    justify-content: center;
+    -webkit-justify-content: center;
+}
 
+.sort_links_wrapp > div {
+    padding: 0 5px;
+}
+
+.sort_links_wrapp h3 {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000;
+}
+
+.sort_links_list {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+}
+
+.sort_links_list li {
+    padding: 1px 10px;
+}
+
+.sort_links_list li a {
+    display: inline-block;
+    vertical-align: top;
+    border-bottom: 1px solid transparent;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: bold;
+    color: #000;
+    -webkit-transition-property: color, border;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: color, border;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: color, border;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: color, border;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: color, border;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.sort_links_list li a.active,
+.sort_links_list li a:active,
+.sort_links_list li a:hover {
+    border-bottom: 1px solid #86c351;
+    color: #86c351;
+}
+
+.sort_slider_wrapp {
+    height: 384px;
+}
+
+.sort_slider_arrows .row {
+    position: relative;
+}
+
+.sort_slider_arrows .row .slick-arrow {
+    position: absolute;
+    bottom: 192px;
+    top: auto;
+}
+
+.sort_slider_arrow {
+    border: none;
+    width: 20px;
+    height: 20px;
+    opacity: .4;
+    -webkit-transition-property: opacity;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: opacity;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: opacity;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: opacity;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: opacity;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.sort_slider_arrow:hover {
+    opacity: 1;
+}
+
+.sort_slider_arrow:before {
+    display: none;
+}
+
+.slick-prev.sort_slider_arrow {
+    left: -83px;
+}
+
+.slick-next.sort_slider_arrow {
+    right: -83px;
+}
+
+.sort_slider .slide {
+    padding: 0 5px;
+}
+
+.sort_slider .slide .bc_card {
+    max-width: 270px;
+    margin: 19px 0 33px 0;
+}
+
+.more_btn_wrapp {
+    text-align: center;
+}
+
+.transparent_pill_4 {
+    display: inline-block;
+    vertical-align: top;
+    padding: 9px 13px 9px 13px;
+    font-size: 16px;
+    line-height: 20px;
+    background-color: transparent;
+    border: 1px solid #1eafe3;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    text-align: center;
+    -webkit-transition-property: color, background;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: color, background;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: color, background;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: color, background;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: color, background;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.transparent_pill_4:hover {
+    background-color: #1eafe3;
+    color: #fff;
+}
+
+.bc_card .inner_content {
+    padding-bottom: 20px;
+}
+
+/*-- /Section 5 - BC Page --*/
+
+/*-- Section 6 - BC Page --*/
+
+.thumbnails_3_wrapp_2 {
+    padding-top: 15px;
+}
+
+/*-- /Section 6 - BC Page --*/
+
+/*-- Section 7 - BC Page --*/
+
+.gradient_box_2 {
+    margin-top: 2px;
+}
+
+.gradient_templ_2 {
+    display: flex;
+    display: -webkit-flex;
+    width: 100%;
+}
+
+.gradient_templ_2 > .col {
+    padding: 10px 10px;
+}
+
+.gradient_templ_2 > .col_1 {
+    padding-left: 0;
+    width: 12%;
+}
+
+.gradient_templ_2 > .col_2 {
+    width: 32%;
+}
+
+.gradient_templ_2 > .col_3 {
+    padding-right: 0;
+    width: 56%;
+}
+
+.gradient_templ_2 > .col_1 p {
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+}
+
+.tel_number_wrapp_2 {
+    padding-left: 50px;
+    position: relative;
+}
+
+.tel_number_wrapp_2:before {
+    display: block;
+    content: "";
+    width: 25px;
+    height: 24px;
+    background-image: url(img/call_2.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+}
+
+.tel_number_wrapp_2 a {
+    display: inline-block;
+    vertical-align: top;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 40px;
+    color: #fff;
+    border-bottom: 1px solid transparent;
+    -webkit-transition-property: border;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: border;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: border;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: border;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: border;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.tel_number_wrapp_2 a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+.gradient_form_wrapp {
+
+}
+
+.gradient_form {
+    display: flex;
+    display: -webkit-flex;
+}
+
+.gradient_form > div:nth-child(1) {
+    width: 135px;
+    width: 23%;
+    padding-left: 10px;
+}
+
+.gradient_form > div:nth-child(2) {
+    width: 42%;
+    padding-right: 10px;
+}
+
+.gradient_form > div:nth-child(3) {
+    width: 35%;
+    padding-left: 10px;
+}
+
+.gradient_form p {
+    padding-top: 6px;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 13px;
+    color: #fff;
+}
+
+.gradient_form {
+
+}
+
+.gradient_form .input_wrapp {
+
+}
+
+.gradient_form .input_wrapp input {
+    width: 100%;
+    height: 41px;
+    font-size: 14px;
+    line-height: 40px;
+    padding: 0 15px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+}
+
+.gradient_form .orange_pill {
+    width: 100%;
+}
+
+/*-- /Section 7 - BC Page --*/
 
 
 
