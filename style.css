@@ -7360,6 +7360,14 @@ body.fixed {
     color: #000000;
 }
 
+.only_timepicker .datepicker--nav,
+.only_timepicker .datepicker--content {
+    display: none;
+}
+.only_timepicker .datepicker--time {
+    border-top: none;
+}
+
 .author_form_wrapp .submit_wrapp {
     padding: 11px 0;
 }
@@ -7556,6 +7564,9 @@ body.fixed {
 .socials_list {
     display: flex;
     display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    max-width: 160px;
 }
 
 .socials_list li {
@@ -7602,8 +7613,20 @@ body.fixed {
     max-width: 100%;
 }
 
+.socials_list li.hide_soc {
+    display: none;
+}
+
+.socials_list li.hide_soc.visible {
+    display: inline-block;
+}
+
 .more_socials {
 
+}
+
+.dropdown_soc_list {
+    display: none;
 }
 
 .icon_links {

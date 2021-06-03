@@ -1641,4 +1641,29 @@ $(document).on("click", ".respmenubtn", function(e){
         });
     }    
 
+    // ---------------
+
+    $(".more_socials").on("click", function(e) {
+        e.preventDefault();
+        parent = $(this).closest(".socials_list");
+        parent.find(".hide_soc").addClass("visible");
+        $(this).closest("li").remove();
+    });
+
+    // ---------------
+
+    $('.datapicker').datepicker({
+        position: "bottom right"
+    });
+
+    $('.only_time').datepicker({
+        dateFormat: ' ',
+        timepicker: true,
+        classes: 'only_timepicker',
+        position: "bottom right"
+    });
+
+    $(".tel_input").mask("+9(999) 999-9999");
+
+
 });

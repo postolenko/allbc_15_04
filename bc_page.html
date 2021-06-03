@@ -1322,17 +1322,17 @@
 								<div class="author_form_two_cols">
 									<div class="col_1">
 										<div class="input_wrapp">
-											<input type="text" name="" placeholder="Дата" />
+											<input type="text" class="datapicker" name="" placeholder="Дата" />
 										</div>
 									</div>
 									<div class="col_2">
 										<div class="input_wrapp">
-											<input type="text" name="" placeholder="Время" />
+											<input type="text" class="only_time" name="" placeholder="Время" />
 										</div>
 									</div>
 								</div>
 								<div class="input_wrapp">
-									<input type="text" placeholder="Телефон" />
+									<input type="text" class="tel_input" placeholder="Телефон" />
 								</div>
 								<div class="submit_wrapp">
 									<button type="submit" class="orange_pill orange_pill_2">Назначить просмотр</button>
@@ -1417,13 +1417,21 @@
 							<div>
 								<h3>Поделиться</h3>
 							</div>
-							<div>
+							<div class="socials_dropdown">
 								<ul class="socials_list">
 									<li><a href="#"><img src="img/soc_icons/pinterest.png" alt="" /></a></li>
 									<li><a href="#"><img src="img/soc_icons/facebook.png" alt="" /></a></li>
 									<li><a href="#"><img src="img/soc_icons/letter.png" alt="" /></a></li>
 									<li><a href="#"><img src="img/soc_icons/twitter.png" alt="" /></a></li>
 									<li><a href="#" class="more_socials"><img src="img/plus.png" alt="" /></a></li>
+									<li class="hide_soc"><a href="#"><img src="img/soc_icons/pinterest.png" alt="" /></a></li>
+									<li class="hide_soc"><a href="#"><img src="img/soc_icons/facebook.png" alt="" /></a></li>
+									<li class="hide_soc"><a href="#"><img src="img/soc_icons/letter.png" alt="" /></a></li>
+									<li class="hide_soc"><a href="#"><img src="img/soc_icons/twitter.png" alt="" /></a></li>
+									<li class="hide_soc"><a href="#"><img src="img/soc_icons/pinterest.png" alt="" /></a></li>
+									<li class="hide_soc"><a href="#"><img src="img/soc_icons/facebook.png" alt="" /></a></li>
+									<li class="hide_soc"><a href="#"><img src="img/soc_icons/letter.png" alt="" /></a></li>
+									<li class="hide_soc"><a href="#"><img src="img/soc_icons/twitter.png" alt="" /></a></li>
 								</ul>
 							</div>
 						</div>
@@ -5837,6 +5845,7 @@
 	<link rel="stylesheet" type="text/css" href="vendors/css/jquery.fancybox.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/nouislider.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/custom_scrollbar.css">
+	<link rel="stylesheet" type="text/css" href="vendors/css/datepicker.css">
 	<script src="js/charts.js"></script>
 	<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
 	<!-- <script src="vendors/js/jquery.js"></script> -->
@@ -5845,6 +5854,8 @@
 	<script src="vendors/js/nouislider.min.js"></script>
 	<script src="vendors/js/wNumb.js"></script>
 	<script src="vendors/js/custom_scrollbar.js"></script>
+	<script src="vendors/js/datepicker.min.js"></script>
+	<script src="vendors/js/jquery.maskedinput.min.js"></script>
 	<script src="js/scripts.js"></script>
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBoGWEyUlxHOSfMgm2TliQLggP3mej7d_I&callback=initMap"></script>
 	<script src="js/map.js"></script>
