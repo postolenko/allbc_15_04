@@ -6399,6 +6399,7 @@ body.fixed {
 .two_cols_templ_2 {
     display: flex;
     display: -webkit-flex;
+    position: relative;
 }
 
 .two_cols_templ_2 > .left_col {
@@ -7322,7 +7323,6 @@ body.fixed {
 }
 
 .author_form_wrapp {
-    /*padding: 10px 0 6px 0;*/
     padding: 3px 0 6px 0;
 }
 
@@ -7364,6 +7364,7 @@ body.fixed {
 .only_timepicker .datepicker--content {
     display: none;
 }
+
 .only_timepicker .datepicker--time {
     border-top: none;
 }
@@ -7394,6 +7395,29 @@ body.fixed {
     height: 370px;
     background-size: cover;
     background-position: center;
+}
+
+.contacts_scroll.fixed {
+    background-color: #fff;
+    width: 300px;
+    padding-left: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.contacts_scroll.fixed.bottom_position {
+    position: absolute;
+    bottom: 0;
+    top: auto;
+    right: 0;
+    left: auto !important;
+}
+
+.contactsScrollBotttomCoord {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 /*-- /Section 3 - BC Page --*/

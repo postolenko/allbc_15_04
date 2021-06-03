@@ -98,6 +98,32 @@ function getMapParams() {
     }
 }
 
+function getContactsPosition() {
+    if( $(".contacts_scroll").length > 0 && bodyWidth > 767) {
+        // contactsCoord = $(".contacts_scroll").offset().top + $(".contacts_scroll").height();
+        contactsScrollWrappCoord = $("#contactsScrollWrapp").offset().top;
+        contactsScrollBottomCoord = $(".contacts_scroll").offset().top + $(".contacts_scroll").height();
+        // if(contactsScrollWrappCoord >= contactsCoord ) {
+        bottomCoord = $(".contactsScrollBotttomCoord").offset().top;
+        if($(document).scrollTop() >= contactsScrollWrappCoord ) {
+            $(".contacts_scroll").addClass("fixed");
+            $(".contacts_scroll").css({
+                "left" : $("#contactsScrollWrapp").offset().left + "px"
+            });
+            if( contactsScrollBottomCoord >= bottomCoord ) {
+                $(".contacts_scroll").addClass("bottom_position");
+            } else {
+                $(".contacts_scroll").removeClass("bottom_position");
+            }
+        } else {
+            $(".contacts_scroll").removeClass("fixed");
+            $(".contacts_scroll").css({
+                "left" : 0
+            });
+        }
+    }
+}
+
 function getfilterNavParams() {
     if($("#filters").length > 0) {
         if($(window).scrollTop() > $("#filters").offset().top ) {
@@ -246,6 +272,7 @@ $(document).scroll(function() {
     getfilterNavParams();
     // getCardParams();
     // getMapParams2();
+    getContactsPosition();
 });
 
 $(document).ready(function() {
@@ -256,6 +283,7 @@ $(document).ready(function() {
     getfilterNavParams();
     // getCardParams();
     // getMapParams2();
+    getContactsPosition();
 
     // -------------
     // mouseover = false;
