@@ -100,23 +100,25 @@ function getMapParams() {
 
 function getContactsPosition() {
     if( $(".contacts_scroll").length > 0 && bodyWidth > 767) {
-        // contactsCoord = $(".contacts_scroll").offset().top + $(".contacts_scroll").height();
+        $(".contacts_scroll_height").css({
+            "height" : $(".contacts_scroll").height() + "px"
+        });
         contactsScrollWrappCoord = $("#contactsScrollWrapp").offset().top;
         contactsScrollBottomCoord = $(".contacts_scroll").offset().top + $(".contacts_scroll").height();
-        // if(contactsScrollWrappCoord >= contactsCoord ) {
         bottomCoord = $(".contactsScrollBotttomCoord").offset().top;
         if($(document).scrollTop() >= contactsScrollWrappCoord ) {
             $(".contacts_scroll").addClass("fixed");
             $(".contacts_scroll").css({
                 "left" : $("#contactsScrollWrapp").offset().left + "px"
             });
-            if( contactsScrollBottomCoord >= bottomCoord ) {
+            if( ($(document).scrollTop() + $(".contacts_scroll").height() ) >= bottomCoord ) {
                 $(".contacts_scroll").addClass("bottom_position");
             } else {
                 $(".contacts_scroll").removeClass("bottom_position");
             }
         } else {
             $(".contacts_scroll").removeClass("fixed");
+            $(".contacts_scroll").removeClass("bottom_position");
             $(".contacts_scroll").css({
                 "left" : 0
             });
@@ -259,7 +261,7 @@ $(window).resize(function() {
     });
     // -------------
     getBcSlideParams();
-
+    getContactsPosition();
 });
 
 $(window).on("load", function() {
@@ -1693,5 +1695,11 @@ $(document).on("click", ".respmenubtn", function(e){
 
     $(".tel_input").mask("+9(999) 999-9999");
 
+    // ---------------
+
+    $(".like_link").on("click", function(e) {
+        e.preventDefault();
+        $(this).toggleClass("active");
+    });
 
 });
