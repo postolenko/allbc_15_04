@@ -1,3 +1,15 @@
+@media only screen and (max-width: 1550px) {
+
+	.slick-prev.sort_slider_arrow {
+	    left: -20px;
+	}
+
+	.slick-next.sort_slider_arrow {
+	    right: -20px;
+	}
+
+}
+
 @media only screen and (max-width: 1380px) {
 
 	/*-- Header - Inner --*/
@@ -35,6 +47,51 @@
 	}
 
 	/*-- /Section 1 - Info Side Page --*/
+
+	/*-- Section 1 - BC Page --*/
+
+	.three_cols > .col_1,
+	.three_cols > .col_2,
+	.three_cols > .col_3 {
+	    padding: 15px 15px 15px 15px;
+	}
+
+	.three_cols .to_location_link {
+	    left: 90px;
+	}
+
+	/*-- /Section 1 - BC Page --*/
+
+	/*-- Section 2 - BC Page --*/
+
+	.two_cols_templ_2 > .left_col {
+	    width: calc(100% - 300px);
+	    padding: 0 20px 0 0;
+	}
+
+	.dropdown_row_title h3 {
+	    font-size: 14px;
+	}
+
+	.dropdown_row_title_sub p {
+		font-size: 14px;
+	}
+
+	/*-- /Section 2 - BC Page --*/
+
+	/*-- Section 7 - BC Page --*/
+
+	.gradient_templ_2 > .col_1 p {
+	    font-size: 14px;
+	    line-height: 18px;
+	}
+
+	.tel_number_wrapp_2 a {
+	    font-size: 25px;
+	    line-height: 30px;
+	}
+
+	/*-- /Section 7 - BC Page --*/
 
 }
 
@@ -124,6 +181,35 @@
 	}
 
 	/*-- /Info side Promo Section --*/
+
+	/*-- Section 7 - BC Page --*/
+
+	.gradient_templ_2 {
+		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		justify-content: center;
+		-webkit-justify-content: center;
+	}
+
+	.gradient_templ_2 > .col_1 {
+	    width: 140px;
+	}
+
+	.gradient_templ_2 > .col_2 {
+		width: 340px;
+	}
+
+	.gradient_templ_2 > .col_3 {
+		width: 100%;
+		max-width: 660px;
+	}
+
+	.gradient_form > div:nth-child(1) {
+	    padding-left: 0;
+	    padding-right: 10px;
+	}
+
+	/*-- /Section 7 - BC Page --*/
 
 	/*-- Footer --*/
 
@@ -531,6 +617,97 @@
 	}
 
 	/*-- /Info side Promo Section --*/
+
+	/*-- Section 1 - BC Page --*/
+
+	.appendBcDots ul.slick-dots li button {
+	    width: 70px;
+	    height: 50px;
+	}
+
+	.appendBcDots ul li {
+	    padding: 2px;
+	}
+
+	.bc_links_list li {
+	    padding: 6px 6px;
+	}
+
+	/*-- /Section 1 - BC Page --*/
+
+	/*-- Section 2 - BC Page --*/
+
+	.three_cols {
+		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+	}
+
+	.three_cols > .col_1,
+	.three_cols > .col_2 {
+		width: 50%;
+		padding: 5px 15px 5px 15px;
+	}
+
+	.three_cols > .col_3 {
+		width: 100%;
+		text-align: center;
+		border-right: none;
+		padding: 5px 15px 5px 15px;
+	}
+
+	/*-- /Section 2 - BC Page --*/
+
+	/*-- Section 3 - BC Page --*/
+
+	.two_cols_templ_2 {
+		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+	}
+
+	.two_cols_templ_2 > .left_col,
+	.two_cols_templ_2 > .right_col {
+	    width: 100%;
+	    padding: 0;
+	}
+
+	.two_cols_templ_2 > .left_col {
+		order: 2;
+	}
+
+	.two_cols_templ_2 > .right_col {
+		order: 1;
+	}
+
+	.banner_wrapp {
+		display: none;
+	}
+
+	.contacts_scroll {
+		max-width: 600px;
+		margin: 0 auto;
+	}
+
+	/*-- /Section 3 - BC Page --*/
+
+	/*-- Section 5 - BC Page --*/
+
+	.slick-prev.sort_slider_arrow {
+	    left: calc(100% - 50px);
+	}
+
+	.slick-next.sort_slider_arrow {
+	    right: 0;
+	}
+
+	.sort_slider_arrows .row .slick-arrow {
+		bottom: 0;
+	}
+
+	.more_btn_wrapp {
+	    padding-top: 20px;
+	}
+
+	/*-- /Section 5 - BC Page --*/
 
 	/*-- Footer --*/
 
@@ -1031,6 +1208,131 @@
 
 	/*-- /Gradient Section --*/
 
+	/*-- Section 1 - BC Page --*/
+
+	.bc_two_cols {
+	    flex-wrap: wrap;
+	    -webkit-flex-wrap: wrap;
+	    margin: 0;
+	}
+
+	.bc_two_cols > .col_1,
+	.bc_two_cols > .col_2 {
+	    width: 100%;
+	    padding: 10px 0;
+	}
+
+	.bc_arrow.left_arrow {
+	    left: 5px;
+	}
+
+	.bc_arrow.right_arrow {
+	    right: 5px;
+	}
+
+	.promo_text_2 {
+		width: 100%;
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+
+	/*-- /Section 1 - BC Page --*/
+
+	/*-- Section 2 - BC Page --*/
+
+	.three_cols {
+		padding: 10px 0;
+	}
+
+	.three_cols > .col_1,
+	.three_cols > .col_2 {
+		width: 100%;
+		text-align: center;
+		padding: 8px 5px 8px 5px;
+		border-right: none;
+	}
+
+	.three_cols > .col_3 {
+		width: 100%;
+		text-align: center;
+		border-right: none;
+		padding: 8px 5px 8px 5px;
+	}
+
+	.inlines_2 {
+	    justify-content: center;
+	    -webkit-justify-content: center;
+	}
+
+	.dropdown_row_title h3 {
+	    font-size: 13px;
+	}
+
+	.dropdown_row_title_sub p {
+		font-size: 13px;
+	}
+
+	.descript_title h3 {
+	    font-size: 22px;
+	    line-height: 28px;
+	}
+
+	.list_title h3 {
+	    font-size: 22px;
+	    line-height: 28px;
+	}
+
+	.dropdown_rows_header h3 {
+	    font-size: 22px;
+	    line-height: 28px;
+	}
+
+	.title_two_cols h3 {
+	    font-size: 22px;
+	    line-height: 28px;
+	}
+
+	.inner_title h3 {
+	    font-size: 22px;
+	    line-height: 28px;
+	}
+
+	.location_wrapp {
+		padding-top: 40px;
+	}
+
+	.location_two_cols > .col_1,
+	.location_two_cols > .col_2 {
+	    width: 100%;
+	    padding: 5px 0;
+	}
+
+	/*-- /Section 2 - BC Page --*/
+
+	/*-- Section 4 - BC Page --*/
+
+	.contacts_box_two_cols {
+		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+	}
+
+	.contacts_box_two_cols > .col_1,
+	.contacts_box_two_cols > .col_2 {
+	    width: 100%;
+	    padding: 10px 0;
+	}
+
+	/*-- /Section 4 - BC Page --*/
+
+	/*-- Section 5 - BC Page --*/
+
+	.h2_wrapp h2 {
+	    font-size: 28px;
+	    line-height: 34px;
+	}
+
+	/*-- /Section 5 - BC Page --*/
+
 	/*-- Footer --*/
 
 	.footer__main__right {
@@ -1221,6 +1523,48 @@
 
 	/*-- /Info side Promo Section --*/
 
+	/*-- Section 3 - BC Page --*/
+
+	.author_two_cols > .col_1 {
+	    width: 90px;
+	    padding-right: 10px;
+	}
+
+	.author_two_cols .green_link_3 {
+	    font-size: 12px;
+	    line-height: 12px;
+	}
+
+	.tel_number_wrapp p {
+	    font-size: 16px;
+	    line-height: 20px;
+	}
+
+	.show_tel a {
+	    font-size: 16px;
+	    line-height: 20px;
+	}
+
+	.title_two_cols {
+		display: block;
+	}
+
+	.title_two_cols > .col_1,
+	.title_two_cols > .col_2 {
+	    width: 100%;
+	}
+
+	.gal_img_box {
+	    height: 80px;
+	}
+
+	.gal_img_box.big {
+	    height: 170px;
+	}
+
+
+	/*-- /Section 3 - BC Page --*/
+
 	/*-- Footer --*/
 
 	.footer__main {
@@ -1248,7 +1592,6 @@
 	.footer__main__contact__input {
 	    margin-bottom: 25px;
 	}
-
 
 	/*-- /Footer --*/
 
@@ -1300,6 +1643,52 @@
 	    font-size: 14px;
 	    line-height: 15px;
 	}
+
+	/*-- Section 7 - BC Page --*/
+
+	.gradient_templ_2 > .col {
+	    padding: 5px 0;
+	}
+
+	.gradient_templ_2 > .col_1 {
+	    width: 35%;
+	}
+
+	.gradient_templ_2 > .col_2 {
+	    width: 65%;
+	}
+
+	.gradient_form {
+		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+	}
+
+	.gradient_form > div:nth-child(1) {
+		width: 100%;
+		padding: 5px 0;
+	}
+
+	.gradient_form > div:nth-child(2) {
+	    width: 55%;
+	    padding-right: 10px;
+	}
+
+	.gradient_form > div:nth-child(3) {
+	    width: 45%;
+	    padding-left: 10px;
+	}
+
+	.gradient_templ_2 > .col_1 p {
+	    font-size: 13px;
+	    line-height: 15px;
+	}
+
+	.tel_number_wrapp_2 a {
+	    font-size: 21px;
+	    line-height: 24px;
+	}
+
+	/*-- /Section 7 - BC Page --*/
 
 }
 
@@ -1719,7 +2108,24 @@
 	    font-size: 12px;
 	}
 
-	/*-- Gradient Section --*/
+	/*-- Section 4 - BC Page --*/
+
+	.contacts_box {
+	    margin: 20px 0;
+	}
+
+	.contacts_form_footer {
+		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+	}
+
+	.contacts_form_footer > .col_1,
+	.contacts_form_footer > .col_2 {
+	    width: 100%;
+	    padding: 5px 0;
+	}
+
+	/*-- /Section 4 - BC Page --*/
 
 }
 
@@ -1764,6 +2170,23 @@
 		font-size: 14px;
 	}
 
+	/*-- Section 7 - BC Page --*/
+
+	.gradient_templ_2 > .col_1 {
+	    width: 100%;
+	    padding: 5px 0;
+	    text-align: center;
+	}
+
+	.gradient_templ_2 > .col_2 {
+	    width: 100%;
+	    max-width: 260px;
+	    padding: 5px 0;
+	    text-align: center;
+	}
+
+	/*-- /Section 7 - BC Page --*/
+
 	/*-- Footer --*/
 
 	.footer__main__left .footer__main__links__col {
@@ -1787,6 +2210,20 @@
 	.reset_filters br {
 		display: none;
 	}
+
+	/*-- Section 7 - BC Page --*/
+
+	.gradient_form > div:nth-child(2) {
+	    width: 100%;
+	    padding: 5px 0;
+	}
+
+	.gradient_form > div:nth-child(3) {
+	    width: 100%;
+	    padding: 5px 0;
+	}
+
+	/*-- /Section 7 - BC Page --*/
 
 }
 
@@ -1826,6 +2263,15 @@
 	}
 
 	/*-- /Section 1 - Info Side Page --*/
+
+	/*-- Section 5 - BC Page --*/
+
+	.sort_slider .slide .bc_card {
+	    max-width: 264px;
+	    margin: 19px auto 33px auto;
+	}
+
+	/*-- /Section 5 - BC Page --*/
 
 	/*-- Popups --*/
 

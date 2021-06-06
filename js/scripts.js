@@ -99,7 +99,7 @@ function getMapParams() {
 }
 
 function getContactsPosition() {
-    if( $(".contacts_scroll").length > 0 && bodyWidth > 767) {
+    if( $(".contacts_scroll").length > 0 && bodyWidth > 900 ) {
         $(".contacts_scroll_height").css({
             "height" : $(".contacts_scroll").height() + "px"
         });
@@ -123,6 +123,12 @@ function getContactsPosition() {
                 "left" : 0
             });
         }
+    } else {
+        $(".contacts_scroll").removeClass("fixed");
+        $(".contacts_scroll").removeClass("bottom_position");
+        $(".contacts_scroll").css({
+            "left" : 0
+        });
     }
 }
 
@@ -194,16 +200,15 @@ function initialSlider() {
         slidesToScroll: 2,
         prevArrow: '<button class="slick-prev slider_5_arrow" aria-label="Previous" type="button"><img src="img/left_arrow_bold.svg" alt="" /></button>',
         nextArrow: '<button class="slick-next slider_5_arrow" aria-label="Next" type="button"><img src="img/right_arrow_bold.svg" alt="" /></button>',
-        // appendArrows: $(".slider_4_controls"),
-        // responsive: [
-        //     {
-        //       breakpoint: 400,
-        //       settings: {
-        //         slidesToShow: 1,
-        //         slidesToScroll: 1
-        //       }
-        //     }
-        // ]
+        responsive: [
+            {
+              breakpoint: 660,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+        ]
     });
 }
 
@@ -1607,15 +1612,15 @@ $(document).on("click", ".respmenubtn", function(e){
                 prevArrow: '<button class="slick-prev slider_5_arrow" aria-label="Previous" type="button"><img src="img/left_arrow_bold.svg" alt="" /></button>',
                 nextArrow: '<button class="slick-next slider_5_arrow" aria-label="Next" type="button"><img src="img/right_arrow_bold.svg" alt="" /></button>',
                 // appendArrows: $(".slider_4_controls"),
-                // responsive: [
-                //     {
-                //       breakpoint: 400,
-                //       settings: {
-                //         slidesToShow: 1,
-                //         slidesToScroll: 1
-                //       }
-                //     }
-                // ]
+                responsive: [
+                    {
+                      breakpoint: 660,
+                      settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                      }
+                    }
+                ]
             });
             parent.addClass("active");
             $(this).addClass("active");
@@ -1683,7 +1688,7 @@ $(document).on("click", ".respmenubtn", function(e){
     // ---------------
 
     $('.datapicker').datepicker({
-        position: "bottom right"
+        position: "bottom left"
     });
 
     $('.only_time').datepicker({
