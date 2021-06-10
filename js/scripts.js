@@ -303,6 +303,7 @@ $(document).ready(function() {
     // getMapParams2();
     getContactsPosition();
     getpaadingLeft();
+    
 
     // -------------
     // mouseover = false;
