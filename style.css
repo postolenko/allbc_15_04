@@ -6268,6 +6268,7 @@ body.fixed {
 .adres_pin_wrapp {
     display: inline-block;
     vertical-align: top;
+    text-align: left;
     padding-left: 40px;
     position: relative;
 }
