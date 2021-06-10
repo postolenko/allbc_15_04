@@ -6731,7 +6731,7 @@ body.fixed {
     position: relative;
 }
 
-.dropdown_row_title_sub {
+.dropdown_row_title_sub p {
     font-size: 14px;
 }
 
