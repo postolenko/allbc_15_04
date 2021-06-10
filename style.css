@@ -6178,14 +6178,12 @@ body.fixed {
     padding-top: 0;
 }
 
-.three_cols {
-    display: flex;
-    display: -webkit-flex;
+.three_cols_wrapp {
     background-color: rgb(255, 255, 255);
     position: relative;
 }
 
-.three_cols:after {
+.three_cols_wrapp:after {
     display: block;
     content: "";
     width: 100%;
@@ -6198,6 +6196,13 @@ body.fixed {
     background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0) 100%);
 }
 
+.three_cols {
+    display: flex;
+    display: -webkit-flex;
+    /*max-width: calc(100% - 147px);*/
+    /*margin: 0 auto;*/
+}
+
 .three_cols > .col {
     border-right: 1px solid #e9e9e9;
 }
@@ -6206,11 +6211,13 @@ body.fixed {
     width: 33.33%;
     padding: 15px 30px 15px 30px;
     text-align: center;
+    /*padding: 15px 30px 15px 17px;*/
 }
 
 .three_cols > .col_2 {
     width: 33.33%;
     padding: 15px 30px 15px 55px;
+    /*padding: 15px 30px 15px 41px;*/
 }
 
 .three_cols > .col_3 {
@@ -6253,7 +6260,8 @@ body.fixed {
 .three_cols .to_location_link {
     position: absolute;
     bottom: -11px;
-    left: 144px;
+    /*left: 144px;*/
+    left: 130px;
     z-index: 3;
 }
 
@@ -6282,7 +6290,8 @@ body.fixed {
     background-repeat: no-repeat;
     position: absolute;
     top: 50%;
-    left: -4px;
+    /*left: -4px;*/
+    left: 0;
     transform: translate(0, -50%);
     -webkit-transform: translate(0, -50%);
 }
@@ -6418,6 +6427,8 @@ body.fixed {
     display: flex;
     display: -webkit-flex;
     position: relative;
+    /*max-width: calc(100% - 177px);*/
+    margin: 0 auto;
 }
 
 .two_cols_templ_2 > .left_col {
@@ -6615,7 +6626,7 @@ body.fixed {
 }
 
 .dropdown_row_title h3 {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 24px;
     color: #000;
     font-weight: bold; 
@@ -6631,7 +6642,7 @@ body.fixed {
     position: relative;
     padding-right: 16px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 24px;
     color: #000;
     font-weight: bold; 
@@ -6718,6 +6729,10 @@ body.fixed {
     border-right: 1px solid #e8e8e8;
     padding: 5px 10px 5px 15px;
     position: relative;
+}
+
+.dropdown_row_title_sub {
+    font-size: 14px;
 }
 
 .dropdown_row_title_sub .cell {
@@ -9386,12 +9401,6 @@ body.fixed {
 
 /*-- Section 1 - Info Side Page New --*/
 
-.promo_text_2 {
-    margin: 0 auto;
-    max-width: 767px;
-    padding-top: 100px;
-}
-
 .city_search {
     display: flex;
     display: -webkit-flex;
@@ -9517,8 +9526,15 @@ body.fixed {
 
 /*-- Section 1 - BC Page --*/
 
+.promo_text_2 {
+    margin: 0 auto;
+    max-width: 767px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .bc_main_sect {
-    min-height: 100vh;
+    min-height: calc( 100vh - 100px );
     background-position: center;
     background-size: cover;
     padding: 0 0 150px 0;

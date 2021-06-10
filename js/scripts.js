@@ -212,6 +212,16 @@ function initialSlider() {
     });
 }
 
+function getpaadingLeft() {
+    if($("#col1").length > 0) {
+        paddingLeft = $("#col1").offset().left - $("#threeCols").offset().left;
+        $("#leftCol").css({
+            "padding-left" : paddingLeft + "px"
+        });
+        console.log(paddingLeft);
+    }
+}
+
 window.addEventListener('resize', debounce(getCardParams));
 
 var w = window,
@@ -267,6 +277,7 @@ $(window).resize(function() {
     // -------------
     getBcSlideParams();
     getContactsPosition();
+    getpaadingLeft();
 });
 
 $(window).on("load", function() {
@@ -291,6 +302,7 @@ $(document).ready(function() {
     // getCardParams();
     // getMapParams2();
     getContactsPosition();
+    getpaadingLeft();
 
     // -------------
     // mouseover = false;
