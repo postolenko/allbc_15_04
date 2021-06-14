@@ -6549,8 +6549,35 @@ body.fixed {
     font-weight: bold;
 }
 
+.main_list {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+}
+
+.main_list .list_item {
+    width: 50%;
+}
+
+.main_list .list_item:nth-child(odd) {
+    padding-right: 10px;
+}
+
+.main_list .list_item:nth-child(even) {
+    padding-left: 10px;
+}
+
 .list_item {
     margin: 10px 0;
+}
+
+.list_item.hiden {
+    display: none;
+}
+
+.list_item.hiden.active {
+    display: block;
 }
 
 .list_item h3 {
@@ -6720,6 +6747,19 @@ body.fixed {
     color: #fff !important;
 }
 
+.dropdown_row_wrapp:hover {
+    box-shadow: 0 3px 24px 0 rgba(0, 0, 0, .11);
+    -webkit-box-shadow: 0 3px 24px 0 rgba(0, 0, 0, .11);
+}
+
+.dropdown_row_wrapp:hover .dropdown_row_title_sub {
+    background-image: linear-gradient(to left,#00AEE7 0%,#88C543 100%);
+}
+
+.dropdown_row_wrapp:hover .dropdown_row_title_sub * {
+    color: #fff !important;
+}
+
 .dropdown_row_title_sub {
     display: flex;
     display: -webkit-flex;
@@ -6804,11 +6844,19 @@ body.fixed {
     display: block !important;
 }
 
-.dropdown_row_wrapp.active .dropdown_row_title_sub .like_link .default {
+/*.dropdown_row_wrapp.active .dropdown_row_title_sub .like_link .default {
     display: none;
 }
 
 .dropdown_row_wrapp.active .dropdown_row_title_sub .like_link .white {
+    display: block;
+}*/
+
+.dropdown_row_wrapp:hover .dropdown_row_title_sub .like_link .default {
+    display: none;
+}
+
+.dropdown_row_wrapp:hover .dropdown_row_title_sub .like_link .white {
     display: block;
 }
 
@@ -6824,7 +6872,11 @@ body.fixed {
     background-position: center;
 }
 
-.dropdown_btn_2.active {
+/*.dropdown_btn_2.active {
+    background-image: url(img/cancel_2.svg);
+}*/
+
+.dropdown_row_wrapp:hover .dropdown_btn_2 {
     background-image: url(img/cancel_2.svg);
 }
 
@@ -6847,7 +6899,11 @@ body.fixed {
     border-bottom-right-radius: 3px;
 }
 
-.dropdown_row_wrapp.active .dropdown_row_content {
+/*.dropdown_row_wrapp.active .dropdown_row_content {
+    height: auto;
+}*/
+
+.dropdown_row_wrapp:hover .dropdown_row_content {
     height: auto;
 }
 
@@ -7555,6 +7611,27 @@ input.arrow_down {
 .contacts_box_two_cols > .col_2 {
     width: calc(100% - 320px);
     padding-left: 10px;
+}
+
+.author_two_cols_2 {
+
+}
+
+.author_two_cols_2 > .col_1 {
+    width: 125px;
+}
+
+.author_two_cols_2 > .col_2 {
+    width: calc(100% - 125px);
+}
+
+.author_two_cols_2 > .col_1 .author_img_box {
+    max-width: 110px;
+    height: 120px;
+}
+
+.author_two_cols_2 .soc_list_pills_2 {
+    margin: 3px 0 7px 0;
 }
 
 .grey_time {
