@@ -9750,6 +9750,30 @@ body.fixed {
     z-index: 3;
 }
 
+.bc_promo_footer_resp {
+    display: none;
+    padding: 10px 0 20px;
+}
+
+.bc_promo_footer_resp p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 14px;
+    color: #fff;
+}
+
+.bc_promo_footer_resp p a {
+    border-bottom: 1px solid #fff;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 14px;
+    color: #fff;
+}
+
+.bc_promo_footer_resp p a:hover {
+    border-bottom: 1px solid transparent;
+}
+
 /*.appendBcDots .bc_miniatures_images {
     height: 0;
     width: 0;
