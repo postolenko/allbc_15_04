@@ -6199,8 +6199,6 @@ body.fixed {
 .three_cols {
     display: flex;
     display: -webkit-flex;
-    /*max-width: calc(100% - 147px);*/
-    /*margin: 0 auto;*/
 }
 
 .three_cols > .col {
@@ -6211,13 +6209,12 @@ body.fixed {
     width: 33.33%;
     padding: 15px 30px 15px 30px;
     text-align: center;
-    /*padding: 15px 30px 15px 17px;*/
+    position: relative;
 }
 
 .three_cols > .col_2 {
     width: 33.33%;
     padding: 15px 30px 15px 55px;
-    /*padding: 15px 30px 15px 41px;*/
 }
 
 .three_cols > .col_3 {
@@ -6291,7 +6288,6 @@ body.fixed {
     background-repeat: no-repeat;
     position: absolute;
     top: 50%;
-    /*left: -4px;*/
     left: 0;
     transform: translate(0, -50%);
     -webkit-transform: translate(0, -50%);
@@ -6428,7 +6424,6 @@ body.fixed {
     display: flex;
     display: -webkit-flex;
     position: relative;
-    /*max-width: calc(100% - 177px);*/
     margin: 0 auto;
 }
 
@@ -6518,22 +6513,6 @@ body.fixed {
     vertical-align: top;
 }
 
-/*.bc_two_cols_2 {
-    display: flex;
-    display: -webkit-flex;
-    margin: 20px 0;
-}
-
-.bc_two_cols_2 > .left_col {
-    width: 50%;
-    padding-right: 10px;
-}
-
-.bc_two_cols_2 > .right_col {
-    width: 50%;
-    padding-left: 10px;
-}*/
-
 .list_wrapp {
     margin: 30px 0;
 }
@@ -6603,9 +6582,9 @@ body.fixed {
     overflow-y: none;
 }
 
-.table_body {
+/*.table_body {
     min-width: 650px;
-}
+}*/
 
 .dropdown_rows_wrapp {
     margin: 40px 0 50px 0;
@@ -7574,6 +7553,54 @@ input.arrow_down {
     background-position: calc(100% - 10px) center;
     background-image: url(img/arrow_black_2.png);
     background-repeat: no-repeat;
+}
+
+.dropdown_row_footer {
+    display: flex;
+    display: -webkit-flex;
+    width: 100%;
+}
+
+.dropdown_row_footer .col_1 {
+    width: 50%;
+    padding-right: 10px;
+}
+
+.dropdown_row_footer .col_2 {
+    width: 50%;
+    padding-left: 10px;
+}
+
+.tab_visible {
+    display: none;
+}
+
+.resp_col {
+    display: none;
+}
+
+.visible_750 {
+    display: none;
+}
+
+.dropdown_row_footer .inlines_2 {
+    width: 100%;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    align-items: center;
+    -webkit-align-items: center;
+    /*margin: 0 -10px;*/
+    margin: 0 -10px 0 0;
+}
+
+.dropdown_row_footer p {
+    font-size: 12px;
+    line-height: 16px;
+    font-style: italic;
+}
+
+.dropdown_row_footer .inlines_2 > div {
+    padding: 3px 10px;
 }
 
 /*-- /Section 3 - BC Page --*/
@@ -10777,5 +10804,35 @@ body.fixed {
     color: #ff0000;
 }
 
-
 /*-- /Header --*/
+
+/*-- Orange Contact Pill --*/
+
+.visible_480 {
+    display: none;
+}
+
+.orange_contact_pill {
+    width: 100%;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    box-shadow: .419px -5.985px 9px 0 rgba(0, 0, 0, .25);
+    -webkit-box-shadow: .419px -5.985px 9px 0 rgba(0, 0, 0, .25);
+    z-index: 10;
+}
+
+.orange_contact_pill .orange_pill {
+    width: 100%;
+}
+
+.orange_pill_3 {
+    font-weight: 500;
+    text-transform: none;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+/*-- /Orange Contact Pill --*/

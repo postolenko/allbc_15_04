@@ -213,10 +213,14 @@ function initialSlider() {
 }
 
 function getpaadingLeft() {
-    if($("#col1").length > 0) {
+    if($("#col1").length > 0 && bodyWidth > 900) {
         paddingLeft = $("#col1").offset().left - $("#threeCols").offset().left;
         $("#leftCol").css({
             "padding-left" : paddingLeft + "px"
+        });
+    } else {
+        $("#leftCol").css({
+            "padding-left" : 0
         });
     }
 }
@@ -1711,7 +1715,17 @@ $(document).on("click", ".respmenubtn", function(e){
             variableWidth: true,
             appendArrows: $(".sort_slider_arrows .row"),
             prevArrow: '<button class="slick-prev sort_slider_arrow" aria-label="Previous" type="button"><img src="img/blue_arrow_left.png" alt="" /></button>',
-            nextArrow: '<button class="slick-next sort_slider_arrow" aria-label="Next" type="button"><img src="img/blue_arrow_right.png" alt="" /></button>'
+            nextArrow: '<button class="slick-next sort_slider_arrow" aria-label="Next" type="button"><img src="img/blue_arrow_right.png" alt="" /></button>',
+            responsive: [
+                {
+                  breakpoint: 380,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    variableWidth: false
+                  }
+                }
+            ]
         });
     }    
 
