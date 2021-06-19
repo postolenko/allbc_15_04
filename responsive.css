@@ -402,6 +402,33 @@
 	    padding-top: 5px !important;
 	}
 
+	/*-- Section 4 - BC Page Broker --*/
+
+	.contacts_treee_cols {
+	    flex-wrap: wrap;
+	    -webkit-flex-wrap: wrap;
+	}
+
+	.contacts_treee_cols > .col_1 {
+	    width: 100%;
+	    padding: 10px 0;
+	}
+
+	.contacts_treee_cols > .col_2 {
+	    width: 50%;
+	    padding: 10px 10px 10px 0;
+	}
+
+	.contacts_treee_cols > .col_3 {
+	    width: 50%;
+	    display: flex;
+	    display: -webkit-flex;
+	    justify-content: flex-start;
+	    -webkit-justify-content: flex-start;
+	}
+
+	/*-- /Section 4 - BC Page Broker --*/
+
 }
 
 @media only screen and (max-width: 900px) {
@@ -729,6 +756,15 @@
 	}
 
 	/*-- /Section 5 - BC Page --*/
+
+	/*-- Section 5 - BC Page Broker --*/
+
+	.three_cols.three_cols_broker > .col_3 > div {
+	    justify-content: flex-start;
+	    -webkit-justify-content: flex-start;
+	}
+
+	/*-- /Section 5 - BC Page Broker --*/
 
 	/*-- Footer --*/
 
@@ -1469,6 +1505,40 @@
 
 	/*-- /Gradient Section --*/
 
+	/*-- Section 4 - BC Page Broker --*/
+
+	.contacts_treee_cols {
+	    flex-wrap: wrap;
+	    -webkit-flex-wrap: wrap;
+	}
+
+	.contacts_treee_cols > .col_1 {
+	    width: 100%;
+	    padding: 10px 0;
+	}
+
+	.contacts_treee_cols > .col_2 {
+	    width: 100%;
+	    padding: 10px 0;
+	}
+
+	.contacts_treee_cols > .col_3 {
+	    width: 100%;
+	    padding: 10px 0;
+	}
+
+	.comment_form {
+	    max-width: 100%;
+	}
+
+	.scroll_bar_comments {
+		max-width: 100%;
+		margin: 0;
+		width: 100%;
+	}
+
+	/*-- /Section 4 - BC Page Broker --*/
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -1728,6 +1798,7 @@
 	.gradient_templ_2 > .col_3 {
 	    width: 100%;
 	    max-width: 100%;
+	    padding: 10px 0;
 	}
 
 	.gradient_form > div:nth-child(2) {

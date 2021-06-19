@@ -297,6 +297,9 @@ $(document).scroll(function() {
 });
 
 $(document).ready(function() {
+
+    $(".scroll_y").mCustomScrollbar();
+
     getHeaderParams();
     getAdaptivePositionElements();
     getMapParams();
@@ -1774,5 +1777,13 @@ $(document).on("click", ".respmenubtn", function(e){
             $(this).addClass("active"); 
         }
     });
+
+    // ---------------
+
+    $(".del_comment").on("click", function(e) {
+        e.preventDefault();
+        parent = $(this).closest(".comment_item");
+        parent.remove();
+    })
 
 });

@@ -3798,7 +3798,7 @@ body.fixed {
     border: 1px solid #b0b8bf;
     background-color: #ffffff;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 35px;
     font-weight: normal;
     color: #000000;
 }
@@ -7014,11 +7014,11 @@ body.fixed {
 }
 
 .title_two_cols > .col_1 {
-    width: 60%;
+    width: 57%;
 }
 
 .title_two_cols > .col_2 {
-    width: 40%;
+    width: 43%;
     text-align: right;
     padding-top: 13px;
 }
@@ -8273,6 +8273,275 @@ input.arrow_down {
 
 /*-- /Section 7 - BC Page --*/
 
+/*-- Section 2 - BC Page Broker --*/
+
+.three_cols.three_cols_broker > .col_3 {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    align-items: center;
+    -webkit-align-items: center;
+    padding-right: 0;
+}
+
+.three_cols.three_cols_broker > .col_3 > div {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    width: 100%;
+}
+
+.three_cols.three_cols_broker > .col_3 .orange_pill {
+    display: block;
+    max-width: 300px;
+    width: 100%;
+    padding: 13px 15px 12px 15px;
+}
+
+/*-- /Section 2 - BC Page Broker --*/
+
+/*-- Section 3 - BC Page Broker --*/
+
+.contacts_treee_cols {
+    display: flex;
+    display: -webkit-flex;
+    padding: 18px 0 25px 0;
+}
+
+.contacts_treee_cols > .col {
+
+}
+
+.contacts_treee_cols > .col_1 {
+    width: 33%;
+    padding: 10px 10px 10px 0;
+}
+
+.contacts_treee_cols > .col_2 {
+    width: 34%;
+    padding: 10px 10px 10px 10px;
+}
+
+.contacts_treee_cols > .col_3 {
+    width: 33%;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    padding: 10px 0 10px 10px;
+}
+
+.adres_item {
+    padding: 0 0 5px 18px;
+    position: relative;
+}
+
+.adres_item:before {
+    display: block;
+    content: "";
+    width: 15px;
+    height: 21px;
+    background-image: url(img/pin_2.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 2px;
+    left: 0;
+}
+
+.adres_item p {
+    font-size: 14px;
+    line-height: 23px;
+    color: #33312f;
+}
+
+.author_two_cols_2_2 {
+    margin: 5px 0;
+}
+
+.comment_form {
+    max-width: 400px;
+    padding: 2px 0;
+}
+
+.comment_form .input_wrapp {
+    margin: 10px 0;
+}
+
+.comment_form .input_wrapp:nth-child(1) {
+    margin-top: 0;
+}
+
+.comment_form .input_wrapp input {
+    display: block;
+    width: 100%;
+    height: 38px;
+    padding: 0 18px;
+    border: 1px solid rgb(221, 221, 221);
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    font-family: "Roboto";
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 37px;
+    color: #000;
+    
+}
+
+.comment_form .input_wrapp textarea {
+    display: block;
+    width: 100%;
+    height: 220px;
+    padding: 13px 18px;
+    border: 1px solid rgb(221, 221, 221);
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    font-family: "Roboto";
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 23px;
+    color: #000;
+}
+
+.submit_wrapp_2 {
+    padding: 7px 0;
+}
+
+.submit_wrapp_2 .orange_pill {
+    width: 100%;
+    padding: 12px 15px 12px 15px;
+}
+
+.scroll_bar_comments {
+    margin: 52px 0;
+    max-width: 350px;
+    height: 270px;
+    overflow: hidden;
+    /*padding: 0 15px 0 17px;*/
+    padding: 12px 8px 14px 17px;
+    border: 1px solid rgb(221, 221, 221);
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+.comment_item {
+    padding: 15px 0 9px 0;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.scroll_bar_comments .comment_item {
+    margin-right: 15px;
+}
+
+.scroll_bar_comments .comment_item:nth-child(1) {
+    padding-top: 5px;
+}
+
+.scroll_bar_comments .comment_item:last-child {
+    border-bottom: none;
+}
+
+.comment_item_text p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000;
+}
+
+.comment_item_footer {
+    display: flex;
+    display: -webkit-flex;
+}
+
+.comment_item_footer > div:nth-child(1) {
+    width: 50%;
+    padding: 3px 5px 3px 0;
+}
+
+.comment_item_footer > div:nth-child(2) {
+    width: 50%;
+    text-align: right;
+    padding: 3px 0 3px 5px;
+}
+
+.comment_date {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000;
+}
+
+.del_comment {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    padding-left: 15px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #d91a1a;
+}
+
+.del_comment:before {
+    display: block;
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-image: url(img/del.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 7px;
+    left: 0;
+}
+
+.scroll_bar_comments .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    width: 6px !important;
+}
+
+.scroll_bar_comments .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background-image: -moz-linear-gradient( 4deg, rgb(135,194,80) 0%, rgb(101,173,224) 100%) !important;
+    background-image: -webkit-linear-gradient( 4deg, rgb(135,194,80) 0%, rgb(101,173,224) 100%) !important;
+    background-image: -ms-linear-gradient( 4deg, rgb(135,194,80) 0%, rgb(101,173,224) 100%) !important;
+}
+
+.scroll_bar_comments .mCSB_scrollTools .mCSB_draggerRail {
+    width: 2px;
+}
+
+.icons_items_wrapp {
+
+}
+
+.icon_item {
+    margin: 8px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+.icon_item img {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+}
+
+.icon_item p {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #33312f;
+}
+
+
+/*-- /Section 3 - BC Page Broker --*/
 
 
 
