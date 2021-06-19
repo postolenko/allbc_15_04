@@ -7688,6 +7688,20 @@ input.arrow_down {
     color: #000;
 }
 
+.contacts_form .input_wrapp {
+    margin: 5px 0;
+}
+
+.resp_form {
+    display: none;
+    padding-bottom: 1px;
+}
+
+.resp_form .input_wrapp input {
+    width: 100%;
+    border: 1px solid #dfdfdf;
+}
+
 .contacts_form_footer {
     display: flex;
     display: -webkit-flex;
@@ -9777,7 +9791,7 @@ body.fixed {
     z-index: 3;
 }
 
-.bc_promo_footer_resp {
+/*.bc_promo_footer_resp {
     display: none;
     padding: 10px 0 20px;
 }
@@ -9799,7 +9813,7 @@ body.fixed {
 
 .bc_promo_footer_resp p a:hover {
     border-bottom: 1px solid transparent;
-}
+}*/
 
 /*.appendBcDots .bc_miniatures_images {
     height: 0;
