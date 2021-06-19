@@ -2375,6 +2375,14 @@
 	    font-size: 12px;
 	}
 
+	/*-- Section 2 - BC Page Broker --*/
+
+	.three_cols.three_cols_broker > .col_3 .orange_pill {
+	    max-width: 100%;
+	}
+
+	/*-- /Section 2 - BC Page Broker --*/
+
 	/*-- Section 3 - BC Page --*/
 
 	.dropdown_row_footer .inlines_2 > div {
