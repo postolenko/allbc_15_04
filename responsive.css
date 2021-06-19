@@ -2597,6 +2597,15 @@
 
 	/*-- Section 4 - BC Page --*/
 
+	.author_two_cols_2 > .col_1 {
+	    width: 95px;
+	    padding-right: 10px;
+	}
+
+	.author_two_cols_2 > .col_2 {
+	    width: calc(100% - 95px);
+	}
+
 	.author_form_two_cols {
 		flex-wrap: wrap;
 		-webkit-flex-wrap: wrap;
