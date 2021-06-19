@@ -8298,6 +8298,7 @@ input.arrow_down {
     max-width: 300px;
     width: 100%;
     padding: 13px 15px 12px 15px;
+    font-size: 18px;
 }
 
 /*-- /Section 2 - BC Page Broker --*/
@@ -11098,7 +11099,7 @@ body.fixed {
 
 .orange_contact_pill {
     width: 100%;
-    padding: 10px;
+    /*padding: 10px;*/
     position: fixed;
     bottom: 0;
     left: 0;
