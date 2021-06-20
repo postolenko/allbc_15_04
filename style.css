@@ -8094,6 +8094,7 @@ input.arrow_down {
 
 .sort_slider .slide .bc_card {
     max-width: 270px;
+    height: auto;
     margin: 19px 0 33px 0;
 }
 
@@ -8138,8 +8139,13 @@ input.arrow_down {
     color: #fff;
 }
 
-.bc_card .inner_content {
+/*.bc_card .inner_content {
     padding-bottom: 20px;
+}*/
+
+.bc_card .card_content {
+    border-radius: 0 0 3px 3px;
+    -webkit-border-radius: 0 0 3px 3px;
 }
 
 /*-- /Section 5 - BC Page --*/

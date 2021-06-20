@@ -148,10 +148,10 @@ function getfilterNavParams() {
 
 function getCardParams() {
     innerWrappHeightArr = [];
-    $(".bc_card").css({
+    $(".cardsHeight .bc_card").css({
         "height" : "auto"
     });
-    $(".bc_card").each(function() {
+    $(".cardsHeight .bc_card").each(function() {
         // if( mouseover == false ) {
             innerWrapp = $(this).find(".inner_content");
             innerWrappHeight = $(this).height();
@@ -159,11 +159,11 @@ function getCardParams() {
         // }
     });
     maxHeight = Math.max.apply(null, innerWrappHeightArr);
-        setTimeout(function() {
-        $(".bc_card").css({
-            "height" : maxHeight + "px"
-        });
-    }, 300);
+        // setTimeout(function() {
+            $(".cardsHeight .bc_card").css({
+                "height" : maxHeight + "px"
+            });
+        // }, 300);
 }
 
 // function getMapParams2() {
@@ -1720,7 +1720,8 @@ $(document).on("click", ".respmenubtn", function(e){
     // --------------
 
 
-    if( $(".sort_slider").length > 0 ) {
+    if( $(".sort_slider").length > 0 ) {      
+
         $(".sort_slider").not(".slick-initialized").slick({
             dots: false,
             arrows: true,
