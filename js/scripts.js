@@ -159,9 +159,11 @@ function getCardParams() {
         // }
     });
     maxHeight = Math.max.apply(null, innerWrappHeightArr);
-    $(".bc_card").css({
-        "height" : maxHeight + "px"
-    });
+        setTimeout(function() {
+        $(".bc_card").css({
+            "height" : maxHeight + "px"
+        });
+    }, 300);
 }
 
 // function getMapParams2() {
