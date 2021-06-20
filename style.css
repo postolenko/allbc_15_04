@@ -6660,7 +6660,7 @@ body.fixed {
     content: "";
     width: 8px;
     height: 7px;
-    background-image: url(img/arrow_black.png);
+    background-image: url(img/down_arrow_icon.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -7592,12 +7592,18 @@ input.arrow_down {
 }
 
 .dropdown_row_footer .col_1 {
-    width: 50%;
-    padding-right: 10px;
+    /*width: 50%;*/
+    width: 100%;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    /*padding-right: 10px;*/
 }
 
 .dropdown_row_footer .col_2 {
-    width: 50%;
+    display: none;
+    width: 64%;
     padding-left: 10px;
 }
 

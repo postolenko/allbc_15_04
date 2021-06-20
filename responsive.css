@@ -1467,6 +1467,20 @@
 	    right: 5px;
 	}
 
+	.dropdown_row_footer .col_1 {
+	    width: 36%;
+	    /*width: 100%;*/
+	    display: flex;
+	    display: -webkit-flex;
+	    justify-content: flex-start;
+	    -webkit-justify-content: flex-start;
+	    padding-right: 10px;
+	}
+
+	.dropdown_row_footer .col_2 {
+	    display: block;
+	}
+
 /*-- /Section 3 - BC Page --*/
 
 }
