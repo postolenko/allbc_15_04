@@ -1628,7 +1628,7 @@ $(document).on("click", ".respmenubtn", function(e){
 
     // ------------
 
-    $(".dropdown_btn_2").on("click", function(e) {
+    $(".dropdown_row_title_sub, .dropdown_btn_2").on("click", function(e) {
         e.preventDefault();
         parent = $(this).closest(".dropdown_row_wrapp");
         dropdown = parent.find(".dropdown_row_content");

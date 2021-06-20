@@ -6743,6 +6743,7 @@ body.fixed {
 .dropdown_row_title_sub {
     display: flex;
     display: -webkit-flex;
+    cursor: pointer;
     min-height: 40px;
     background-color: #fff;
     border-bottom: 1px solid #e8e8e8;
