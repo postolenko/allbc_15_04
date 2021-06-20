@@ -11124,13 +11124,13 @@ body.fixed {
 
 .orange_contact_pill {
     width: 100%;
-    /*padding: 10px;*/
+    padding: 10px 15px;
     position: fixed;
     bottom: 0;
     left: 0;
-    background-color: rgb(255, 255, 255);
-    box-shadow: .419px -5.985px 9px 0 rgba(0, 0, 0, .25);
-    -webkit-box-shadow: .419px -5.985px 9px 0 rgba(0, 0, 0, .25);
+    background-color: transparent;
+    /*box-shadow: .419px -5.985px 9px 0 rgba(0, 0, 0, .25);*/
+    /*-webkit-box-shadow: .419px -5.985px 9px 0 rgba(0, 0, 0, .25);*/
     z-index: 10;
     opacity: .8 !important;
     -webkit-transition-property: opacity;
