@@ -225,6 +225,16 @@ function getpaadingLeft() {
     }
 }
 
+function getOrangePillParams() {
+    if($("#orangePill").length > 0 && bodyWidth <= 480) {
+        if( $(document).scrollTop() > $(window).height() * .5 ) {
+            $("#orangePill").addClass("active");
+        } else {
+            $("#orangePill").removeClass("active");
+        }
+    }
+}
+
 window.addEventListener('resize', debounce(getCardParams));
 
 var w = window,
@@ -281,6 +291,7 @@ $(window).resize(function() {
     getBcSlideParams();
     getContactsPosition();
     getpaadingLeft();
+    getOrangePillParams();
 });
 
 $(window).on("load", function() {
@@ -294,6 +305,7 @@ $(document).scroll(function() {
     // getCardParams();
     // getMapParams2();
     getContactsPosition();
+    getOrangePillParams();
 });
 
 $(document).ready(function() {
@@ -309,7 +321,7 @@ $(document).ready(function() {
     // getMapParams2();
     getContactsPosition();
     getpaadingLeft();
-    
+    getOrangePillParams();
 
     // -------------
     // mouseover = false;
@@ -1743,16 +1755,16 @@ $(document).on("click", ".respmenubtn", function(e){
 
     // ---------------
 
-    $('.datapicker').datepicker({
-        position: "bottom left"
-    });
+    // $('.datapicker').datepicker({
+    //     position: "bottom left"
+    // });
 
-    $('.only_time').datepicker({
-        dateFormat: ' ',
-        timepicker: true,
-        classes: 'only_timepicker',
-        position: "bottom right"
-    });
+    // $('.only_time').datepicker({
+    //     dateFormat: ' ',
+    //     timepicker: true,
+    //     classes: 'only_timepicker',
+    //     position: "bottom right"
+    // });
 
     $(".tel_input").mask("+9(999) 999-9999");
 
@@ -1784,6 +1796,16 @@ $(document).on("click", ".respmenubtn", function(e){
         e.preventDefault();
         parent = $(this).closest(".comment_item");
         parent.remove();
-    })
+    });
+
+    // ---------------
+
+    $(".tag_2").on("click", function(e) {
+        e.preventDefault();
+        hrefAttr = $(this).attr("href");
+        if( hrefAttr.length > 0 && hrefAttr != "#" ) {
+            $(hrefAttr).find(".dropdown_btn_2").click();
+        }
+    });
 
 });

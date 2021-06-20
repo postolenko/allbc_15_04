@@ -6658,9 +6658,9 @@ body.fixed {
 .h3_dropdown_wrapp h3:after {
     display: block;
     content: "";
-    width: 10px;
-    height: 8px;
-    background-image: url(img/arrow_black_2.png);
+    width: 8px;
+    height: 7px;
+    background-image: url(img/arrow_black.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -6754,6 +6754,11 @@ body.fixed {
 
 .dropdown_row_title_sub p {
     font-size: 14px;
+}
+
+.dropdown_row_title_sub p span {
+    display: inline-block;
+    vertical-align: top;
 }
 
 .dropdown_row_title_sub .cell {
@@ -7492,6 +7497,25 @@ body.fixed {
     color: #000000;
 }
 
+.select_time {
+    width: 100%;
+    height: 40px;
+    padding: 0 16px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid #b0b8bf;
+    background-color: #fff;
+    font-size: 14px;
+    line-height: 39px;
+    font-weight: normal;
+    color: #000000;
+    background-image: url(img/arrow_down.svg);
+    background-size: 10px;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) center;
+}
+
 .only_timepicker .datepicker--nav,
 .only_timepicker .datepicker--content {
     display: none;
@@ -7556,7 +7580,7 @@ input.arrow_down {
     display: block;
     background-size: 10px;
     background-position: calc(100% - 10px) center;
-    background-image: url(img/arrow_black_2.png);
+    background-image: url(img/arrow_black.png);
     background-repeat: no-repeat;
 }
 
@@ -7702,7 +7726,8 @@ input.arrow_down {
     padding-bottom: 1px;
 }
 
-.resp_form .input_wrapp input {
+.resp_form .input_wrapp input,
+.resp_form .input_wrapp select {
     width: 100%;
     border: 1px solid #dfdfdf;
 }
@@ -11116,8 +11141,33 @@ body.fixed {
 .orange_pill_3 {
     font-weight: 500;
     text-transform: none;
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+#orangePill {
+    opacity: 0;
+    bottom: -100px;
+    -webkit-transition-property: opacity, bottom;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+    -moz-transition-property: opacity, bottom;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+    -ms-transition-property: opacity, bottom;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+    -o-transition-property: opacity, bottom;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+    transition-property: opacity, bottom;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+#orangePill.active {
+    opacity: 1;
+    bottom: 0;
 }
 
 /*-- /Orange Contact Pill --*/
