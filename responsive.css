@@ -1710,7 +1710,13 @@
 	    display: -webkit-flex;
 	    align-items: center;
 	    -webkit-align-items: center;
-	    min-height: auto;
+	    /*min-height: auto;*/
+	    min-height: 70vh;
+	    padding-bottom: 75px;
+	}
+
+	.absolute_position {
+	    top: 45px;
 	}
 
 	.bc_main_sect > .inner {

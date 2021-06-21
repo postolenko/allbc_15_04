@@ -51,7 +51,8 @@
 					<div class="logo_city">
 						<div class="logo_wrapp">
 							<a href="#" class="logo">
-								<img src="img/logo_white.svg" alt="" />
+								<!-- <img src="img/logo_white.svg" alt="" /> -->
+								<img src="img/logo.svg" alt="" />
 							</a>
 						</div>
 					</div>
@@ -146,8 +147,8 @@
 			<button type="button" class="bc_arrow left_arrow" id="bcRightArrow"></button>
 			<button type="button" class="bc_arrow right_arrow" id="bcLeftArrow"></button>
 		</div>
-		<div class="padding_row inner">
-			<!-- <div class="row"> -->
+		<div class="absolute_position">
+			<div class="padding_row">
 				<ul class="breadcrumbs white">
 					<li><a href="#">Главная</a></li>
 					<li><a href="#">Аренда офиса</a></li>
@@ -164,6 +165,30 @@
 						</ul> -->
 					</div>
 				</div>
+			</div>
+		</div>
+		<div class="padding_row inner">
+			<!-- <div class="row"> -->
+				<!-- <div class="absolute_position">
+					<div class="padding_row">
+						<ul class="breadcrumbs white">
+							<li><a href="#">Главная</a></li>
+							<li><a href="#">Аренда офиса</a></li>
+							<li><a href="#">Аренда офиса Киева</a></li>
+						</ul>
+						<div class="bc_two_cols">
+							<div class="col_1">
+								<a href="#" class="transparent_pill_3 back_pill">К результатам поиска</a>
+							</div>
+							<div class="col_2">
+								<ul class="options_list">
+									<li><a href="#"><img src="img/printer.svg" alt="" /></a></li>
+									<li><a href="#"><img src="img/share.png" alt="" /></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div> -->
 				<div class="promo_text promo_text_2">
 					<h1>БЦ Славия БЦ Славия БЦ Славия БЦ Славия БЦ Славия</h1>
 					<a href="#" class="promo_link">Бизнес-центр класса «В»</a>
@@ -193,11 +218,11 @@
 					</ul>
 				</div>
 				<ul class="bc_links_list">
-					<li><a href="#"><span class="link_text">Описание</span></a></li>
-					<li><a href="#"><span class="link_text">На карте</span></a></li>
-					<li><a href="#"><span class="link_text">Галерея</span></a></li>
-					<li><a href="#"><span class="link_text">Свободные офисы</span><span class="blue">15</span></a></li>
-					<li><a href="#"><span class="link_text">Контакты</span></a></li>
+					<li><a href="#descript"><span class="link_text">Описание</span></a></li>
+					<li><a href="#all_offices"><span class="link_text">Свободные офисы</span><span class="blue">15</span></a></li>
+					<li><a href="#gallery"><span class="link_text">Галерея</span></a></li>
+					<li><a href="#locationBox"><span class="link_text">На карте</span></a></li>
+					<li><a href="#contactsBox"><span class="link_text">Контакты</span></a></li>
 				</ul>
 			</div>
 		</div>
@@ -260,8 +285,8 @@
 	<section class="no_border">
 		<div class="row">
 			<div class="two_cols_templ_2">
-				<div class="left_col" id="leftCol">
-					<div>
+				<div class="left_col leftCol">
+					<div id="descript">
 						<div class="descript_box">
 							<div class="descript_title">
 								<h3>Описание</h3>
@@ -1421,7 +1446,7 @@
 						</div>
 					</div>
 
-					<div class="photo_gallery_bc_wrapp">
+					<div class="photo_gallery_bc_wrapp" id="gallery">
 						<div class="title_two_cols">
 							<div class="col_1">
 								<h3>Фотогалерея</h3>
@@ -1647,7 +1672,7 @@
 
 	<section class="no_border grey_bg_2" id="contactsBox">
 		<div class="row">
-			<div class="contacts_box">
+			<div class="contacts_box leftCol">
 				<div class="contacts_box_header">
 					<h2>Контакты</h2>
 				</div>
@@ -3971,7 +3996,7 @@
 				</div>
 				<div class="col col_2">
 					<div class="tel_number_wrapp_2">
-						<a href="#">+38 (044) 209-42-06</a>
+						<a href="#">+38 (044) 209-XX-XX</a>
 					</div>
 				</div>
 				<div class="col col_3">

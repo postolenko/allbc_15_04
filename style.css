@@ -872,6 +872,7 @@ textarea:focus {
 .logo {
     display: inline-block;
     vertical-align: top;
+    max-height: 50px;
 }
 
 .logo img {
@@ -879,7 +880,7 @@ textarea:focus {
     width: auto;
     height: auto;
     max-width: 100%;
-    width: 140px;
+    /*width: 140px;*/
 }
 
 .top_menu {
@@ -7648,7 +7649,7 @@ input.arrow_down {
 }
 
 .contacts_box {
-    max-width: 775px;
+    max-width: 875px;
     margin: 25px 0 32px 0;
 }
 
@@ -8095,13 +8096,16 @@ input.arrow_down {
 }
 
 .sort_slider .slide {
-    padding: 0 5px;
+    padding: 0 10px;
 }
 
 .sort_slider .slide .bc_card {
-    max-width: 270px;
+    /*max-width: 270px;*/
+    /*max-width: 320px;*/
+    width: 100%;
+    max-width: 340px;
     height: auto;
-    margin: 19px 0 33px 0;
+    margin: 19px auto 33px auto;
 }
 
 .more_btn_wrapp {
@@ -8347,26 +8351,32 @@ input.arrow_down {
     display: flex;
     display: -webkit-flex;
     padding: 18px 0 25px 0;
+    max-width: 1024px;
+    margin: 0 auto;
 }
 
 .contacts_treee_cols > .col_1 {
-    width: 33%;
+    width: 50%;
     padding: 10px 10px 10px 0;
 }
 
 .contacts_treee_cols > .col_2 {
-    width: 34%;
-    padding: 10px 10px 10px 10px;
-}
-
-.contacts_treee_cols > .col_3 {
-    width: 33%;
+    width: 50%;
     display: flex;
     display: -webkit-flex;
     justify-content: flex-end;
     -webkit-justify-content: flex-end;
     padding: 10px 0 10px 10px;
 }
+
+/*.contacts_treee_cols > .col_3 {
+    width: 33%;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    padding: 10px 0 10px 10px;
+}*/
 
 .adres_item {
     padding: 0 0 5px 18px;
@@ -8398,7 +8408,7 @@ input.arrow_down {
 }
 
 .comment_form {
-    max-width: 400px;
+    max-width: 500px;
     padding: 2px 0;
 }
 
@@ -8454,7 +8464,7 @@ input.arrow_down {
 
 .scroll_bar_comments {
     margin: 52px 0;
-    max-width: 350px;
+    max-width: 450px;
     height: 270px;
     overflow: hidden;
     /*padding: 0 15px 0 17px;*/
@@ -10400,6 +10410,20 @@ body.fixed {
 .bc_two_cols > .col_2 {
     width: 50%;
     padding: 10px 0 10px 10px;
+}
+
+.bc_main_sect {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.absolute_position {
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    z-index: 2;
 }
 
 .transparent_pill_3 {

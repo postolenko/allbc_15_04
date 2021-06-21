@@ -217,11 +217,11 @@ function initialSlider() {
 function getpaadingLeft() {
     if($("#col1").length > 0 && bodyWidth > 900) {
         paddingLeft = $("#col1").offset().left - $("#threeCols").offset().left;
-        $("#leftCol").css({
+        $(".leftCol").css({
             "padding-left" : paddingLeft + "px"
         });
     } else {
-        $("#leftCol").css({
+        $(".leftCol").css({
             "padding-left" : 0
         });
     }
@@ -1728,19 +1728,32 @@ $(document).on("click", ".respmenubtn", function(e){
             // autoplay: true,
             autoplaySpeed: 4000,
             speed: 1200,
-            // slidesToShow: 3,
+            slidesToShow: 4,
             slidesToScroll: 3,
-            variableWidth: true,
+            // variableWidth: true,
             appendArrows: $(".sort_slider_arrows .row"),
             prevArrow: '<button class="slick-prev sort_slider_arrow" aria-label="Previous" type="button"><img src="img/blue_arrow_left.png" alt="" /></button>',
             nextArrow: '<button class="slick-next sort_slider_arrow" aria-label="Next" type="button"><img src="img/blue_arrow_right.png" alt="" /></button>',
             responsive: [
                 {
-                  breakpoint: 380,
+                  breakpoint: 1220,
+                  settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 2
+                  }
+                },
+                {
+                  breakpoint: 920,
+                  settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                  }
+                },
+                {
+                  breakpoint: 580,
                   settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1,
-                    variableWidth: false
+                    slidesToScroll: 1
                   }
                 }
             ]
