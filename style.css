@@ -8158,6 +8158,24 @@ input.arrow_down {
     -webkit-border-radius: 0 0 3px 3px;
 }
 
+.office_title_wrapp {
+    min-height: 52px;
+    padding: 0 0 6px 0;
+    border-bottom: 1px solid #ededed;
+}
+
+.office_title {
+    font-size: 14px;
+    line-height: 15px;
+    font-weight: 500;
+}
+
+.bc_card.office_card {
+    min-height: auto;
+    height: auto;
+}
+
+
 /*-- /Section 5 - BC Page --*/
 
 /*-- Section 6 - BC Page --*/
