@@ -994,6 +994,14 @@
 	    width: 115px;
 	}*/
 
+	.lang_switch {
+	    top: -6px;
+	}
+
+	.lang_switch .dropdown_title {
+	    padding: 11px 10px 10px 10px;
+	}
+
 	/*-- Section 1 --*/
 
 	.promo_sect {
