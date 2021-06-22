@@ -884,11 +884,17 @@ textarea:focus {
     /*width: 140px;*/
 }
 
-.logo_wrapp .red_pill {
+.footer__main__bussines__btn.btn_2 {
+    width: auto;
+    white-space: nowrap;
+    padding: 0 21px 0 29px;
+}
+
+.logo_wrapp .footer__main__bussines__btn {
     white-space: nowrap;
     margin: 0;
     position: absolute;
-    top: 5px;
+    top: 11px;
     left: calc(100% + 20px);
 }
 
