@@ -892,6 +892,11 @@ textarea:focus {
     border: 1px solid #ff0000;
 }
 
+
+.footer__main__bussines__btn.btn_2.green {
+    border: 1px solid #4ab996;
+}
+
 .footer__main__bussines__btn.btn_2:before {
     width: 8px;
     height: 8px;
@@ -903,6 +908,14 @@ textarea:focus {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.footer__main__bussines__btn.btn_2.green:before {
+    width: auto;
+    height:auto;
+    top: 3px;
+    background-image: none;
+    content: url(img/+.png);
 }
 
 .logo_wrapp .footer__main__bussines__btn {
