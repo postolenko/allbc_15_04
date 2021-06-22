@@ -388,6 +388,12 @@ textarea:focus {
     padding: 0 25px;
 }
 
+.row_2 {
+    margin: 0 auto;
+    padding: 0 25px;
+    max-width: 1400px !important;
+}
+
 .padding_row {
     padding: 0 25px;
 }
