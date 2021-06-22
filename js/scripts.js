@@ -1824,4 +1824,11 @@ $(document).on("click", ".respmenubtn", function(e){
         }
     });
 
+    // ---------------
+
+    $(".hidden_tel").on("click", function(e) {
+        e.preventDefault();
+        $(this).addClass("active");
+    });
+
 });

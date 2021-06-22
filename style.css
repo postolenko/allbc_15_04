@@ -872,6 +872,7 @@ textarea:focus {
 .logo {
     display: inline-block;
     vertical-align: top;
+    position: relative;
     max-height: 50px;
 }
 
@@ -881,6 +882,14 @@ textarea:focus {
     height: auto;
     max-width: 100%;
     /*width: 140px;*/
+}
+
+.logo_wrapp .red_pill {
+    white-space: nowrap;
+    margin: 0;
+    position: absolute;
+    top: 5px;
+    left: calc(100% + 20px);
 }
 
 .top_menu {
@@ -8276,10 +8285,6 @@ input.arrow_down {
     border-bottom: 1px solid #fff;
 }
 
-.gradient_form_wrapp {
-
-}
-
 .gradient_form {
     display: flex;
     display: -webkit-flex;
@@ -8309,14 +8314,6 @@ input.arrow_down {
     color: #fff;
 }
 
-.gradient_form {
-
-}
-
-.gradient_form .input_wrapp {
-
-}
-
 .gradient_form .input_wrapp input {
     width: 100%;
     height: 41px;
@@ -8329,6 +8326,19 @@ input.arrow_down {
 
 .gradient_form .orange_pill {
     width: 100%;
+}
+
+.hidden_tel .visible_tel_2 {
+    display: none;
+}
+
+.hidden_tel.active .hide_tel_2 {
+    display: none;
+}
+
+.hidden_tel.active .visible_tel_2 {
+    display: inline-block;
+    vertical-align: top;
 }
 
 /*-- /Section 7 - BC Page --*/
