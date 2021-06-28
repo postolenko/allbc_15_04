@@ -313,6 +313,9 @@ $(document).scroll(function() {
 $(document).ready(function() {
 
     $(".scroll_y").mCustomScrollbar();
+    $(".scroll_x").mCustomScrollbar({
+        axis:"x"
+    });
 
     getHeaderParams();
     getAdaptivePositionElements();

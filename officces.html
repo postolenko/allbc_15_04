@@ -20,7 +20,7 @@
 
 	<header>
 		<div class="header_site header_main">
-			<div class="row clearfix">
+			<div class="row row_2 clearfix">
 				<div class="left">
 					<div class="inline_2">
 						<button class="respmenubtn respmenubtn_2 menu_btn_2">
@@ -32,18 +32,20 @@
 						</button>
 					</div>
 					<div class="inline_2">
-						<div class="top_menu append-elem" data-append-desktop-elem = "5" data-min-screen = "768">
-							<ul class="lang_list">
-								<li>
-									<a href="#" class="active">Ru</a>
-								</li>
-								<li>
-									<a href="#">Ua</a>
-								</li>
-								<li>
-									<a href="#">Eng</a>
-								</li>
-							</ul>
+						<div class="append-elem" data-append-desktop-elem = "5" data-min-screen = "768">
+							<div class="dropdowm_wrapp lang_switch">
+								<div class="dropdown_title">
+									<p class="p_width">ENG</p>
+									<input type="text" name="" placeholder="ENG" readonly="">
+								</div>
+								<div class="dropdown_menu">
+									<ul>
+										<li class="active"><a href="#" title="" class="active">ENG</a></li>
+										<li><a href="#" title="">RU</a></li>
+										<li><a href="#" title="">UA</a></li>
+									</ul>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -54,6 +56,9 @@
 								<!-- <img src="img/logo_white.svg" alt="" /> -->
 								<img src="img/logo.svg" alt="" />
 							</a>
+							<div class="novisible_600">
+								<a href="#" class="footer__main__bussines__btn btn_2 green"><span class="plus_2">+</span>Добавить офис</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -62,9 +67,6 @@
 						<a href="#" class="search_open">
 							<i class="search_icon"></i>
 						</a>
-					</div>
-					<div class="top_menu novisible_1380">
-						<a href="#" class="red_pill">+ Подобрать офис</a>
 					</div>
 					<div class="inline">
 						<div class="favorite_box">
@@ -75,7 +77,6 @@
 						</div>
 					</div>
 					<div class="inline append-elem novisible_900" data-append-desktop-elem = "4" data-min-screen = "900">
-					<!-- <div class="inline"> -->
 						<div class="user_wrapp">
 							<a href="#" class="icon_link">
 								<i class="user_icon"></i>
@@ -144,7 +145,7 @@
 						<div class="slide" style="background-image: url('img/promo_bg.jpg');"></div>
 					</div>
 				</div>
-				<div class="row">
+				<div class="row row_2">
 					<ul class="breadcrumbs white">
 						<li><a href="#">Главная</a></li>
 						<li><a href="#">Аренда офиса</a></li>
@@ -2745,7 +2746,1133 @@
 			<section class="sect_3_info_side">
 				<div class="row">
 					<h2>Статистика по районам</h2>
-					<div class="table_slider_wrapp">
+
+					<div class="static_table_sl_templ">
+						<div class="left_col">
+							<div class="main_col">
+								<div class="logo_cell">
+									<div class="inner_cell">
+										<img src="img/table_logo.png" alt="" />
+									</div>
+									<div class="inner_cell">
+										<img src="img/table_logo.png" alt="" />
+									</div>
+								</div>
+								<div class="main_col_table">
+									<div class="cell">
+										<p>Название</p>
+									</div>
+									<div class="cell">
+										<p>Тип объекта</p>
+									</div>
+									<div class="cell">
+										<p>Район</p>
+									</div>
+									<div class="cell">
+										<p>Адрес</p>
+									</div>
+									<div class="cell">
+										<p>Удаленность от метро</p>
+									</div>
+									<div class="cell">
+										<p>Свободные офисы,этаж - площадь, м2</p>
+									</div>
+									<div class="cell">
+										<p>КОП % (BDMA)</p>
+									</div>
+									<div class="cell">
+										<p>Аренда $/м2/месяц,<br /> без НДС</p>
+									</div>
+									<div class="cell">
+										<p>OPEX $/м2/месяц,<br /> без НДС</p>
+									</div>
+									<div class="cell">
+										<p>Паркинг, м/м на м2</p>
+									</div>
+									<div class="cell">
+										<p>Паркинг, $/м/м/мес,<br /> без НДС</p>
+									</div>
+									<div class="cell">
+										<p>Высота до потолка м</p>
+									</div>
+									<div class="cell">
+										<p>Состояние помещений</p>
+									</div>
+									<div class="cell">
+										<p>Системы кондиционирования и вентиляции</p>
+									</div>
+									<div class="cell">
+										<p>Безопасность</p>
+									</div>
+								</div>
+							</div>							
+						</div>
+						<div class="right_col">
+							<div class="scroll_x">
+								<div class="scrollbar_tables">
+									<div class="scroll_thumb">
+										<div class="img_box">
+											<img src="img/table_img.jpg" alt="" />
+										</div>
+										<div class="scroll_thumb_table">
+											<div class="cell">
+												<h3>М8</h3>
+											</div>
+											<div class="cell">
+												<h3>БЦ класса А</h3>
+											</div>
+											<div class="cell">
+												<p>Печерская</p>
+											</div>
+											<div class="cell">
+												<p>8б, Московская</p>
+											</div>
+											<div class="cell">
+												<p><i class="metro"></i>Арсенальная 10 мин</p>
+											</div>
+											<div class="cell">
+												<p>6 000 м2</p>
+											</div>
+											<div class="cell">
+												<p>10 %</p>
+											</div>
+											<div class="cell">
+												<p>$ 35 + НДС</p>
+											</div>
+											<div class="cell">
+												<p>$ 5 + НДС</p>
+											</div>
+											<div class="cell">
+												<p>1 \ 200</p>
+											</div>
+											<div class="cell">
+												<p>По запросу</p>
+											</div>
+											<div class="cell">
+												<p>3-4</p>
+											</div>
+											<div class="cell">
+												<p>Норм</p>
+											</div>
+											<div class="cell">
+												<p>Центральная система</p>
+											</div>
+											<div class="cell">
+												<p>Система доступа</p>
+											</div>
+										</div>
+										<div class="likes_btns">
+											<a href="#" class="like_link_2">
+												<div class="icon_box">
+													<i class="like"></i>
+												</div>
+												<p>Интересно</p>
+											</a>
+											<a href="#" class="like_link_2">
+												<div class="icon_box">
+													<i class="dislike"></i>
+												</div>
+												<p>Не интересно</p>
+											</a>
+										</div>
+									</div>
+									<div class="scroll_thumb">
+										<div class="img_box">
+											<img src="img/table_img.jpg" alt="" />
+										</div>
+										<div class="scroll_thumb_table">
+											<div class="cell">
+												<h3>М8</h3>
+											</div>
+											<div class="cell">
+												<h3>БЦ класса А</h3>
+											</div>
+											<div class="cell">
+												<p>Печерская</p>
+											</div>
+											<div class="cell">
+												<p>8б, Московская</p>
+											</div>
+											<div class="cell">
+												<p><i class="metro"></i>Арсенальная 10 мин</p>
+											</div>
+											<div class="cell">
+												<p>6 000 м2</p>
+											</div>
+											<div class="cell">
+												<p>10 %</p>
+											</div>
+											<div class="cell">
+												<p>$ 35 + НДС</p>
+											</div>
+											<div class="cell">
+												<p>$ 5 + НДС</p>
+											</div>
+											<div class="cell">
+												<p>1 \ 200</p>
+											</div>
+											<div class="cell">
+												<p>По запросу</p>
+											</div>
+											<div class="cell">
+												<p>3-4</p>
+											</div>
+											<div class="cell">
+												<p>Норм</p>
+											</div>
+											<div class="cell">
+												<p>Центральная система</p>
+											</div>
+											<div class="cell">
+												<p>Система доступа</p>
+											</div>
+										</div>
+										<div class="likes_btns">
+											<a href="#" class="like_link_2">
+												<div class="icon_box">
+													<i class="like"></i>
+												</div>
+												<p>Интересно</p>
+											</a>
+											<a href="#" class="like_link_2">
+												<div class="icon_box">
+													<i class="dislike"></i>
+												</div>
+												<p>Не интересно</p>
+											</a>
+										</div>
+									</div>
+									<div class="scroll_thumb">
+										<div class="img_box">
+											<img src="img/table_img.jpg" alt="" />
+										</div>
+										<div class="scroll_thumb_table">
+											<div class="cell">
+												<h3>М8</h3>
+											</div>
+											<div class="cell">
+												<h3>БЦ класса А</h3>
+											</div>
+											<div class="cell">
+												<p>Печерская</p>
+											</div>
+											<div class="cell">
+												<p>8б, Московская</p>
+											</div>
+											<div class="cell">
+												<p><i class="metro"></i>Арсенальная 10 мин</p>
+											</div>
+											<div class="cell">
+												<p>6 000 м2</p>
+											</div>
+											<div class="cell">
+												<p>10 %</p>
+											</div>
+											<div class="cell">
+												<p>$ 35 + НДС</p>
+											</div>
+											<div class="cell">
+												<p>$ 5 + НДС</p>
+											</div>
+											<div class="cell">
+												<p>1 \ 200</p>
+											</div>
+											<div class="cell">
+												<p>По запросу</p>
+											</div>
+											<div class="cell">
+												<p>3-4</p>
+											</div>
+											<div class="cell">
+												<p>Норм</p>
+											</div>
+											<div class="cell">
+												<p>Центральная система</p>
+											</div>
+											<div class="cell">
+												<p>Система доступа</p>
+											</div>
+										</div>
+										<div class="likes_btns">
+											<a href="#" class="like_link_2">
+												<div class="icon_box">
+													<i class="like"></i>
+												</div>
+												<p>Интересно</p>
+											</a>
+											<a href="#" class="like_link_2">
+												<div class="icon_box">
+													<i class="dislike"></i>
+												</div>
+												<p>Не интересно</p>
+											</a>
+										</div>
+									</div>
+									<div class="scroll_thumb">
+										<div class="img_box">
+											<img src="img/table_img.jpg" alt="" />
+										</div>
+										<div class="scroll_thumb_table">
+											<div class="cell">
+												<h3>М8</h3>
+											</div>
+											<div class="cell">
+												<h3>БЦ класса А</h3>
+											</div>
+											<div class="cell">
+												<p>Печерская</p>
+											</div>
+											<div class="cell">
+												<p>8б, Московская</p>
+											</div>
+											<div class="cell">
+												<p><i class="metro"></i>Арсенальная 10 мин</p>
+											</div>
+											<div class="cell">
+												<p>6 000 м2</p>
+											</div>
+											<div class="cell">
+												<p>10 %</p>
+											</div>
+											<div class="cell">
+												<p>$ 35 + НДС</p>
+											</div>
+											<div class="cell">
+												<p>$ 5 + НДС</p>
+											</div>
+											<div class="cell">
+												<p>1 \ 200</p>
+											</div>
+											<div class="cell">
+												<p>По запросу</p>
+											</div>
+											<div class="cell">
+												<p>3-4</p>
+											</div>
+											<div class="cell">
+												<p>Норм</p>
+											</div>
+											<div class="cell">
+												<p>Центральная система</p>
+											</div>
+											<div class="cell">
+												<p>Система доступа</p>
+											</div>
+										</div>
+										<div class="likes_btns">
+											<a href="#" class="like_link_2">
+												<div class="icon_box">
+													<i class="like"></i>
+												</div>
+												<p>Интересно</p>
+											</a>
+											<a href="#" class="like_link_2">
+												<div class="icon_box">
+													<i class="dislike"></i>
+												</div>
+												<p>Не интересно</p>
+											</a>
+										</div>
+									</div>
+									<div class="scroll_thumb">
+										<div class="img_box">
+											<img src="img/table_img.jpg" alt="" />
+										</div>
+										<div class="scroll_thumb_table">
+											<div class="cell">
+												<h3>М8</h3>
+											</div>
+											<div class="cell">
+												<h3>БЦ класса А</h3>
+											</div>
+											<div class="cell">
+												<p>Печерская</p>
+											</div>
+											<div class="cell">
+												<p>8б, Московская</p>
+											</div>
+											<div class="cell">
+												<p><i class="metro"></i>Арсенальная 10 мин</p>
+											</div>
+											<div class="cell">
+												<p>6 000 м2</p>
+											</div>
+											<div class="cell">
+												<p>10 %</p>
+											</div>
+											<div class="cell">
+												<p>$ 35 + НДС</p>
+											</div>
+											<div class="cell">
+												<p>$ 5 + НДС</p>
+											</div>
+											<div class="cell">
+												<p>1 \ 200</p>
+											</div>
+											<div class="cell">
+												<p>По запросу</p>
+											</div>
+											<div class="cell">
+												<p>3-4</p>
+											</div>
+											<div class="cell">
+												<p>Норм</p>
+											</div>
+											<div class="cell">
+												<p>Центральная система</p>
+											</div>
+											<div class="cell">
+												<p>Система доступа</p>
+											</div>
+										</div>
+										<div class="likes_btns">
+											<a href="#" class="like_link_2">
+												<div class="icon_box">
+													<i class="like"></i>
+												</div>
+												<p>Интересно</p>
+											</a>
+											<a href="#" class="like_link_2">
+												<div class="icon_box">
+													<i class="dislike"></i>
+												</div>
+												<p>Не интересно</p>
+											</a>
+										</div>
+									</div>
+									<div class="scroll_thumb">
+										<div class="img_box">
+											<img src="img/table_img.jpg" alt="" />
+										</div>
+										<div class="scroll_thumb_table">
+											<div class="cell">
+												<h3>М8</h3>
+											</div>
+											<div class="cell">
+												<h3>БЦ класса А</h3>
+											</div>
+											<div class="cell">
+												<p>Печерская</p>
+											</div>
+											<div class="cell">
+												<p>8б, Московская</p>
+											</div>
+											<div class="cell">
+												<p><i class="metro"></i>Арсенальная 10 мин</p>
+											</div>
+											<div class="cell">
+												<p>6 000 м2</p>
+											</div>
+											<div class="cell">
+												<p>10 %</p>
+											</div>
+											<div class="cell">
+												<p>$ 35 + НДС</p>
+											</div>
+											<div class="cell">
+												<p>$ 5 + НДС</p>
+											</div>
+											<div class="cell">
+												<p>1 \ 200</p>
+											</div>
+											<div class="cell">
+												<p>По запросу</p>
+											</div>
+											<div class="cell">
+												<p>3-4</p>
+											</div>
+											<div class="cell">
+												<p>Норм</p>
+											</div>
+											<div class="cell">
+												<p>Центральная система</p>
+											</div>
+											<div class="cell">
+												<p>Система доступа</p>
+											</div>
+										</div>
+										<div class="likes_btns">
+											<a href="#" class="like_link_2">
+												<div class="icon_box">
+													<i class="like"></i>
+												</div>
+												<p>Интересно</p>
+											</a>
+											<a href="#" class="like_link_2">
+												<div class="icon_box">
+													<i class="dislike"></i>
+												</div>
+												<p>Не интересно</p>
+											</a>
+										</div>
+									</div>
+									<div class="scroll_thumb">
+										<div class="img_box">
+											<img src="img/table_img.jpg" alt="" />
+										</div>
+										<div class="scroll_thumb_table">
+											<div class="cell">
+												<h3>М8</h3>
+											</div>
+											<div class="cell">
+												<h3>БЦ класса А</h3>
+											</div>
+											<div class="cell">
+												<p>Печерская</p>
+											</div>
+											<div class="cell">
+												<p>8б, Московская</p>
+											</div>
+											<div class="cell">
+												<p><i class="metro"></i>Арсенальная 10 мин</p>
+											</div>
+											<div class="cell">
+												<p>6 000 м2</p>
+											</div>
+											<div class="cell">
+												<p>10 %</p>
+											</div>
+											<div class="cell">
+												<p>$ 35 + НДС</p>
+											</div>
+											<div class="cell">
+												<p>$ 5 + НДС</p>
+											</div>
+											<div class="cell">
+												<p>1 \ 200</p>
+											</div>
+											<div class="cell">
+												<p>По запросу</p>
+											</div>
+											<div class="cell">
+												<p>3-4</p>
+											</div>
+											<div class="cell">
+												<p>Норм</p>
+											</div>
+											<div class="cell">
+												<p>Центральная система</p>
+											</div>
+											<div class="cell">
+												<p>Система доступа</p>
+											</div>
+										</div>
+										<div class="likes_btns">
+											<a href="#" class="like_link_2">
+												<div class="icon_box">
+													<i class="like"></i>
+												</div>
+												<p>Интересно</p>
+											</a>
+											<a href="#" class="like_link_2">
+												<div class="icon_box">
+													<i class="dislike"></i>
+												</div>
+												<p>Не интересно</p>
+											</a>
+										</div>
+									</div>
+									<div class="scroll_thumb">
+										<div class="img_box">
+											<img src="img/table_img.jpg" alt="" />
+										</div>
+										<div class="scroll_thumb_table">
+											<div class="cell">
+												<h3>М8</h3>
+											</div>
+											<div class="cell">
+												<h3>БЦ класса А</h3>
+											</div>
+											<div class="cell">
+												<p>Печерская</p>
+											</div>
+											<div class="cell">
+												<p>8б, Московская</p>
+											</div>
+											<div class="cell">
+												<p><i class="metro"></i>Арсенальная 10 мин</p>
+											</div>
+											<div class="cell">
+												<p>6 000 м2</p>
+											</div>
+											<div class="cell">
+												<p>10 %</p>
+											</div>
+											<div class="cell">
+												<p>$ 35 + НДС</p>
+											</div>
+											<div class="cell">
+												<p>$ 5 + НДС</p>
+											</div>
+											<div class="cell">
+												<p>1 \ 200</p>
+											</div>
+											<div class="cell">
+												<p>По запросу</p>
+											</div>
+											<div class="cell">
+												<p>3-4</p>
+											</div>
+											<div class="cell">
+												<p>Норм</p>
+											</div>
+											<div class="cell">
+												<p>Центральная система</p>
+											</div>
+											<div class="cell">
+												<p>Система доступа</p>
+											</div>
+										</div>
+										<div class="likes_btns">
+											<a href="#" class="like_link_2">
+												<div class="icon_box">
+													<i class="like"></i>
+												</div>
+												<p>Интересно</p>
+											</a>
+											<a href="#" class="like_link_2">
+												<div class="icon_box">
+													<i class="dislike"></i>
+												</div>
+												<p>Не интересно</p>
+											</a>
+										</div>
+									</div>
+									<div class="scroll_thumb">
+										<div class="img_box">
+											<img src="img/table_img.jpg" alt="" />
+										</div>
+										<div class="scroll_thumb_table">
+											<div class="cell">
+												<h3>М8</h3>
+											</div>
+											<div class="cell">
+												<h3>БЦ класса А</h3>
+											</div>
+											<div class="cell">
+												<p>Печерская</p>
+											</div>
+											<div class="cell">
+												<p>8б, Московская</p>
+											</div>
+											<div class="cell">
+												<p><i class="metro"></i>Арсенальная 10 мин</p>
+											</div>
+											<div class="cell">
+												<p>6 000 м2</p>
+											</div>
+											<div class="cell">
+												<p>10 %</p>
+											</div>
+											<div class="cell">
+												<p>$ 35 + НДС</p>
+											</div>
+											<div class="cell">
+												<p>$ 5 + НДС</p>
+											</div>
+											<div class="cell">
+												<p>1 \ 200</p>
+											</div>
+											<div class="cell">
+												<p>По запросу</p>
+											</div>
+											<div class="cell">
+												<p>3-4</p>
+											</div>
+											<div class="cell">
+												<p>Норм</p>
+											</div>
+											<div class="cell">
+												<p>Центральная система</p>
+											</div>
+											<div class="cell">
+												<p>Система доступа</p>
+											</div>
+										</div>
+										<div class="likes_btns">
+											<a href="#" class="like_link_2">
+												<div class="icon_box">
+													<i class="like"></i>
+												</div>
+												<p>Интересно</p>
+											</a>
+											<a href="#" class="like_link_2">
+												<div class="icon_box">
+													<i class="dislike"></i>
+												</div>
+												<p>Не интересно</p>
+											</a>
+										</div>
+									</div>
+									<div class="scroll_thumb">
+										<div class="img_box">
+											<img src="img/table_img.jpg" alt="" />
+										</div>
+										<div class="scroll_thumb_table">
+											<div class="cell">
+												<h3>М8</h3>
+											</div>
+											<div class="cell">
+												<h3>БЦ класса А</h3>
+											</div>
+											<div class="cell">
+												<p>Печерская</p>
+											</div>
+											<div class="cell">
+												<p>8б, Московская</p>
+											</div>
+											<div class="cell">
+												<p><i class="metro"></i>Арсенальная 10 мин</p>
+											</div>
+											<div class="cell">
+												<p>6 000 м2</p>
+											</div>
+											<div class="cell">
+												<p>10 %</p>
+											</div>
+											<div class="cell">
+												<p>$ 35 + НДС</p>
+											</div>
+											<div class="cell">
+												<p>$ 5 + НДС</p>
+											</div>
+											<div class="cell">
+												<p>1 \ 200</p>
+											</div>
+											<div class="cell">
+												<p>По запросу</p>
+											</div>
+											<div class="cell">
+												<p>3-4</p>
+											</div>
+											<div class="cell">
+												<p>Норм</p>
+											</div>
+											<div class="cell">
+												<p>Центральная система</p>
+											</div>
+											<div class="cell">
+												<p>Система доступа</p>
+											</div>
+										</div>
+										<div class="likes_btns">
+											<a href="#" class="like_link_2">
+												<div class="icon_box">
+													<i class="like"></i>
+												</div>
+												<p>Интересно</p>
+											</a>
+											<a href="#" class="like_link_2">
+												<div class="icon_box">
+													<i class="dislike"></i>
+												</div>
+												<p>Не интересно</p>
+											</a>
+										</div>
+									</div>
+									<div class="scroll_thumb">
+										<div class="img_box">
+											<img src="img/table_img.jpg" alt="" />
+										</div>
+										<div class="scroll_thumb_table">
+											<div class="cell">
+												<h3>М8</h3>
+											</div>
+											<div class="cell">
+												<h3>БЦ класса А</h3>
+											</div>
+											<div class="cell">
+												<p>Печерская</p>
+											</div>
+											<div class="cell">
+												<p>8б, Московская</p>
+											</div>
+											<div class="cell">
+												<p><i class="metro"></i>Арсенальная 10 мин</p>
+											</div>
+											<div class="cell">
+												<p>6 000 м2</p>
+											</div>
+											<div class="cell">
+												<p>10 %</p>
+											</div>
+											<div class="cell">
+												<p>$ 35 + НДС</p>
+											</div>
+											<div class="cell">
+												<p>$ 5 + НДС</p>
+											</div>
+											<div class="cell">
+												<p>1 \ 200</p>
+											</div>
+											<div class="cell">
+												<p>По запросу</p>
+											</div>
+											<div class="cell">
+												<p>3-4</p>
+											</div>
+											<div class="cell">
+												<p>Норм</p>
+											</div>
+											<div class="cell">
+												<p>Центральная система</p>
+											</div>
+											<div class="cell">
+												<p>Система доступа</p>
+											</div>
+										</div>
+										<div class="likes_btns">
+											<a href="#" class="like_link_2">
+												<div class="icon_box">
+													<i class="like"></i>
+												</div>
+												<p>Интересно</p>
+											</a>
+											<a href="#" class="like_link_2">
+												<div class="icon_box">
+													<i class="dislike"></i>
+												</div>
+												<p>Не интересно</p>
+											</a>
+										</div>
+									</div>
+									<div class="scroll_thumb">
+										<div class="img_box">
+											<img src="img/table_img.jpg" alt="" />
+										</div>
+										<div class="scroll_thumb_table">
+											<div class="cell">
+												<h3>М8</h3>
+											</div>
+											<div class="cell">
+												<h3>БЦ класса А</h3>
+											</div>
+											<div class="cell">
+												<p>Печерская</p>
+											</div>
+											<div class="cell">
+												<p>8б, Московская</p>
+											</div>
+											<div class="cell">
+												<p><i class="metro"></i>Арсенальная 10 мин</p>
+											</div>
+											<div class="cell">
+												<p>6 000 м2</p>
+											</div>
+											<div class="cell">
+												<p>10 %</p>
+											</div>
+											<div class="cell">
+												<p>$ 35 + НДС</p>
+											</div>
+											<div class="cell">
+												<p>$ 5 + НДС</p>
+											</div>
+											<div class="cell">
+												<p>1 \ 200</p>
+											</div>
+											<div class="cell">
+												<p>По запросу</p>
+											</div>
+											<div class="cell">
+												<p>3-4</p>
+											</div>
+											<div class="cell">
+												<p>Норм</p>
+											</div>
+											<div class="cell">
+												<p>Центральная система</p>
+											</div>
+											<div class="cell">
+												<p>Система доступа</p>
+											</div>
+										</div>
+										<div class="likes_btns">
+											<a href="#" class="like_link_2">
+												<div class="icon_box">
+													<i class="like"></i>
+												</div>
+												<p>Интересно</p>
+											</a>
+											<a href="#" class="like_link_2">
+												<div class="icon_box">
+													<i class="dislike"></i>
+												</div>
+												<p>Не интересно</p>
+											</a>
+										</div>
+									</div>
+									<div class="scroll_thumb">
+										<div class="img_box">
+											<img src="img/table_img.jpg" alt="" />
+										</div>
+										<div class="scroll_thumb_table">
+											<div class="cell">
+												<h3>М8</h3>
+											</div>
+											<div class="cell">
+												<h3>БЦ класса А</h3>
+											</div>
+											<div class="cell">
+												<p>Печерская</p>
+											</div>
+											<div class="cell">
+												<p>8б, Московская</p>
+											</div>
+											<div class="cell">
+												<p><i class="metro"></i>Арсенальная 10 мин</p>
+											</div>
+											<div class="cell">
+												<p>6 000 м2</p>
+											</div>
+											<div class="cell">
+												<p>10 %</p>
+											</div>
+											<div class="cell">
+												<p>$ 35 + НДС</p>
+											</div>
+											<div class="cell">
+												<p>$ 5 + НДС</p>
+											</div>
+											<div class="cell">
+												<p>1 \ 200</p>
+											</div>
+											<div class="cell">
+												<p>По запросу</p>
+											</div>
+											<div class="cell">
+												<p>3-4</p>
+											</div>
+											<div class="cell">
+												<p>Норм</p>
+											</div>
+											<div class="cell">
+												<p>Центральная система</p>
+											</div>
+											<div class="cell">
+												<p>Система доступа</p>
+											</div>
+										</div>
+										<div class="likes_btns">
+											<a href="#" class="like_link_2">
+												<div class="icon_box">
+													<i class="like"></i>
+												</div>
+												<p>Интересно</p>
+											</a>
+											<a href="#" class="like_link_2">
+												<div class="icon_box">
+													<i class="dislike"></i>
+												</div>
+												<p>Не интересно</p>
+											</a>
+										</div>
+									</div>
+									<div class="scroll_thumb">
+										<div class="img_box">
+											<img src="img/table_img.jpg" alt="" />
+										</div>
+										<div class="scroll_thumb_table">
+											<div class="cell">
+												<h3>М8</h3>
+											</div>
+											<div class="cell">
+												<h3>БЦ класса А</h3>
+											</div>
+											<div class="cell">
+												<p>Печерская</p>
+											</div>
+											<div class="cell">
+												<p>8б, Московская</p>
+											</div>
+											<div class="cell">
+												<p><i class="metro"></i>Арсенальная 10 мин</p>
+											</div>
+											<div class="cell">
+												<p>6 000 м2</p>
+											</div>
+											<div class="cell">
+												<p>10 %</p>
+											</div>
+											<div class="cell">
+												<p>$ 35 + НДС</p>
+											</div>
+											<div class="cell">
+												<p>$ 5 + НДС</p>
+											</div>
+											<div class="cell">
+												<p>1 \ 200</p>
+											</div>
+											<div class="cell">
+												<p>По запросу</p>
+											</div>
+											<div class="cell">
+												<p>3-4</p>
+											</div>
+											<div class="cell">
+												<p>Норм</p>
+											</div>
+											<div class="cell">
+												<p>Центральная система</p>
+											</div>
+											<div class="cell">
+												<p>Система доступа</p>
+											</div>
+										</div>
+										<div class="likes_btns">
+											<a href="#" class="like_link_2">
+												<div class="icon_box">
+													<i class="like"></i>
+												</div>
+												<p>Интересно</p>
+											</a>
+											<a href="#" class="like_link_2">
+												<div class="icon_box">
+													<i class="dislike"></i>
+												</div>
+												<p>Не интересно</p>
+											</a>
+										</div>
+									</div>
+									<div class="scroll_thumb">
+										<div class="img_box">
+											<img src="img/table_img.jpg" alt="" />
+										</div>
+										<div class="scroll_thumb_table">
+											<div class="cell">
+												<h3>М8</h3>
+											</div>
+											<div class="cell">
+												<h3>БЦ класса А</h3>
+											</div>
+											<div class="cell">
+												<p>Печерская</p>
+											</div>
+											<div class="cell">
+												<p>8б, Московская</p>
+											</div>
+											<div class="cell">
+												<p><i class="metro"></i>Арсенальная 10 мин</p>
+											</div>
+											<div class="cell">
+												<p>6 000 м2</p>
+											</div>
+											<div class="cell">
+												<p>10 %</p>
+											</div>
+											<div class="cell">
+												<p>$ 35 + НДС</p>
+											</div>
+											<div class="cell">
+												<p>$ 5 + НДС</p>
+											</div>
+											<div class="cell">
+												<p>1 \ 200</p>
+											</div>
+											<div class="cell">
+												<p>По запросу</p>
+											</div>
+											<div class="cell">
+												<p>3-4</p>
+											</div>
+											<div class="cell">
+												<p>Норм</p>
+											</div>
+											<div class="cell">
+												<p>Центральная система</p>
+											</div>
+											<div class="cell">
+												<p>Система доступа</p>
+											</div>
+										</div>
+										<div class="likes_btns">
+											<a href="#" class="like_link_2">
+												<div class="icon_box">
+													<i class="like"></i>
+												</div>
+												<p>Интересно</p>
+											</a>
+											<a href="#" class="like_link_2">
+												<div class="icon_box">
+													<i class="dislike"></i>
+												</div>
+												<p>Не интересно</p>
+											</a>
+										</div>
+									</div>
+									<div class="scroll_thumb">
+										<div class="img_box">
+											<img src="img/table_img.jpg" alt="" />
+										</div>
+										<div class="scroll_thumb_table">
+											<div class="cell">
+												<h3>М8</h3>
+											</div>
+											<div class="cell">
+												<h3>БЦ класса А</h3>
+											</div>
+											<div class="cell">
+												<p>Печерская</p>
+											</div>
+											<div class="cell">
+												<p>8б, Московская</p>
+											</div>
+											<div class="cell">
+												<p><i class="metro"></i>Арсенальная 10 мин</p>
+											</div>
+											<div class="cell">
+												<p>6 000 м2</p>
+											</div>
+											<div class="cell">
+												<p>10 %</p>
+											</div>
+											<div class="cell">
+												<p>$ 35 + НДС</p>
+											</div>
+											<div class="cell">
+												<p>$ 5 + НДС</p>
+											</div>
+											<div class="cell">
+												<p>1 \ 200</p>
+											</div>
+											<div class="cell">
+												<p>По запросу</p>
+											</div>
+											<div class="cell">
+												<p>3-4</p>
+											</div>
+											<div class="cell">
+												<p>Норм</p>
+											</div>
+											<div class="cell">
+												<p>Центральная система</p>
+											</div>
+											<div class="cell">
+												<p>Система доступа</p>
+											</div>
+										</div>
+										<div class="likes_btns">
+											<a href="#" class="like_link_2">
+												<div class="icon_box">
+													<i class="like"></i>
+												</div>
+												<p>Интересно</p>
+											</a>
+											<a href="#" class="like_link_2">
+												<div class="icon_box">
+													<i class="dislike"></i>
+												</div>
+												<p>Не интересно</p>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<!-- <div class="table_slider_wrapp">
 						<div class="table_slider_controls"></div>
 						<div class="table_slider">
 							<div class="slide">
@@ -2901,7 +4028,9 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					</div> -->
+
+					
 					<div class="thumbnails_3_wrapp">
 						<h2>Дополнительные услуги</h2>
 						<div class="thumbnails_3 offset_ziro">
@@ -2985,6 +4114,20 @@
 			</section>
 
 			<!-- /Section 4 - Info Side Page -->
+
+			<!-- Breadcrumbs sect -->
+
+			<div class="breadcrumbs_sect">
+				<div class="row">
+					<ul class="breadcrumbs">
+						<li><a href="#">Главная</a></li>
+						<li><a href="#">Аренда офиса</a></li>
+						<li><a href="#">Аренда офиса Киева</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- /Breadcrumbs sect -->
 
 		</div>
 	<!-- /Content -->

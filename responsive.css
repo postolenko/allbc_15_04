@@ -990,10 +990,6 @@
 	    min-width: 115px;
 	}
 
-/*	.logo img {
-	    width: 115px;
-	}*/
-
 	.lang_switch {
 	    top: -6px;
 	}
@@ -1477,7 +1473,6 @@
 
 	.dropdown_row_footer .col_1 {
 	    width: 36%;
-	    /*width: 100%;*/
 	    display: flex;
 	    display: -webkit-flex;
 	    justify-content: flex-start;
@@ -1718,7 +1713,6 @@
 	    display: -webkit-flex;
 	    align-items: center;
 	    -webkit-align-items: center;
-	    /*min-height: auto;*/
 	    min-height: 70vh;
 	    padding-bottom: 75px;
 	}
@@ -1851,6 +1845,71 @@
 	}
 
 	/*-- /Section 7 - BC Page --*/
+
+	/*-- Section 3 - Info Side Page --*/
+
+	.main_col_table p {
+	    font-size: 12px;
+	    line-height: 16px;
+	}
+
+	.scroll_thumb_table .cell h3 {
+	    font-size: 12px;
+	    line-height: 16px;
+	}
+
+	.scroll_thumb_table .cell p {
+	    font-size: 12px;
+	    line-height: 16px;
+	}
+
+	.scroll_thumb_table .cell:nth-child(6) {
+	    min-height: 49px;
+	}
+
+	.scroll_thumb_table .cell:nth-child(8) {
+	    min-height: 49px;
+	}
+
+	.scroll_thumb_table .cell:nth-child(9) {
+	    min-height: 49px;
+	}
+
+	.scroll_thumb_table .cell:nth-child(11) {
+	    min-height: 49px;
+	}
+
+	.scroll_thumb_table .cell:nth-child(14) {
+	    min-height: 65px;
+	}
+
+	.static_table_sl_templ .left_col {
+	    width: 142px;
+	}
+
+	.static_table_sl_templ .right_col {
+	    width: calc(100% - 142px);
+	}
+
+	.main_col_table .cell {
+	    padding: 8px 8px 8px 8px;
+	}
+
+	.scroll_thumb {
+	    width: 155px !important;
+	}
+
+	.scroll_thumb_table .cell {
+	    padding: 8px 8px 8px 8px;
+	}
+
+	.like_link_2 p {
+	    font-size: 10px;
+	    line-height: 14px;
+	}
+
+
+	/*-- /Section 3 - Info Side Page --*/
 
 	/*-- Footer --*/
 
