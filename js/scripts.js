@@ -1834,4 +1834,30 @@ $(document).on("click", ".respmenubtn", function(e){
         $(this).addClass("active");
     });
 
+    // ---------------
+
+    if( $(".office_slider").length > 0 ) {
+
+        $('.office_slider').not(".slick-initialized").slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            fade: true,
+            asNavFor: '.office_slider_miniatures',
+            prevArrow: '<button class="slick-prev" aria-label="Previous" type="button"><img src="img/left_chevron.svg"></button>',
+            nextArrow: '<button class="slick-next" aria-label="Next" type="button"><img src="img/right_chevron.svg"></button>'
+        });
+
+        $('.office_slider_miniatures').not(".slick-initialized").slick({
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            asNavFor: '.office_slider',
+            dots: false,
+            // centerMode: true,
+            variableWidth: true,
+            focusOnSelect: true
+        });
+
+    }
+
 });
