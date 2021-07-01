@@ -1,3 +1,12 @@
+@media only screen and (max-width: 1600px) {
+
+	.bc_main_sect {
+		padding: 0 0 150px 0;
+	    min-height: calc( 100vh - 100px );
+	}
+
+}
+
 @media only screen and (max-width: 1550px) {
 
 	.slick-prev.sort_slider_arrow {
