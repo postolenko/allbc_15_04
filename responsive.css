@@ -1057,6 +1057,11 @@
 	    padding-top: 3px;
 	}
 
+	.breadcrumbs li a {
+	    font-size: 13px;
+	    line-height: 16px;
+	}
+
 	/*-- Section 1 --*/
 
 	.promo_sect {
@@ -2000,6 +2005,11 @@
 	/*-- /Section 3 - Info Side Page --*/
 
 	/*-- Section 1 - Office Page --*/
+
+	.resp_office_slider_title h2 {
+	    font-size: 20px;
+	    line-height: 24px;
+	}
 
 	.wrapper_2 {
 	    padding-top: 50px;

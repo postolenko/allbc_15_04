@@ -229,7 +229,13 @@ function getpaadingLeft() {
 
 function getOrangePillParams() {
     if($("#orangePill").length > 0) {
-        if( $(document).scrollTop() > ( $(window).height() * .7 ) ) {
+        if($("#orangePill").hasClass("visible_900")) {
+            topOffset = 0;
+        } else {
+            topOffset = $(window).height() * .7;
+        }
+
+        if( $(document).scrollTop() > topOffset ) {
             $("#orangePill").addClass("active");
         } else {
             $("#orangePill").removeClass("active");

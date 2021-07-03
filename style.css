@@ -9187,7 +9187,7 @@ input.arrow_down {
     position: relative;
 }
 
-.breadcrumbs_sect:before {
+/*.breadcrumbs_sect:before {
     display: block;
     content: "";
     width: 100%;
@@ -9198,7 +9198,7 @@ input.arrow_down {
     background-image: -moz-linear-gradient( 180deg, rgb(0,174,231) 0%, rgb(136,197,67) 100%);
     background-image: -webkit-linear-gradient( 180deg, rgb(0,174,231) 0%, rgb(136,197,67) 100%);
     background-image: -ms-linear-gradient( 180deg, rgb(0,174,231) 0%, rgb(136,197,67) 100%);
-}
+}*/
 
 /*-- /Breadcrumbs sect --*/
 
@@ -9247,6 +9247,12 @@ input.arrow_down {
     text-align: left;
     font-size: 26px;
     line-height: 32px;
+}
+
+.resp_office_slider_title h2 {
+    font-size: 22px;
+    line-height: 26px;
+    text-align: left;
 }
 
 .office_slider_wrapp {
@@ -9545,6 +9551,44 @@ p.metro_p {
     border-bottom: none;
 }
 
+.resp_object_descript .contacts_box_2 {
+    border: none;
+    padding: 0;
+}
+
+.resp_object_descript .card_title_descript p {
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.resp_object_descript .card_adress p {
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.resp_object_descript .metro_wrapp_2 p {
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.resp_object_descript  .object_descript {
+    padding: 5px 0;
+}
+
+.resp_object_descript .object_descript .metro_wrapp p i {
+    top: 2px;
+}
+
+.resp_object_descript .walker_wrapp p {
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.resp_object_descript .walker_wrapp i {
+    position: relative;
+    top: 2px;
+}
+
 .list_3 {
     display: flex;
     display: -webkit-flex;
@@ -9622,6 +9666,43 @@ p.metro_p {
     font-size: 14px;
     line-height: 20px;
 }
+
+.resp_inlines {
+    margin: 0 -7px;
+    align-items: center;
+    -webkit-align-items: center;
+}
+
+.resp_inlines > div {
+    padding: 3px 7px;
+    position: relative;
+}
+
+.resp_inlines > div:after {
+    content: "";
+    width: 1px;
+    height: 20px;
+    background-color: #000;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -10px);
+    -webkit-transform: translate(0, -10px);
+}
+
+.resp_inlines > div:last-child:after {
+    display: none;
+}
+
+.resp_inlines p {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.resp_inlines .green {
+    color: #9ac351;
+}
+
 
 /*-- /Section 1 - Office Page --*/
 
