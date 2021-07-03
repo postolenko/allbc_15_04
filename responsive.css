@@ -102,6 +102,18 @@
 
 	/*-- /Section 7 - BC Page --*/
 
+	/*-- Section 1 - Office Page --*/
+
+	.two_cols_templ_2_2 > .left_col {
+	    width: calc(100% - 330px);
+	}
+
+	.two_cols_templ_2_2 > .right_col {
+	    width: 330px;
+	}
+
+	/*-- .Section 1 - Office Page --*/
+
 }
 
 @media only screen and (max-width: 1240px) {
@@ -219,6 +231,19 @@
 	}
 
 	/*-- /Section 7 - BC Page --*/
+
+	/*-- Section 1 - Office Page --*/
+
+	.office_slider_title h2 {
+	    font-size: 24px;
+	    line-height: 29px;
+	}
+
+	.contacts_box_2 {
+	    margin: 8px 0 25px;
+	}
+
+	/*-- /Section 1 - Office Page --*/
 
 	/*-- Footer --*/
 
@@ -413,7 +438,7 @@
 
 	/*-- Section 4 - BC Page Broker --*/
 
-	.contacts_treee_cols {
+/*	.contacts_treee_cols {
 	    flex-wrap: wrap;
 	    -webkit-flex-wrap: wrap;
 	}
@@ -434,7 +459,7 @@
 	    display: -webkit-flex;
 	    justify-content: flex-start;
 	    -webkit-justify-content: flex-start;
-	}
+	}*/
 
 	/*-- /Section 4 - BC Page Broker --*/
 
@@ -825,9 +850,9 @@
 		padding-right: 25px;
 	}
 
-	.header_main .left {
+/*	.header_main .left {
 		padding-top: 10px;
-	}
+	}*/
 
 	.logo_wrapp {
 	    margin: 3px 0;
@@ -925,6 +950,26 @@
 		top: 0;
 	}
 
+	.logo_wrapp .right_box {
+	    top: -3px;
+	}
+
+	.logo_wrapp .right_box:before {
+	    top: 17px;
+	}
+
+	.lang_switch {
+	    /*top: -15px;*/
+	}
+
+	.header_site_2 .left .inline_2 {
+	    height: 45px;
+	}
+
+	.header_main.header_site_2 .inline {
+	    padding: 14px 14px 5px 14px;
+	}
+
 	/*-- /Header --*/
 
 	/*-- Section 1 - Info Side Page --*/
@@ -962,7 +1007,8 @@
 	    line-height: 29px;
 	}
 
-	.resp_768 {
+	.resp_768,
+	.novisible_768 {
 		display: none !important;
 	}
 
@@ -1005,6 +1051,10 @@
 
 	.lang_switch .dropdown_title {
 	    padding: 11px 10px 10px 10px;
+	}
+
+	.header_main .left {
+	    padding-top: 3px;
 	}
 
 	/*-- Section 1 --*/
@@ -1401,6 +1451,14 @@
 
 	/*-- /Section 5 - BC Page --*/
 
+	/*-- Section 1 - Office Page --*/
+
+	.office_slider .slide {
+	    height: 400px;
+	}
+
+	/*-- /Section 1 - Office Page --*/
+
 	/*-- Footer --*/
 
 	.footer__main__right {
@@ -1494,6 +1552,40 @@
 	}
 
 /*-- /Section 3 - BC Page --*/
+
+}
+
+@media only screen and (max-width: 700px) {
+
+/*-- Section 4 - BC Page Broker --*/
+
+.contacts_broker_cols {
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+}
+
+.contacts_broker_cols > .col_1,
+.contacts_broker_cols > .col_2 {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.contacts_broker_cols > .col_2 {
+	justify-content: center;
+	-webkit-justify-content: center;
+}
+
+.comment_form {
+    max-width: 100%;
+    padding: 2px 0;
+}
+
+.scroll_bar_comments {
+    margin: 20px 0;
+    max-width: 100%;
+}
+
+/*-- /Section 4 - BC Page Broker --*/
 
 }
 
@@ -1604,18 +1696,6 @@
 
 	.header_1 .right {
 	    width: calc(50% - 120px) !important;
-	}
-
-	.header_main .left {
-	    width: calc(50% - 70px) !important;
-	}
-
-	.header_main .center {
-	    width: 140px !important;
-	}
-
-	.header_main .right {
-	    width: calc(50% - 70px) !important;
 	}
 
 	.menu_btn_2 .sp_2 {
@@ -1917,8 +1997,79 @@
 	    line-height: 14px;
 	}
 
-
 	/*-- /Section 3 - Info Side Page --*/
+
+	/*-- Section 1 - Office Page --*/
+
+	.wrapper_2 {
+	    padding-top: 50px;
+	}
+
+	.office_slider_title .black_circle_2 {
+	    top: 12px;
+	}
+
+	.office_slider_title h2 {
+	    font-size: 19px;
+	    line-height: 27px;
+	}
+
+	.office_slider .slide {
+		height: 400px;
+	}
+
+	.office_slider_footer {
+		display: block;
+	    padding: 5px 0;
+	}
+
+	.office_slider_footer > .col:nth-child(1) {
+	    width: 100%;
+	    padding: 5px 0;
+	}
+
+	.office_slider_footer > .col:nth-child(2) {
+	    width: 100%;
+	    padding: 5px 0;
+	    text-align: left;
+	}
+
+	.office_slider_footer > .col:nth-child(3) {
+	    width: 100%;
+	    padding: 5px 0;
+	    text-align: left;
+	}
+
+	.office_descript_two_cols {
+		display: block;
+	}
+
+	.office_descript_two_cols > .col {
+	    width: 100%;
+	}
+
+	.office_descript_two_cols > .col_1 {
+	    padding-right: 0;
+	    padding-bottom: 20px;
+	}
+
+	.office_descript_two_cols > .col_2 {
+	    padding-left: 0;
+	}
+
+	.list_3 {
+		display: block;
+	}
+
+	.list_3 li {
+	    width: 100%;
+	    margin: 10px 0;
+	    padding-left: 20px;
+	    padding-right: 0;
+	    font-size: 14px;
+	}
+
+	/*-- /Section 1 - Office Page --*/
 
 	/*-- Footer --*/
 
@@ -1949,6 +2100,18 @@
 	}
 
 	/*-- /Footer --*/
+
+	/*-- Orange Contact Pill --*/
+
+	.orange_contact_pill_2 {
+	    text-align: center;
+	}
+
+	.orange_pill_2_2 {
+	    max-width: 100%;
+	}
+
+	/*-- /Orange Contact Pill --*/
 
 }
 
@@ -2545,13 +2708,13 @@
 
 	/*-- Header --*/
 
-	.header_site .left {
+/*	.header_site .left {
 	    width: 100%;
 	}
 
 	.header_site .right {
 	    width: 0;
-	}
+	}*/
 
 	.logo_wrapp {
 	    padding-right: 0;
@@ -2560,7 +2723,45 @@
 	.menu_btn_2 {
 		position: relative;
 		left: -3px;
-		top: -3px;
+		/*top: -3px;*/
+	}
+
+	.city_switch .dropdown_title {
+	    max-width: 110px;
+	    padding: 10px 5px 10px 5px;
+	}
+
+	.logo_wrapp .right_box {
+	    left: calc(100% + 5px);
+	}
+
+	.logo_wrapp .right_box:before {
+	    left: 2px;
+	}
+
+	.header_main > .row {
+	    padding-right: 15px;
+	    padding: 0 15px;
+	}
+
+	.logo_city {
+		width: 60px;
+		min-width: 60px;
+	    margin-left: -89px;
+	}
+
+	.city_switch .dropdown_title {
+	    max-width: 110px;
+	    min-height: 43px;
+	    padding: 6px 5px 6px 5px;
+	}
+
+	.header_main .city_switch .dropdown_title:before {
+	    top: 19px;
+	}
+
+	.logo_wrapp .right_box:before {
+	    top: 13px;
 	}
 
 	/*-- /Header --*/

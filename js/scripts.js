@@ -228,7 +228,7 @@ function getpaadingLeft() {
 }
 
 function getOrangePillParams() {
-    if($("#orangePill").length > 0 && bodyWidth <= 480) {
+    if($("#orangePill").length > 0) {
         if( $(document).scrollTop() > ( $(window).height() * .7 ) ) {
             $("#orangePill").addClass("active");
         } else {
