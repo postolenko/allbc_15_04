@@ -243,6 +243,22 @@ function getOrangePillParams() {
     }
 }
 
+// function getPointsPosition() {
+//     $("#staticChart").find(".ct-point").each(function() {
+//         topOffset = $(this).offset().top;
+//         leftOffset = $(this).offset().left;
+//         widthPointHalf = $(".ct_point_bg").width() / 2;
+//         index = $(this).index(".ct-point");
+//         pointValue = $(this).attr("ct:value");
+//         $(".whiteCircle .ct_point_bg").each(function() {
+//             indexCtPointBg = $(this).index(".ct_point_bg");
+//             if(pointValue == $(this).attr("data-val") && index == indexCtPointBg) {
+//                 $(this).offset({ top: ( topOffset - widthPointHalf - 3 ), left: ( leftOffset - widthPointHalf - 3 ) });
+//             }
+//         });
+//     });   
+// }
+
 window.addEventListener('resize', debounce(getCardParams));
 
 var w = window,
@@ -300,6 +316,10 @@ $(window).resize(function() {
     getContactsPosition();
     getpaadingLeft();
     getOrangePillParams();
+    // setTimeout(function() {        
+    //     getPointsPosition();
+    // }, 300);
+    
 });
 
 $(window).on("load", function() {
@@ -1872,6 +1892,121 @@ $(document).on("click", ".respmenubtn", function(e){
         e.preventDefault();
         $(".scroll_thumb_table").removeClass("active");
         $(this).addClass("active");
-    })
+    });
+
+    // ---------------
+
+    if( $("[data-static-chart]").length> 0 ) {
+
+        $("[data-static-chart]").each(function() {
+            chartName = $(this).attr("data-static-chart");
+            chartLabels = [];
+            chartSeries = [];
+            $("[data-static-chart-values = '"+chartName+"'] .dataVal").each(function() {
+                chartLabels.push($(this).attr("data-val-x"));
+                chartSeries.push( parseInt($(this).attr("data-val-y")) );
+            });
+            console.log(chartLabels);
+            console.log(chartSeries);
+            // chart = $("[data-static-chart = '"+chartName+"']");
+            new Chartist.Line("[data-static-chart = '"+chartName+"']", {
+              labels: chartLabels,
+              series: [
+                chartSeries
+              ]
+            }, {
+              low: 0,
+              showArea: true,
+              fullWidth: true,
+              lineSmooth: false,
+              axisY: {
+                offset: 5
+              }
+            });
+        });
+
+    }
+
+    $(window).on("load", function() {
+        $("[data-static-chart]").each(function() {
+            chartName = $(this).attr("data-static-chart");
+            $("[data-static-chart = '"+chartName+"']").find(".ct-point").each(function() {
+                pointValue = $(this).attr("ct:value");
+                index = $(this).index(".ct-point");
+                $("[data-static-chart-values = '"+chartName+"'] .dataVal").each(function() {
+                    indexCtPointBg = $(this).index(".dataVal");
+                    if( index == indexCtPointBg ) {
+                        priceVal = $(this).attr("data-price-val");
+                        $("[data-static-chart-appends = '"+chartName+"']").append("<div class='ct_point_bg' data-val = '"+pointValue+"'>"+
+                        "<div class='ct_point_tooltip'><p>"+priceVal+" <span>$\/м2\/мес</span></p></div></dov>");
+                    }
+                });
+            });
+            $("[data-static-chart = '"+chartName+"']").find(".ct-point").each(function() {
+                topOffset = $(this).offset().top;
+                leftOffset = $(this).offset().left;
+                widthPointHalf = $(".ct_point_bg").width() / 2;
+                index = $(this).index(".ct-point");
+                pointValue = $(this).attr("ct:value");
+                $("[data-static-chart-appends = '"+chartName+"'] .ct_point_bg").each(function() {
+                    indexCtPointBg = $(this).index(".ct_point_bg");
+                    if(pointValue == $(this).attr("data-val") && index == indexCtPointBg) {
+                        $(this).offset({ top: ( topOffset - widthPointHalf - 3 ), left: ( leftOffset - widthPointHalf - 3 ) });
+                    }
+                });
+            });
+        });
+    });
+
+    $(window).on("resize", function() {
+        setTimeout(function() {
+            $("[data-static-chart]").each(function() {
+                chartName = $(this).attr("data-static-chart");
+                $(this).find(".ct-point").each(function() {
+                    topOffset = $(this).offset().top;
+                    leftOffset = $(this).offset().left;
+                    widthPointHalf = $(".ct_point_bg").width() / 2;
+                    index = $(this).index(".ct-point");
+                    pointValue = $(this).attr("ct:value");
+                    $("[data-static-chart-appends = '"+chartName+"'] .ct_point_bg").each(function() {
+                    // $(".whiteCircle .ct_point_bg").each(function() {
+                        indexCtPointBg = $(this).index(".ct_point_bg");
+                        if(pointValue == $(this).attr("data-val") && index == indexCtPointBg) {
+                            $(this).offset({ top: ( topOffset - widthPointHalf - 3 ), left: ( leftOffset - widthPointHalf - 3 ) });
+                        }
+                    });
+                });
+            });
+        }, 300);
+        // $("#staticChart").find(".ct-point").each(function() {
+        //     topOffset = $(this).offset().top;
+        //     leftOffset = $(this).offset().left;
+        //     widthPointHalf = $(".ct_point_bg").width() / 2;
+        //     index = $(this).index(".ct-point");
+        //     pointValue = $(this).attr("ct:value");
+        //     $(".whiteCircle .ct_point_bg").each(function() {
+        //         indexCtPointBg = $(this).index(".ct_point_bg");
+        //         if(pointValue == $(this).attr("data-val") && index == indexCtPointBg) {
+        //             $(this).offset({ top: ( topOffset - widthPointHalf - 3 ), left: ( leftOffset - widthPointHalf - 3 ) });
+        //         }
+        //     });
+        // });
+    });
+
+    // function getPointsPosition() {
+    //     $("#staticChart").find(".ct-point").each(function() {
+    //         topOffset = $(this).offset().top;
+    //         leftOffset = $(this).offset().left;
+    //         widthPointHalf = $(".ct_point_bg").width() / 2;
+    //         index = $(this).index(".ct-point");
+    //         pointValue = $(this).attr("ct:value");
+    //         $(".whiteCircle .ct_point_bg").each(function() {
+    //             indexCtPointBg = $(this).index(".ct_point_bg");
+    //             if(pointValue == $(this).attr("data-val") && index == indexCtPointBg) {
+    //                 $(this).offset({ top: ( topOffset - widthPointHalf - 3 ), left: ( leftOffset - widthPointHalf - 3 ) });
+    //             }
+    //         });
+    //     });   
+    // }
 
 });
