@@ -342,6 +342,11 @@ $(document).ready(function() {
     $(".scroll_x").mCustomScrollbar({
         axis:"x"
     });
+    $(".chart_tabs_scrollbar").mCustomScrollbar({
+        axis:"x",
+        autoHideScrollbar: true,
+        scrollButtons:{ enable: true }
+    });
 
     getHeaderParams();
     getAdaptivePositionElements();
@@ -1906,22 +1911,23 @@ $(document).on("click", ".respmenubtn", function(e){
                 chartLabels.push($(this).attr("data-val-x"));
                 chartSeries.push( parseInt($(this).attr("data-val-y")) );
             });
-            console.log(chartLabels);
-            console.log(chartSeries);
-            // chart = $("[data-static-chart = '"+chartName+"']");
             new Chartist.Line("[data-static-chart = '"+chartName+"']", {
               labels: chartLabels,
               series: [
                 chartSeries
               ]
             }, {
-              low: 0,
-              showArea: true,
-              fullWidth: true,
-              lineSmooth: false,
-              axisY: {
-                offset: 5
-              }
+            // high: 30,
+            low: 0,
+            showArea: true,
+            fullWidth: true,
+            lineSmooth: false,
+            axisY: {
+                offset: 0
+            },
+            axisX: {
+                offset: 50
+            }
             });
         });
 
@@ -1956,6 +1962,12 @@ $(document).on("click", ".respmenubtn", function(e){
                 });
             });
         });
+
+        $(".static_chart .ct-end").each(function() {
+            parent = $(this).closest("foreignObject");
+            parent.addClass("horizontal_val");
+        });
+
     });
 
     $(window).on("resize", function() {
@@ -2008,5 +2020,19 @@ $(document).on("click", ".respmenubtn", function(e){
     //         });
     //     });   
     // }
+
+    // --------------------
+
+    $(document).on("click", ".tabs_arrow", function(e) {
+        e.preventDefault();
+        parent = $(this).closest("[data-tabs-arrows]");
+        tabsName = parent.attr("data-tabs-arrows");
+        if($(this).hasClass("left_tabs_arrow")) {
+            $(".mCSB_buttonLeft").trigger("click");
+        }
+        if($(this).hasClass("right_tabs_arrow")) {
+            $(".mCSB_buttonRight").trigger("click");
+        }
+    });
 
 });

@@ -436,32 +436,88 @@
 	    padding-top: 5px !important;
 	}
 
-	/*-- Section 4 - BC Page Broker --*/
+	/*-- Static Charts --*/
 
-/*	.contacts_treee_cols {
-	    flex-wrap: wrap;
-	    -webkit-flex-wrap: wrap;
+	.static_chart_header {
+		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
 	}
 
-	.contacts_treee_cols > .col_1 {
+	.static_chart_header > .col_1 {
 	    width: 100%;
-	    padding: 10px 0;
+	    padding-right: 0;
+	    padding-bottom: 10px;
 	}
 
-	.contacts_treee_cols > .col_2 {
-	    width: 50%;
-	    padding: 10px 10px 10px 0;
-	}
-
-	.contacts_treee_cols > .col_3 {
-	    width: 50%;
-	    display: flex;
-	    display: -webkit-flex;
+	.static_chart_header > .col_2 {
 	    justify-content: flex-start;
 	    -webkit-justify-content: flex-start;
-	}*/
+	    width: 100%;
+	    padding-left: 0;
+	}
 
-	/*-- /Section 4 - BC Page Broker --*/
+	.static_chart_header_2 {
+		padding-top: 20px;
+	}
+
+	.tabs_title h3 {
+	    font-size: 22px;
+	}
+
+	.static_chart {
+	    height: 400px;
+	}
+
+	.ct_point_tooltip {
+	    padding: 10px 30px 10px 30px;
+	}
+
+	.ct_point_tooltip p {
+	    font-size: 20px;
+	    line-height: 26px;
+	}
+
+	.chart_tab {
+	    width: 130px !important;
+	    min-height: 50px;
+	    font-size: 14px;
+	    line-height: 16px;
+	}
+
+	.static_chart_wrapp {
+	    padding-bottom: 30px;
+	}
+
+	.static_chart .horizontal_val {
+	    font-size: 12px;
+	    line-height: 20px;
+	}
+
+	.static_chart .ct-label.ct-horizontal.ct-end {
+	    font-size: 13px;
+	    line-height: 21px;
+	    transform: rotate(89deg);
+	    -webkit-transform: rotate(89deg);
+	    position: relative;
+	    left: -44px;
+	    top: 20px;
+	}
+
+	.static_chart .ct-labels foreignObject:nth-child(12) .ct-end {
+	    position: relative;
+	    left: -24px;
+	    top: -4px;
+	}
+
+	.static_chart_wrapp:after {
+	    bottom: 84px;
+	}
+
+	.static_chart_wrapp:before {
+	    bottom: 82px;
+	}
+
+	/*-- /Static Charts --*/
 
 }
 

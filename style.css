@@ -9760,19 +9760,41 @@ p.metro_p {
 }
 
 .tabs_arrows {
+    display: flex;
+    display: -webkit-flex;
     width: 70px;
 }
 
+.static_chart_header_2 .tabs_arrows {
+    margin-top: 3px;
+}
+
 .tabs_arrow {
-
+    display: block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
-.left_arrow {
-
+.left_tabs_arrow {
+    background-image: url(img/scroll_right_arrow.png);
 }
 
-.right_arrow {
+.right_tabs_arrow {
+    background-image: url(img/scroll_left_arrow.png);
+}
 
+.tabs_arrows .left_tabs_arrow {
+    margin-right: 5px;
+}
+
+.tabs_arrows .right_tabs_arrow {
+    margin-left: 5px;
 }
 
 .tabs_title {
@@ -9790,22 +9812,66 @@ p.metro_p {
   color: rgb(143, 215, 240);
 }
 
+.chart_tabs_scrollbar_wrapp {
+    position: relative;
+}
+
+.chart_tabs_scrollbar_wrapp .tabs_arrows {
+    position: absolute;
+    top: 20px;
+    right: -21px;
+}
+
 .chart_tabs_scrollbar {
+    margin: 31px 0 10px 0;
+    width: calc(100% - 55px);
+    position: relative;
+}
+
+.chart_tabs_scrollbar:before {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #e4e4e4;
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+}
+
+.chart_tabs_scrollbar .mCSB_horizontal.mCSB_inside > .mCSB_container {
+    margin-bottom: 15px;
+}
+
+.chart_tabs_scrollbar .flex {
     display: flex;
     display: -webkit-flex;
-    margin: 31px 0 10px 0;
-    border-bottom: 1px solid #e4e4e4;
+}
+
+.chart_tabs_scrollbar .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    width: auto !important;
+}
+
+.chart_tabs_scrollbar .mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger {
+    opacity: 0 !important;
+}
+
+.chart_tabs_scrollbar .mCSB_scrollTools .mCSB_draggerContainer {
+    opacity: 0 !important;
 }
 
 .chart_tab {
-    display: flex;
-    display: -webkit-flex;
+    display: inline-flex;
+    display: -webkit-inline-flex;
     justify-content: center;
     -webkit-justify-content: center;
     align-items: center;
     -webkit-align-items: center;
+    flex-shrink: 0;
+    -webkit-flex-shrink: 0;
     text-align: center;
-    width: 134px;
+    width: 134px !important;
+    min-height: 60px;
     border-radius: 4px 4px 0 0;
     -webkit-border-radius: 4px 4px 0 0;
     border: 1px solid transparent;
@@ -9831,6 +9897,10 @@ p.metro_p {
     transition-timing-function: ease;
 }
 
+.chart_tab span {
+    white-space: normal;
+}
+
 .chart_tab:hover {
     border: 1px solid #e4e4e4;
     background-color: #fff;
@@ -9839,6 +9909,22 @@ p.metro_p {
 .chart_tab.active {
     border: 1px solid #e4e4e4;
     border-bottom: 1px solid #fff;
+    background-color: #fff;
+    position: relative;
+}
+
+.chart_tab:after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #e4e4e4;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.chart_tab.active:after {
     background-color: #fff;
 }
 
@@ -9850,6 +9936,58 @@ p.metro_p {
 
 .static_chart {
     height: 580px;
+    position: relative;
+}
+
+.static_chart:before {
+    display: block;
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-image: url(img/chart_top_arrow.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+    top: -11px;
+    left: 7px;
+}
+
+.static_chart:after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 40px;
+    background-color: #f4f4f4;
+    position: absolute;
+    top: -6px;
+    left: 9px;
+}
+
+
+.static_chart_wrapp:before {
+    display: block;
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-image: url(img/chart_right_arrow.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+    bottom: 51px;
+    right: -39px;
+}
+
+.static_chart_wrapp:after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 60px;
+    background-color: #f4f4f4;
+    position: absolute;
+    bottom: 54px;
+    right: -35px;
 }
 
 .static_chart .ct-label.ct-vertical.ct-start {
@@ -9877,7 +10015,7 @@ p.metro_p {
 
 .static_chart .ct-labels foreignObject:nth-child(12) .ct-end {
     position: relative;
-    left: -50px;
+    left: -46px;
 }
 
 .static_chart .ct-series-a .ct-line {
@@ -9901,17 +10039,68 @@ p.metro_p {
 }
 
 .static_chart_wrapp {
+    width: calc(100% - 40px);
     position: relative;
+    padding-top: 32px;
 }
 
-/*.static_chart_wrapp .whiteCircle {
-    width: 24px;
-    height: 24px;
-    background-color: #fff;
-    border: 1px solid #8fbf6e;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-}*/
+.chart_params {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+}
+
+.static_chart_wrapp .chart_params {
+    width: 100%;
+    position: absolute;
+    top: -6px;
+    left: 0;
+    padding: 0 0 0 20px;
+}
+
+.chart_params > div {
+    padding: 8px;
+}
+
+.white_tag {
+    min-width: 120px;
+    padding: 8px 5px 8px 5px;
+    text-align: center;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 3px 7px 0 rgba(0, 0, 0, .03);
+    -webkit-box-shadow: 0 3px 7px 0 rgba(0, 0, 0, .03);
+}
+
+select.white_tag {
+    position: relative;
+    border: none;
+    font-size: 16px;
+    color: rgb(51, 49, 47);
+    line-height: 1.125;
+    text-align: center;
+    cursor: pointer;
+    padding: 8px 30px 8px 20px;
+    background-image: url(img/arrow_down.svg);
+    background-size: 10px;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) center;
+}
+
+select.white_tag option {
+    font-size: 16px;
+    color: rgb(51, 49, 47);
+    line-height: 1.125;
+    text-align: center;
+}
+
+.white_tag p {
+    font-size: 16px;
+    color: rgb(51, 49, 47);
+    line-height: 1.125;
+}
 
 .whiteCircle {
     height: 0;
@@ -10001,6 +10190,28 @@ p.metro_p {
     margin-left: 20px;
     opacity: 1;
 }
+
+.chart_footer {
+    text-align: right;
+}
+
+.static_chart_wrapp .chart_footer {
+    width: 100%;
+    position: absolute;
+    bottom: -34px;
+    left: 36px;
+}
+
+.chart_descript {
+    padding: 48px 0 20px 0;
+}
+
+.chart_descript p {
+    font-size: 16px;
+    line-height: 1.2;
+    color: #939393;
+}
+
 
 /*-- /Static Charts --*/
 
