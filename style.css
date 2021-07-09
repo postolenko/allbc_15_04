@@ -10020,7 +10020,8 @@ p.metro_p {
 
 .static_chart .ct-series-a .ct-line {
     stroke-width: 1px;
-    stroke: #8fbf6e;
+    /*stroke: #8fbf6e;*/
+    stroke: url(#gradient-a);
 }
 
 .static_chart .ct-series-a .ct-area {
