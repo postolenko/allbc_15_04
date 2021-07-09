@@ -9975,8 +9975,8 @@ p.metro_p {
     background-size: contain;
     background-position: center;
     position: absolute;
-    bottom: 51px;
-    right: -39px;
+    bottom: 62px;
+    right: -38px;
 }
 
 .static_chart_wrapp:after {
@@ -9986,7 +9986,7 @@ p.metro_p {
     width: 60px;
     background-color: #f4f4f4;
     position: absolute;
-    bottom: 54px;
+    bottom: 64px;
     right: -35px;
 }
 

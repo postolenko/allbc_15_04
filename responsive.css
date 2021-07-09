@@ -245,6 +245,56 @@
 
 	/*-- /Section 1 - Office Page --*/
 
+	/*-- Static Charts --*/
+
+	.static_chart_wrapp {
+	    padding-bottom: 30px;
+	}
+
+	.static_chart .horizontal_val {
+	    font-size: 12px;
+	    line-height: 20px;
+	}
+
+	.static_chart .ct-label.ct-horizontal.ct-end {
+	    font-size: 13px;
+	    line-height: 21px;
+	    transform: rotate(89deg);
+	    -webkit-transform: rotate(89deg);
+	    position: relative;
+	    left: -44px;
+	    top: 20px;
+	}
+
+	.static_chart .ct-labels foreignObject:nth-child(12) .ct-end {
+	    position: relative;
+	    left: -24px;
+	    top: -4px;
+	}
+
+	.static_chart_wrapp:after {
+	    bottom: 94px;
+	}
+
+	.static_chart_wrapp:before {
+    	bottom: 91px;
+	}
+
+	.ct_point_bg {
+	    width: 18px;
+	    height: 18px;
+	}
+
+	.static_chart .ct-point {
+	    stroke-width: 16px;
+	}
+
+	.ct_point_bg:hover .ct_point_tooltip {
+	    margin-left: 13px;
+	}
+
+	/*-- /Static Charts --*/
+
 	/*-- Footer --*/
 
 	.footer__main {
@@ -482,39 +532,6 @@
 	    min-height: 50px;
 	    font-size: 14px;
 	    line-height: 16px;
-	}
-
-	.static_chart_wrapp {
-	    padding-bottom: 30px;
-	}
-
-	.static_chart .horizontal_val {
-	    font-size: 12px;
-	    line-height: 20px;
-	}
-
-	.static_chart .ct-label.ct-horizontal.ct-end {
-	    font-size: 13px;
-	    line-height: 21px;
-	    transform: rotate(89deg);
-	    -webkit-transform: rotate(89deg);
-	    position: relative;
-	    left: -44px;
-	    top: 20px;
-	}
-
-	.static_chart .ct-labels foreignObject:nth-child(12) .ct-end {
-	    position: relative;
-	    left: -24px;
-	    top: -4px;
-	}
-
-	.static_chart_wrapp:after {
-	    bottom: 84px;
-	}
-
-	.static_chart_wrapp:before {
-	    bottom: 82px;
 	}
 
 	/*-- /Static Charts --*/
@@ -1520,6 +1537,20 @@
 
 	/*-- /Section 1 - Office Page --*/
 
+	/*-- Static Charts --*/
+
+	.static_chart .ct-label.ct-horizontal.ct-end {
+		left: -33px;
+		top: 3px;
+	}
+
+	.static_chart .ct-labels foreignObject:nth-child(12) .ct-end {
+	    left: -27px;
+	    top: -11px;
+	}
+
+	/*-- /Static Charts --*/
+
 	/*-- Footer --*/
 
 	.footer__main__right {
@@ -2136,6 +2167,52 @@
 	}
 
 	/*-- /Section 1 - Office Page --*/
+
+	/*-- Static Charts --*/
+
+	.static_chart_header h3 {
+	    font-size: 20px;
+	    line-height: 24px;
+	}
+
+	.tabs_title h3 {
+	    font-size: 18px;
+	}
+
+	.static_chart_wrapp {
+	    width: 100%;
+	    padding-top: 0;
+	}
+
+	.static_chart_wrapp .chart_params {
+		padding: 0;
+	    position: relative;
+	    top: 0;
+	}
+
+	.chart_params > div {
+	    padding: 4px;
+	}
+
+	.ct_point_tooltip {
+	    padding: 5px 10px 4px 10px;
+	}
+
+	.ct_point_tooltip p {
+	    font-size: 15px;
+	    line-height: 21px;
+	}
+
+	.static_chart .ct-label.ct-horizontal.ct-end {
+	    top: -8px;
+	}
+
+	.static_chart_wrapp .chart_footer {
+	    bottom: -25px;
+	    left: 0;
+	}
+
+	/*-- /Static Charts --*/
 
 	/*-- Footer --*/
 
@@ -2974,6 +3051,19 @@
 
 	/*-- /Section 7 - BC Page --*/
 
+	/*-- Static Charts --*/
+
+	.static_chart .ct-label.ct-horizontal.ct-end {
+	    top: -10px;
+	    left: -28px;
+	}
+
+	.static_chart .ct-labels foreignObject:nth-child(12) .ct-end {
+	    left: -35px;
+	}
+
+	/*-- /Static Charts --*/
+
 	/*-- Footer --*/
 
 	.footer__main__left .footer__main__links__col {
@@ -3080,6 +3170,14 @@
 	}
 
 	/*-- /Section 5 - BC Page --*/
+
+	/*-- Static Charts --*/
+
+	.static_chart .ct-label.ct-horizontal.ct-end {
+	    top: -14px;
+	}
+
+	/*-- /Static Charts --*/
 
 	/*-- Popups --*/
 

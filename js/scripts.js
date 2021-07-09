@@ -1926,7 +1926,7 @@ $(document).on("click", ".respmenubtn", function(e){
                 offset: 0
             },
             axisX: {
-                offset: 50
+                offset: 60
             }
             });
         });
