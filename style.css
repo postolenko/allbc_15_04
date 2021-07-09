@@ -10024,8 +10024,8 @@ p.metro_p {
 }
 
 .static_chart .ct-series-a .ct-area {
-    fill: #8cbe75;
-    fill-opacity: 0.1;
+    fill: url(#gradient-a);
+    fill-opacity: .2;
 }
 
 .static_chart .ct-point {
