@@ -9812,6 +9812,11 @@ p.metro_p {
   color: rgb(143, 215, 240);
 }
 
+.chart_color {
+    height: 0;
+    overflow: hidden;
+}
+
 .chart_tabs_scrollbar_wrapp {
     position: relative;
 }
@@ -9820,6 +9825,20 @@ p.metro_p {
     position: absolute;
     top: 20px;
     right: -21px;
+}
+
+.mCSB_buttonLeft {
+    display: block;
+    width: 20px;
+    height: 20px;
+    outline: 1px solid red;
+}
+
+.mCSB_buttonRight {
+    display: block;
+    width: 20px;
+    height: 20px;
+    outline: 1px solid red;
 }
 
 .chart_tabs_scrollbar {
@@ -9950,7 +9969,7 @@ p.metro_p {
     background-position: center;
     position: absolute;
     top: -11px;
-    left: 7px;
+    left: 10px;
 }
 
 .static_chart:after {
@@ -9961,7 +9980,7 @@ p.metro_p {
     background-color: #f4f4f4;
     position: absolute;
     top: -6px;
-    left: 9px;
+    left: 12px;
 }
 
 
@@ -10030,9 +10049,9 @@ p.metro_p {
 }
 
 .static_chart .ct-point {
-    stroke-width: 20px;
+    /*stroke-width: 20px;*/
+    stroke-width: 2px;
     stroke: #8fbf6e !important;
-    z-index: 20;
 }
 
 .static_chart .ct-point:hover {

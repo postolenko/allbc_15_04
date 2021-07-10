@@ -344,7 +344,7 @@ $(document).ready(function() {
     });
     $(".chart_tabs_scrollbar").mCustomScrollbar({
         axis:"x",
-        autoHideScrollbar: true,
+        // autoHideScrollbar: true,
         scrollButtons:{ enable: true }
     });
 
@@ -1911,7 +1911,7 @@ $(document).on("click", ".respmenubtn", function(e){
                 chartLabels.push($(this).attr("data-val-x"));
                 chartSeries.push( parseInt($(this).attr("data-val-y")) );
             });
-            new Chartist.Line("[data-static-chart = '"+chartName+"']", {
+            chart = new Chartist.Line("[data-static-chart = '"+chartName+"']", {
               labels: chartLabels,
               series: [
                 chartSeries
@@ -1923,12 +1923,28 @@ $(document).on("click", ".respmenubtn", function(e){
             fullWidth: true,
             lineSmooth: false,
             axisY: {
-                offset: 0
+                offset: 3
             },
             axisX: {
                 offset: 60
             }
             });
+        });
+
+        chart.on('draw', function(data) {
+          // If the draw event was triggered from drawing a point on the line chart
+          if(data.type === 'point') {
+            // We are creating a new path SVG element that draws a triangle around the point coordinates
+            var triangle = new Chartist.Svg('circle', {
+              r:"12",
+              cx: data.x,
+              cy: data.y,          
+              style: 'fill:#fff'
+            }, 'ct-point');
+
+            // With data.element we get the Chartist SVG wrapper and we can replace the original point drawn by Chartist with our newly created triangle
+            data.element.replace(triangle);
+          }
         });
 
     }
@@ -1948,19 +1964,21 @@ $(document).on("click", ".respmenubtn", function(e){
                     }
                 });
             });
-            $("[data-static-chart = '"+chartName+"']").find(".ct-point").each(function() {
-                topOffset = $(this).offset().top;
-                leftOffset = $(this).offset().left;
-                widthPointHalf = $(".ct_point_bg").width() / 2;
-                index = $(this).index(".ct-point");
-                pointValue = $(this).attr("ct:value");
-                $("[data-static-chart-appends = '"+chartName+"'] .ct_point_bg").each(function() {
-                    indexCtPointBg = $(this).index(".ct_point_bg");
-                    if(pointValue == $(this).attr("data-val") && index == indexCtPointBg) {
-                        $(this).offset({ top: ( topOffset - widthPointHalf - 3 ), left: ( leftOffset - widthPointHalf - 3 ) });
-                    }
-                });
-            });
+            // $("[data-static-chart = '"+chartName+"']").find(".ct-point").each(function() {
+            //     topOffset = $(this).offset().top;
+            //     leftOffset = $(this).offset().left;
+            //     widthPointHalf = $(".ct_point_bg").width() / 2;
+            //     index = $(this).index(".ct-point");
+            //     pointValue = $(this).attr("ct:value");
+            //     $("[data-static-chart-appends = '"+chartName+"'] .ct_point_bg").each(function() {
+            //         indexCtPointBg = $(this).index(".ct_point_bg");
+            //         if(pointValue == $(this).attr("data-val") && index == indexCtPointBg) {
+            //             $(this).offset({ top: ( topOffset - widthPointHalf - 3 ), left: ( leftOffset - widthPointHalf - 3 ) });
+            //         }
+            //     });
+            // });
+            // $("[data-tabs = '"+chartName+"']").find(".mCSB_buttonLeft").clone().appendTo( "[data-tabs-arrows = '"+chartName+"']" );
+            // $("[data-tabs = '"+chartName+"']").find(".mCSB_buttonRight").clone().appendTo( "[data-tabs-arrows = '"+chartName+"']" );
         });
 
         $(".static_chart .ct-end").each(function() {
@@ -1968,28 +1986,30 @@ $(document).on("click", ".respmenubtn", function(e){
             parent.addClass("horizontal_val");
         });
 
+        // $( ".hello" ).clone().appendTo( ".goodbye" );
+
     });
 
     $(window).on("resize", function() {
-        setTimeout(function() {
-            $("[data-static-chart]").each(function() {
-                chartName = $(this).attr("data-static-chart");
-                $(this).find(".ct-point").each(function() {
-                    topOffset = $(this).offset().top;
-                    leftOffset = $(this).offset().left;
-                    widthPointHalf = $(".ct_point_bg").width() / 2;
-                    index = $(this).index(".ct-point");
-                    pointValue = $(this).attr("ct:value");
-                    $("[data-static-chart-appends = '"+chartName+"'] .ct_point_bg").each(function() {
-                    // $(".whiteCircle .ct_point_bg").each(function() {
-                        indexCtPointBg = $(this).index(".ct_point_bg");
-                        if(pointValue == $(this).attr("data-val") && index == indexCtPointBg) {
-                            $(this).offset({ top: ( topOffset - widthPointHalf - 3 ), left: ( leftOffset - widthPointHalf - 3 ) });
-                        }
-                    });
-                });
-            });
-        }, 300);
+        // setTimeout(function() {
+        //     $("[data-static-chart]").each(function() {
+        //         chartName = $(this).attr("data-static-chart");
+        //         $(this).find(".ct-point").each(function() {
+        //             topOffset = $(this).offset().top;
+        //             leftOffset = $(this).offset().left;
+        //             widthPointHalf = $(".ct_point_bg").width() / 2;
+        //             index = $(this).index(".ct-point");
+        //             pointValue = $(this).attr("ct:value");
+        //             $("[data-static-chart-appends = '"+chartName+"'] .ct_point_bg").each(function() {
+        //             // $(".whiteCircle .ct_point_bg").each(function() {
+        //                 indexCtPointBg = $(this).index(".ct_point_bg");
+        //                 if(pointValue == $(this).attr("data-val") && index == indexCtPointBg) {
+        //                     $(this).offset({ top: ( topOffset - widthPointHalf - 3 ), left: ( leftOffset - widthPointHalf - 3 ) });
+        //                 }
+        //             });
+        //         });
+        //     });
+        // }, 300);
         // $("#staticChart").find(".ct-point").each(function() {
         //     topOffset = $(this).offset().top;
         //     leftOffset = $(this).offset().left;
@@ -2025,14 +2045,22 @@ $(document).on("click", ".respmenubtn", function(e){
 
     $(document).on("click", ".tabs_arrow", function(e) {
         e.preventDefault();
-        parent = $(this).closest("[data-tabs-arrows]");
-        tabsName = parent.attr("data-tabs-arrows");
+        // parent = $(this).closest("[data-tabs-arrows]");
+        // tabsName = parent.attr("data-tabs-arrows");
         if($(this).hasClass("left_tabs_arrow")) {
             $(".mCSB_buttonLeft").trigger("click");
         }
         if($(this).hasClass("right_tabs_arrow")) {
             $(".mCSB_buttonRight").trigger("click");
         }
+    });
+
+    $(".mCSB_buttonLeft").on("click", function() {
+        console.log("left");
+    });
+
+    $(".mCSB_buttonRight").on("click", function() {
+        console.log("right");
     });
 
 });
