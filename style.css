@@ -9831,14 +9831,14 @@ p.metro_p {
     display: block;
     width: 20px;
     height: 20px;
-    outline: 1px solid red;
+    /*outline: 1px solid red;*/
 }
 
 .mCSB_buttonRight {
     display: block;
     width: 20px;
     height: 20px;
-    outline: 1px solid red;
+    /*outline: 1px solid red;*/
 }
 
 .chart_tabs_scrollbar {
@@ -9983,7 +9983,6 @@ p.metro_p {
     left: 12px;
 }
 
-
 .static_chart_wrapp:before {
     display: block;
     content: "";
@@ -10039,7 +10038,6 @@ p.metro_p {
 
 .static_chart .ct-series-a .ct-line {
     stroke-width: 1px;
-    /*stroke: #8fbf6e;*/
     stroke: url(#gradient-a);
 }
 
@@ -10049,13 +10047,45 @@ p.metro_p {
 }
 
 .static_chart .ct-point {
-    /*stroke-width: 20px;*/
     stroke-width: 2px;
     stroke: #8fbf6e !important;
+    -webkit-transition-property: stroke;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+    -moz-transition-property: stroke;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+    -ms-transition-property: stroke;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+    -o-transition-property: stroke;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+    transition-property: stroke;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.static_chart .ct-point.green_1 {
+    stroke: #9ac354 !important;
+}
+
+.static_chart .ct-point.green_2 {
+    stroke: #8ebe78 !important;
+}
+
+.static_chart .ct-point.blue_1 {
+    stroke: #82baab !important;
+}
+
+.static_chart .ct-point.blue_2 {
+    stroke: #73b5e1 !important;
 }
 
 .static_chart .ct-point:hover {
     cursor: pointer;
+    z-index: 2;
+    stroke: #de4f13 !important;
 }
 
 .static_chart_wrapp {
@@ -10129,7 +10159,13 @@ select.white_tag option {
     left: -200vw;
 }
 
-.ct_point_bg {
+.static_chart_wrapp .ct_point_tooltip {
+    position: absolute;
+    top: 0;
+    left: -200vw;
+}
+
+/*.ct_point_bg {
     display: block;
     width: 24px;
     height: 24px;
@@ -10144,7 +10180,7 @@ select.white_tag option {
 .ct_point_bg:hover {
     z-index: 2;
     border: 2px solid #de4f13;
-}
+}*/
 
 .ct_point_tooltip {
     display: inline-block;

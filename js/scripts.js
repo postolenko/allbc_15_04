@@ -1932,19 +1932,38 @@ $(document).on("click", ".respmenubtn", function(e){
         });
 
         chart.on('draw', function(data) {
-          // If the draw event was triggered from drawing a point on the line chart
           if(data.type === 'point') {
-            // We are creating a new path SVG element that draws a triangle around the point coordinates
-            var triangle = new Chartist.Svg('circle', {
+            var circle = new Chartist.Svg('circle', {
               r:"12",
               cx: data.x,
               cy: data.y,          
               style: 'fill:#fff'
             }, 'ct-point');
-
-            // With data.element we get the Chartist SVG wrapper and we can replace the original point drawn by Chartist with our newly created triangle
-            data.element.replace(triangle);
+            data.element.replace(circle);
+            // parent = data.type.point.element._node;
+            // console.log(parent);
           }
+          // parent = $(this).closest(".static_chart");
+          // console.log(data);
+
+            // chartWidth = chart.width();
+            // chart.find(".ct-point").each(function() {
+            //     xCoord = $(this).attr("cx");
+            //     xPercent = (xCoord * 100) / chartWidth;
+            //     if( xPercent >= 0 && xPercent <= 25) {
+            //         $(this).addClass("green_1");
+            //     }
+            //     if( xPercent >= 26 && xPercent <= 50) {
+            //         $(this).addClass("green_2");
+            //     }
+            //     if( xPercent >= 51 && xPercent <= 75) {
+            //         $(this).addClass("blue_1");
+            //     }
+            //     if( xPercent >= 75 && xPercent <= 100) {
+            //         $(this).addClass("blue_2");
+            //     }
+            // });
+
         });
 
     }
@@ -1952,18 +1971,19 @@ $(document).on("click", ".respmenubtn", function(e){
     $(window).on("load", function() {
         $("[data-static-chart]").each(function() {
             chartName = $(this).attr("data-static-chart");
-            $("[data-static-chart = '"+chartName+"']").find(".ct-point").each(function() {
-                pointValue = $(this).attr("ct:value");
-                index = $(this).index(".ct-point");
-                $("[data-static-chart-values = '"+chartName+"'] .dataVal").each(function() {
-                    indexCtPointBg = $(this).index(".dataVal");
-                    if( index == indexCtPointBg ) {
-                        priceVal = $(this).attr("data-price-val");
-                        $("[data-static-chart-appends = '"+chartName+"']").append("<div class='ct_point_bg' data-val = '"+pointValue+"'>"+
-                        "<div class='ct_point_tooltip'><p>"+priceVal+" <span>$\/м2\/мес</span></p></div></dov>");
-                    }
-                });
-            });
+            // $("[data-static-chart = '"+chartName+"']").find(".ct-point").each(function() {
+            //     pointValue = $(this).attr("ct:value");
+            //     index = $(this).index(".ct-point");
+            //     $("[data-static-chart-values = '"+chartName+"'] .dataVal").each(function() {
+            //         indexCtPointBg = $(this).index(".dataVal");
+            //         if( index == indexCtPointBg ) {
+            //             priceVal = $(this).attr("data-price-val");
+            //             $("[data-static-chart-appends = '"+chartName+"']").append("<div class='ct_point_bg' data-val = '"+pointValue+"'>"+
+            //             "<div class='ct_point_tooltip'><p>"+priceVal+" <span>$\/м2\/мес</span></p></div></dov>");
+            //         }
+            //     });
+            // });
+
             // $("[data-static-chart = '"+chartName+"']").find(".ct-point").each(function() {
             //     topOffset = $(this).offset().top;
             //     leftOffset = $(this).offset().left;
@@ -1979,6 +1999,36 @@ $(document).on("click", ".respmenubtn", function(e){
             // });
             // $("[data-tabs = '"+chartName+"']").find(".mCSB_buttonLeft").clone().appendTo( "[data-tabs-arrows = '"+chartName+"']" );
             // $("[data-tabs = '"+chartName+"']").find(".mCSB_buttonRight").clone().appendTo( "[data-tabs-arrows = '"+chartName+"']" );
+
+            $("[data-static-chart = '"+chartName+"']").find(".ct-point").each(function() {
+                index = $(this).index(".ct-point");
+                ctPoint = $(this);
+                $("[data-static-chart-values = '"+chartName+"']").find(".dataVal").each(function() {
+                    valIndex = $(this).index(".dataVal");
+                    if(index == valIndex) {
+                        ctPoint.attr("data-price-val", $(this).attr("data-price-val"));
+                    }
+                });
+            });
+
+            chartWidth = $(this).width();
+            $("[data-static-chart = '"+chartName+"']").find(".ct-point").each(function() {
+                xCoord = $(this).attr("cx");
+                xPercent = (xCoord * 100) / chartWidth;
+                if( xPercent >= 0 && xPercent <= 25) {
+                    $(this).addClass("green_1");
+                }
+                if( xPercent >= 26 && xPercent <= 50) {
+                    $(this).addClass("green_2");
+                }
+                if( xPercent >= 51 && xPercent <= 75) {
+                    $(this).addClass("blue_1");
+                }
+                if( xPercent >= 75 && xPercent <= 100) {
+                    $(this).addClass("blue_2");
+                }
+            });
+
         });
 
         $(".static_chart .ct-end").each(function() {
@@ -1987,6 +2037,12 @@ $(document).on("click", ".respmenubtn", function(e){
         });
 
         // $( ".hello" ).clone().appendTo( ".goodbye" );
+
+        if(bodyWidth <= 600) {
+            $(".static_chart .ct-point").attr("r", "8");
+        } else {
+            $(".static_chart .ct-point").attr("r", "12");
+        }
 
     });
 
@@ -2023,6 +2079,35 @@ $(document).on("click", ".respmenubtn", function(e){
         //         }
         //     });
         // });
+
+        setTimeout(function() {
+            $("[data-static-chart]").each(function() {
+                chartName = $(this).attr("data-static-chart");
+                chartWidth = $(this).width();
+                $("[data-static-chart = '"+chartName+"']").find(".ct-point").each(function() {
+                    xCoord = $(this).attr("cx");
+                    xPercent = (xCoord * 100) / chartWidth;
+                    if( xPercent >= 0 && xPercent <= 25) {
+                        $(this).addClass("green_1");
+                    }
+                    if( xPercent >= 26 && xPercent <= 50) {
+                        $(this).addClass("green_2");
+                    }
+                    if( xPercent >= 51 && xPercent <= 75) {
+                        $(this).addClass("blue_1");
+                    }
+                    if( xPercent >= 75 && xPercent <= 100) {
+                        $(this).addClass("blue_2");
+                    }
+                });
+            });
+            if(bodyWidth <= 600) {
+                $(".static_chart .ct-point").attr("r", "8");
+            } else {
+                $(".static_chart .ct-point").attr("r", "12");
+            }
+        }, 500);
+        
     });
 
     // function getPointsPosition() {
@@ -2040,6 +2125,27 @@ $(document).on("click", ".respmenubtn", function(e){
     //         });
     //     });   
     // }
+
+    // --------------------
+
+    $(document).on("mouseover", ".ct-point", function(e) {
+        parent = $(this).closest("[data-static-chart]");
+        chartName = parent.attr("data-static-chart");
+        widthPointHalf = parseInt($(".ct-point").attr("r"));
+        topOffset = $(this).offset().top;
+        leftOffset = $(this).offset().left + widthPointHalf;        
+        pointValue = $(this).attr("data-price-val");
+        tooltipTop = topOffset - $(".ct_point_tooltip").outerHeight() - ( widthPointHalf * 1.5 );
+        tooltipLeft = $(".ct_point_tooltip").outerWidth() / 2;
+        $(".ct_point_tooltip .priceValApeend").text(pointValue);
+        valTypeval = $("select[data-valtypechart = '"+chartName+"']").val();
+        $(".ct_point_tooltip .valType").text( valTypeval );
+        $(".ct_point_tooltip").offset({ top: tooltipTop  , left: (leftOffset - tooltipLeft) });
+    });
+
+    $(document).on("mouseleave", ".ct-point", function(e) {
+        $(".ct_point_tooltip").attr("style", "");
+    });
 
     // --------------------
 
