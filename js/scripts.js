@@ -2128,7 +2128,8 @@ $(document).on("click", ".respmenubtn", function(e){
 
     // --------------------
 
-    $(document).on("mouseover", ".ct-point", function(e) {
+    // $(document).on("mouseover", ".ct-point", function(e) {
+    $(document).on("mouseover", ".click", function(e) {
         parent = $(this).closest("[data-static-chart]");
         chartName = parent.attr("data-static-chart");
         widthPointHalf = parseInt($(".ct-point").attr("r"));
