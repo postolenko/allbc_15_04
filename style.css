@@ -9769,7 +9769,7 @@ p.metro_p {
     margin-top: 3px;
 }
 
-.tabs_arrow {
+.mCSB_buttonLeft {
     display: block;
     width: 20px;
     height: 20px;
@@ -9779,21 +9779,31 @@ p.metro_p {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-}
-
-.left_tabs_arrow {
     background-image: url(img/scroll_right_arrow.png);
 }
 
-.right_tabs_arrow {
+.mCSB_buttonRight {
+    display: block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
     background-image: url(img/scroll_left_arrow.png);
 }
 
-.tabs_arrows .left_tabs_arrow {
+/*.right_tabs_arrow {
+    background-image: url(img/scroll_left_arrow.png);
+}*/
+
+.tabs_arrows .mCSB_buttonLeft {
     margin-right: 5px;
 }
 
-.tabs_arrows .right_tabs_arrow {
+.tabs_arrows .mCSB_buttonRight {
     margin-left: 5px;
 }
 

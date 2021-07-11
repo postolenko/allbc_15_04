@@ -287,10 +287,6 @@
 	    height: 18px;
 	}
 
-/*	.static_chart .ct-point {
-	    stroke-width: 16px;
-	}*/
-
 	.ct_point_bg:hover .ct_point_tooltip {
 	    margin-left: 13px;
 	}
@@ -2175,6 +2171,10 @@
 	.static_chart_header h3 {
 	    font-size: 20px;
 	    line-height: 24px;
+	}
+
+	.static_chart_header_2 .tabs_title {
+	    width: 100%;
 	}
 
 	.tabs_title h3 {
