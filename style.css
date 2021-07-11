@@ -10247,6 +10247,13 @@ select.white_tag option {
     opacity: 1;
 }
 
+.chart_bar {
+    background-image: -moz-linear-gradient( 180deg, rgb(135,194,155) 0%, rgb(129,191,158) 100%);
+    background-image: -webkit-linear-gradient( 180deg, rgb(135,194,155) 0%, rgb(129,191,158) 100%);
+    background-image: -ms-linear-gradient( 180deg, rgb(135,194,155) 0%, rgb(129,191,158) 100%);
+    opacity: .2;
+}
+
 .chart_footer {
     text-align: right;
 }
