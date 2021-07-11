@@ -344,7 +344,6 @@ $(document).ready(function() {
     });
     $(".chart_tabs_scrollbar").mCustomScrollbar({
         axis:"x",
-        // autoHideScrollbar: true,
         scrollButtons:{ enable: true }
     });
 
@@ -1968,6 +1967,22 @@ $(document).on("click", ".respmenubtn", function(e){
 
     }
 
+
+    function getScrollbarArrows() {
+        $("[data-tabs]").each(function() {
+            tabsName = $(this).attr("data-tabs");
+            if($(this).find(".mCSB_scrollTools_horizontal").is(":hidden") ) {
+                $("[data-tabs-arrows = '"+tabsName+"']").addClass("noactive");
+            } else {
+                $(this).mCustomScrollbar({
+                    axis:"x",
+                    scrollButtons:{ enable: true }
+                });
+                $("[data-tabs-arrows = '"+tabsName+"']").removeClass("noactive");
+            }
+        });
+    }
+
     $(window).on("load", function() {
         $("[data-static-chart]").each(function() {
             chartName = $(this).attr("data-static-chart");
@@ -2036,8 +2051,6 @@ $(document).on("click", ".respmenubtn", function(e){
             parent.addClass("horizontal_val");
         });
 
-        // $( ".hello" ).clone().appendTo( ".goodbye" );
-
         if(bodyWidth <= 600) {
             $(".static_chart .ct-point").attr("r", "8");
         } else {
@@ -2046,12 +2059,13 @@ $(document).on("click", ".respmenubtn", function(e){
 
         $("[data-tabs]").each(function() {
             tabsName = $(this).attr("data-tabs");
-            console.log(tabsName);
             leftArrow = $(this).find(".mCSB_buttonLeft");
             rightArrow = $(this).find(".mCSB_buttonRight");
             leftArrow.appendTo("[data-tabs-arrows = '"+tabsName+"'");
             rightArrow.appendTo("[data-tabs-arrows = '"+tabsName+"'");
         });
+
+        getScrollbarArrows();
 
     });
 
@@ -2115,25 +2129,13 @@ $(document).on("click", ".respmenubtn", function(e){
             } else {
                 $(".static_chart .ct-point").attr("r", "12");
             }
+
+            getScrollbarArrows();
         }, 500);
+
+        
         
     });
-
-    // function getPointsPosition() {
-    //     $("#staticChart").find(".ct-point").each(function() {
-    //         topOffset = $(this).offset().top;
-    //         leftOffset = $(this).offset().left;
-    //         widthPointHalf = $(".ct_point_bg").width() / 2;
-    //         index = $(this).index(".ct-point");
-    //         pointValue = $(this).attr("ct:value");
-    //         $(".whiteCircle .ct_point_bg").each(function() {
-    //             indexCtPointBg = $(this).index(".ct_point_bg");
-    //             if(pointValue == $(this).attr("data-val") && index == indexCtPointBg) {
-    //                 $(this).offset({ top: ( topOffset - widthPointHalf - 3 ), left: ( leftOffset - widthPointHalf - 3 ) });
-    //             }
-    //         });
-    //     });   
-    // }
 
     // --------------------
 
@@ -2144,12 +2146,22 @@ $(document).on("click", ".respmenubtn", function(e){
         topOffset = $(this).offset().top;
         leftOffset = $(this).offset().left + widthPointHalf;        
         pointValue = $(this).attr("data-price-val");
-        tooltipTop = topOffset - $(".ct_point_tooltip").outerHeight() - ( widthPointHalf * 1.5 );
+        tooltipTop = topOffset - $(".ct_point_tooltip").outerHeight() - ( widthPointHalf * .8 );
         tooltipLeft = $(".ct_point_tooltip").outerWidth() / 2;
         $(".ct_point_tooltip .priceValApeend").text(pointValue);
         valTypeval = $("select[data-valtypechart = '"+chartName+"']").val();
         $(".ct_point_tooltip .valType").text( valTypeval );
         $(".ct_point_tooltip").offset({ top: tooltipTop  , left: (leftOffset - tooltipLeft) });
+        if( $(this).index(".ct-point") < ( parent.find(".ct-point").length - 1 ) ) {
+            barHeight = parseInt( parent.find(".ct-vertical:eq(0)").attr("y1") ) - parseInt( $(this).attr("cy") );
+            barWidth = parseInt( parent.find(".ct-point:eq(1)").attr("cx") ) - parseInt( parent.find(".ct-point:eq(0)").attr("cx"));
+            barChart = parent.find(".chart_bar_bg");
+            barChart.outerHeight(barHeight);
+            barChart.outerWidth(barWidth);
+            barChart.css({
+                "left" : parseInt( $(this).attr("cx") ) + "px"
+            });
+        }
     });
 
     $(document).on("click", ".ct-point", function(e) {
@@ -2159,16 +2171,29 @@ $(document).on("click", ".respmenubtn", function(e){
         topOffset = $(this).offset().top;
         leftOffset = $(this).offset().left + widthPointHalf;        
         pointValue = $(this).attr("data-price-val");
-        tooltipTop = topOffset - $(".ct_point_tooltip").outerHeight() - ( widthPointHalf * 1.5 );
+        tooltipTop = topOffset - $(".ct_point_tooltip").outerHeight() - ( widthPointHalf * .8 );
         tooltipLeft = $(".ct_point_tooltip").outerWidth() / 2;
         $(".ct_point_tooltip .priceValApeend").text(pointValue);
         valTypeval = $("select[data-valtypechart = '"+chartName+"']").val();
         $(".ct_point_tooltip .valType").text( valTypeval );
         $(".ct_point_tooltip").offset({ top: tooltipTop  , left: (leftOffset - tooltipLeft) });
+        if( $(this).index(".ct-point") < ( parent.find(".ct-point").length - 1 ) ) {
+            barChart = parent.find(".chart_bar_bg");
+            barHeight = parseInt( parent.find(".ct-vertical:eq(0)").attr("y1") ) - parseInt( $(this).attr("cy") );
+            barWidth = parseInt( parent.find(".ct-point:eq(1)").attr("cx") ) - parseInt( parent.find(".ct-point:eq(0)").attr("cx"));
+            barChart.outerHeight(barHeight);
+            barChart.outerWidth(barWidth);
+            barChart.css({
+                "left" : parseInt( $(this).attr("cx") ) + "px"
+            });
+        }
     });
 
     $(document).on("mouseleave", ".ct-point", function(e) {
         $(".ct_point_tooltip").attr("style", "");
+        parent = $(this).closest("[data-static-chart]");
+        barChart = parent.find(".chart_bar_bg");
+        barChart.attr("style", "");
     });
 
     // --------------------
