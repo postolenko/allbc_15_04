@@ -2128,8 +2128,7 @@ $(document).on("click", ".respmenubtn", function(e){
 
     // --------------------
 
-    // $(document).on("mouseover", ".ct-point", function(e) {
-    $(document).on("click", ".ct-point", function(e) {
+    $(document).on("mouseover", ".ct-point", function(e) {
         parent = $(this).closest("[data-static-chart]");
         chartName = parent.attr("data-static-chart");
         widthPointHalf = parseInt($(".ct-point").attr("r"));
@@ -2142,6 +2141,23 @@ $(document).on("click", ".respmenubtn", function(e){
         valTypeval = $("select[data-valtypechart = '"+chartName+"']").val();
         $(".ct_point_tooltip .valType").text( valTypeval );
         $(".ct_point_tooltip").offset({ top: tooltipTop  , left: (leftOffset - tooltipLeft) });
+    });
+
+    $(document).on("click", ".ct-point", function(e) {
+        if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+            parent = $(this).closest("[data-static-chart]");
+            chartName = parent.attr("data-static-chart");
+            widthPointHalf = parseInt($(".ct-point").attr("r"));
+            topOffset = $(this).offset().top;
+            leftOffset = $(this).offset().left + widthPointHalf;        
+            pointValue = $(this).attr("data-price-val");
+            tooltipTop = topOffset - $(".ct_point_tooltip").outerHeight() - ( widthPointHalf * 1.5 );
+            tooltipLeft = $(".ct_point_tooltip").outerWidth() / 2;
+            $(".ct_point_tooltip .priceValApeend").text(pointValue);
+            valTypeval = $("select[data-valtypechart = '"+chartName+"']").val();
+            $(".ct_point_tooltip .valType").text( valTypeval );
+            $(".ct_point_tooltip").offset({ top: tooltipTop  , left: (leftOffset - tooltipLeft) });
+        }
     });
 
     $(document).on("mouseleave", ".ct-point", function(e) {
