@@ -10088,6 +10088,10 @@ p.metro_p {
     transition-timing-function: ease;
 }
 
+.static_chart .ct-point:last-child {
+    display: none !important;
+}
+
 .static_chart .ct-point.green_1 {
     stroke: #9ac354 !important;
 }
