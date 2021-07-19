@@ -520,6 +520,10 @@
 	    height: 400px;
 	}
 
+	.chart_bar_bg .ct_point_tooltip {
+	    top: -71px;
+	}
+
 	.ct_point_tooltip {
 	    padding: 10px 30px 10px 30px;
 	}
@@ -2202,6 +2206,10 @@
 
 	.ct_point_tooltip {
 	    padding: 5px 10px 4px 10px;
+	}
+
+	.chart_bar_bg .ct_point_tooltip {
+	    top: -50px;
 	}
 
 	.ct_point_tooltip p {

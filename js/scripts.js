@@ -2167,22 +2167,22 @@ $(document).on("click", ".respmenubtn", function(e){
     $(document).on("click", ".ct-point", function(e) {
         parent = $(this).closest("[data-static-chart]");
         chartName = parent.attr("data-static-chart");
-        widthPointHalf = parseInt($(".ct-point").attr("r"));
-        topOffset = $(this).offset().top;
-        leftOffset = $(this).offset().left + widthPointHalf;        
+        // widthPointHalf = parseInt($(".ct-point").attr("r"));
+        // topOffset = $(this).offset().top;
+        // leftOffset = $(this).offset().left + widthPointHalf;    
         pointValue = $(this).attr("data-price-val");
-        tooltipTop = topOffset - $(".ct_point_tooltip").outerHeight() - ( widthPointHalf * .8 );
-        tooltipLeft = $(".ct_point_tooltip").outerWidth() / 2;
+        // tooltipTop = topOffset - $(".ct_point_tooltip").outerHeight() - ( widthPointHalf * .8 );
+        // tooltipLeft = $(".ct_point_tooltip").outerWidth() / 2;
         $(".ct_point_tooltip .priceValApeend").text(pointValue);
         valTypeval = $("select[data-valtypechart = '"+chartName+"']").val();
         $(".ct_point_tooltip .valType").text( valTypeval );
-        $(".ct_point_tooltip").offset({ top: tooltipTop  , left: (leftOffset - tooltipLeft) });
+        // $(".ct_point_tooltip").offset({ top: tooltipTop  , left: (leftOffset - tooltipLeft) });
         if( $(this).index(".ct-point") < ( parent.find(".ct-point").length - 1 ) ) {
-            barChart = parent.find(".chart_bar_bg");
             barHeight = parseInt( parent.find(".ct-vertical:eq(0)").attr("y1") ) - parseInt( $(this).attr("cy") );
             barWidth = parseInt( parent.find(".ct-point:eq(1)").attr("cx") ) - parseInt( parent.find(".ct-point:eq(0)").attr("cx"));
-            barChart.outerHeight(barHeight);
-            barChart.outerWidth(barWidth);
+            barChart = parent.find(".chart_bar_bg");
+            barChart.height(barHeight);
+            barChart.width(barWidth);
             barChart.css({
                 "left" : parseInt( $(this).attr("cx") ) + "px"
             });
