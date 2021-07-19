@@ -257,6 +257,7 @@
 	}
 
 	.static_chart .ct-label.ct-horizontal.ct-end {
+		width: 71px !important;
 	    font-size: 13px;
 	    line-height: 21px;
 	    transform: rotate(89deg);
@@ -266,11 +267,11 @@
 	    top: 20px;
 	}
 
-	.static_chart .ct-labels foreignObject:nth-child(12) .ct-end {
+/*	.static_chart .ct-labels foreignObject:nth-child(12) .ct-end {
 	    position: relative;
 	    left: -24px;
 	    top: -4px;
-	}
+	}*/
 
 	.static_chart_wrapp:after {
 	    bottom: 94px;
@@ -287,9 +288,9 @@
 	    height: 18px;
 	}
 
-	.ct_point_bg:hover .ct_point_tooltip {
+/*	.ct_point_bg:hover .ct_point_tooltip {
 	    margin-left: 13px;
-	}
+	}*/
 
 	/*-- /Static Charts --*/
 
@@ -520,9 +521,9 @@
 	    height: 400px;
 	}
 
-	.chart_bar_bg .ct_point_tooltip {
+/*	.chart_bar_bg .ct_point_tooltip {
 	    top: -71px;
-	}
+	}*/
 
 	.ct_point_tooltip {
 	    padding: 10px 30px 10px 30px;
@@ -533,11 +534,25 @@
 	    line-height: 26px;
 	}
 
+	.ct_point_tooltip p .grey {
+		font-size: 20px;
+		line-height: 26px;
+	}
+
 	.chart_tab {
 	    width: 130px !important;
 	    min-height: 50px;
 	    font-size: 14px;
 	    line-height: 16px;
+	}
+
+	.ct_point_tooltip_2 {
+	    min-width: auto;
+	    padding: 3px 10px 3px 10px;
+	}
+
+	.ct_point_tooltip_2 p {
+		padding: 5px 0;
 	}
 
 	/*-- /Static Charts --*/
@@ -1546,14 +1561,15 @@
 	/*-- Static Charts --*/
 
 	.static_chart .ct-label.ct-horizontal.ct-end {
+		width: 50px !important;
 		left: -33px;
 		top: 3px;
 	}
 
-	.static_chart .ct-labels foreignObject:nth-child(12) .ct-end {
+/*	.static_chart .ct-labels foreignObject:nth-child(12) .ct-end {
 	    left: -27px;
 	    top: -11px;
-	}
+	}*/
 
 	/*-- /Static Charts --*/
 
@@ -2208,9 +2224,9 @@
 	    padding: 5px 10px 4px 10px;
 	}
 
-	.chart_bar_bg .ct_point_tooltip {
+/*	.chart_bar_bg .ct_point_tooltip {
 	    top: -50px;
-	}
+	}*/
 
 	.ct_point_tooltip p {
 	    font-size: 15px;
@@ -2231,6 +2247,16 @@
 	.static_chart_wrapp .chart_footer {
 	    bottom: -25px;
 	    left: 0;
+	}
+
+	.static_chart_wrapp .top_chart_descript {
+	    top: -16px;
+	    left: 30px;
+	}
+
+	.top_chart_descript p {
+	    font-size: 14px;
+	    line-height: 16px;
 	}
 
 	/*-- /Static Charts --*/
@@ -3075,13 +3101,14 @@
 	/*-- Static Charts --*/
 
 	.static_chart .ct-label.ct-horizontal.ct-end {
+		width: 27px !important;
 	    top: -10px;
 	    left: -28px;
 	}
 
-	.static_chart .ct-labels foreignObject:nth-child(12) .ct-end {
+/*	.static_chart .ct-labels foreignObject:nth-child(12) .ct-end {
 	    left: -35px;
-	}
+	}*/
 
 	/*-- /Static Charts --*/
 

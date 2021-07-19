@@ -1902,6 +1902,8 @@ $(document).on("click", ".respmenubtn", function(e){
 
     if( $("[data-static-chart]").length> 0 ) {
 
+        var chart;
+
         $("[data-static-chart]").each(function() {
             chartName = $(this).attr("data-static-chart");
             chartLabels = [];
@@ -1915,32 +1917,32 @@ $(document).on("click", ".respmenubtn", function(e){
               series: [
                 chartSeries
               ]
-            }, {
-            // high: 30,
-            low: 0,
-            showArea: true,
-            fullWidth: true,
-            lineSmooth: false,
-            axisY: {
-                offset: 3
-            },
-            axisX: {
-                offset: 60
-            }
+                }, {
+                // high: 30,
+                low: 0,
+                showArea: true,
+                fullWidth: true,
+                lineSmooth: false,
+                axisY: {
+                    offset: 3
+                },
+                axisX: {
+                    offset: 60
+                }
             });
 
-        });
+            chart.on('draw', function(data) {
+              if(data.type === 'point') {
+                var circle = new Chartist.Svg('circle', {
+                  r:"12",
+                  cx: data.x,
+                  cy: data.y,          
+                  style: 'fill:#fff'
+                }, 'ct-point');
+                data.element.replace(circle);
+              }
+            });
 
-        chart.on('draw', function(data) {
-          if(data.type === 'point') {
-            var circle = new Chartist.Svg('circle', {
-              r:"12",
-              cx: data.x,
-              cy: data.y,          
-              style: 'fill:#fff'
-            }, 'ct-point');
-            data.element.replace(circle);
-          }
         });
     }
 
@@ -1975,13 +1977,23 @@ $(document).on("click", ".respmenubtn", function(e){
                 $("[data-static-chart-values = '"+chartName+"']").find(".dataVal").each(function() {
                     valIndex = $(this).index(".dataVal");
                     if(index == valIndex) {
-                        priceVal = $(this).attr("data-price-val");
-                        chartBarTempl = "<div class='chart_bar_hover' style='width: "+barWidth+"px; height: "+barHeight+"px; left: "+leftCoord+"px '>"+
-                                        "<div class='chart_bar'></div>"+
-                                        "<div class='ct_point_tooltip'>"+
-                                        "<p><span class='priceValApeend'>"+priceVal+"</span><span class='valType'>$/м2/мес</span></p>"+
-                                        "</div></div>";
-                        chartBarBg.append(chartBarTempl);
+                        chartBarBg.find(".chart_bar_hover").each(function() {
+                            valIndex = $(this).index(".chart_bar_hover");
+                            if(index == valIndex) {
+                                $(this).css({
+                                    "width" : barWidth + "px",
+                                    "height" : barHeight + "px",
+                                    "left" : leftCoord + "px"
+                                });
+                            }
+                        });
+                        // priceVal = $(this).attr("data-price-val");
+                        // chartBarTempl = "<div class='chart_bar_hover' style='width: "+barWidth+"px; height: "+barHeight+"px; left: "+leftCoord+"px '>"+
+                        //                 "<div class='chart_bar'></div>"+
+                        //                 "<div class='ct_point_tooltip'>"+
+                        //                 "<p><span class='priceValApeend'>"+priceVal+"</span><span class='valType'>$/м2/мес</span></p>"+
+                        //                 "</div></div>";
+                        // chartBarBg.append(chartBarTempl);
                     }
                 });
             });

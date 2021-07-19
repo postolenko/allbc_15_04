@@ -10051,10 +10051,10 @@ p.metro_p {
     left: -10px;
 }
 
-.static_chart .ct-labels foreignObject:nth-child(12) .ct-end {
+/*.static_chart .ct-labels foreignObject:nth-child(12) .ct-end {
     position: relative;
     left: -46px;
-}
+}*/
 
 .static_chart .ct-series-a .ct-line {
     stroke-width: 1px;
@@ -10178,6 +10178,16 @@ select.white_tag option {
     line-height: 1.125;
 }
 
+.white_tag_2 {
+    min-width: auto;
+    box-shadow: none;
+}
+
+.white_tag_2 p {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
 .ct_point_tooltip {
     display: inline-block;
     vertical-align: top;
@@ -10284,7 +10294,7 @@ select.white_tag option {
 
 .chart_bar_hover .ct_point_tooltip {
     position: absolute;
-    top: -81px;
+    bottom: calc(100% + 22px);
     left: 0;
     transform: translate(-50%, 0);
     -webkit-transform: translate(-50%, 0);
@@ -10310,6 +10320,43 @@ select.white_tag option {
     line-height: 1.2;
     color: #939393;
 }
+
+.top_chart_descript {
+
+}
+
+.top_chart_descript p {
+    font-size: 16px;
+    line-height: 18px;
+    color: #33312f;    
+}
+
+.static_chart_wrapp .top_chart_descript {
+    position: absolute;
+    top: 25px;
+    left: 35px;
+}
+
+.ct_point_tooltip_2 {
+    min-width: 405px;
+    padding: 9px 22px 9px 22px;
+    text-align: center;
+}
+
+.ct_point_tooltip_2 p {
+    padding: 10px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.ct_point_tooltip_2 p:last-child {
+    border-bottom: none;
+}
+
+.ct_point_tooltip_2 p .grey {
+    font-size: 30px;
+    color: #8d8d8d;
+}
+
 
 /*-- /Static Charts --*/
 
