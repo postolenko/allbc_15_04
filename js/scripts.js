@@ -1928,6 +1928,7 @@ $(document).on("click", ".respmenubtn", function(e){
                 offset: 60
             }
             });
+
         });
 
         chart.on('draw', function(data) {
@@ -1939,32 +1940,8 @@ $(document).on("click", ".respmenubtn", function(e){
               style: 'fill:#fff'
             }, 'ct-point');
             data.element.replace(circle);
-            // parent = data.type.point.element._node;
-            // console.log(parent);
           }
-          // parent = $(this).closest(".static_chart");
-          // console.log(data);
-
-            // chartWidth = chart.width();
-            // chart.find(".ct-point").each(function() {
-            //     xCoord = $(this).attr("cx");
-            //     xPercent = (xCoord * 100) / chartWidth;
-            //     if( xPercent >= 0 && xPercent <= 25) {
-            //         $(this).addClass("green_1");
-            //     }
-            //     if( xPercent >= 26 && xPercent <= 50) {
-            //         $(this).addClass("green_2");
-            //     }
-            //     if( xPercent >= 51 && xPercent <= 75) {
-            //         $(this).addClass("blue_1");
-            //     }
-            //     if( xPercent >= 75 && xPercent <= 100) {
-            //         $(this).addClass("blue_2");
-            //     }
-            // });
-
         });
-
     }
 
 
@@ -1985,43 +1962,26 @@ $(document).on("click", ".respmenubtn", function(e){
 
     $(window).on("load", function() {
         $("[data-static-chart]").each(function() {
+            parent = $(this);
             chartName = $(this).attr("data-static-chart");
-            // $("[data-static-chart = '"+chartName+"']").find(".ct-point").each(function() {
-            //     pointValue = $(this).attr("ct:value");
-            //     index = $(this).index(".ct-point");
-            //     $("[data-static-chart-values = '"+chartName+"'] .dataVal").each(function() {
-            //         indexCtPointBg = $(this).index(".dataVal");
-            //         if( index == indexCtPointBg ) {
-            //             priceVal = $(this).attr("data-price-val");
-            //             $("[data-static-chart-appends = '"+chartName+"']").append("<div class='ct_point_bg' data-val = '"+pointValue+"'>"+
-            //             "<div class='ct_point_tooltip'><p>"+priceVal+" <span>$\/м2\/мес</span></p></div></dov>");
-            //         }
-            //     });
-            // });
-
-            // $("[data-static-chart = '"+chartName+"']").find(".ct-point").each(function() {
-            //     topOffset = $(this).offset().top;
-            //     leftOffset = $(this).offset().left;
-            //     widthPointHalf = $(".ct_point_bg").width() / 2;
-            //     index = $(this).index(".ct-point");
-            //     pointValue = $(this).attr("ct:value");
-            //     $("[data-static-chart-appends = '"+chartName+"'] .ct_point_bg").each(function() {
-            //         indexCtPointBg = $(this).index(".ct_point_bg");
-            //         if(pointValue == $(this).attr("data-val") && index == indexCtPointBg) {
-            //             $(this).offset({ top: ( topOffset - widthPointHalf - 3 ), left: ( leftOffset - widthPointHalf - 3 ) });
-            //         }
-            //     });
-            // });
-            // $("[data-tabs = '"+chartName+"']").find(".mCSB_buttonLeft").clone().appendTo( "[data-tabs-arrows = '"+chartName+"']" );
-            // $("[data-tabs = '"+chartName+"']").find(".mCSB_buttonRight").clone().appendTo( "[data-tabs-arrows = '"+chartName+"']" );
-
             $("[data-static-chart = '"+chartName+"']").find(".ct-point").each(function() {
+                chart = $(this).closest("[data-static-chart]");
                 index = $(this).index(".ct-point");
                 ctPoint = $(this);
+                chartBarBg = chart.find(".chart_bar_bg");
+                leftCoord = parseInt( $(this).attr("cx") );
+                barHeight = parseInt( parent.find(".ct-vertical:eq(0)").attr("y1") ) - parseInt( $(this).attr("cy") );
+                barWidth = parseInt( parent.find(".ct-point:eq(1)").attr("cx") ) - parseInt( parent.find(".ct-point:eq(0)").attr("cx"));
                 $("[data-static-chart-values = '"+chartName+"']").find(".dataVal").each(function() {
                     valIndex = $(this).index(".dataVal");
                     if(index == valIndex) {
-                        ctPoint.attr("data-price-val", $(this).attr("data-price-val"));
+                        priceVal = $(this).attr("data-price-val");
+                        chartBarTempl = "<div class='chart_bar_hover' style='width: "+barWidth+"px; height: "+barHeight+"px; left: "+leftCoord+"px '>"+
+                                        "<div class='chart_bar'></div>"+
+                                        "<div class='ct_point_tooltip'>"+
+                                        "<p><span class='priceValApeend'>"+priceVal+"</span><span class='valType'>$/м2/мес</span></p>"+
+                                        "</div></div>";
+                        chartBarBg.append(chartBarTempl);
                     }
                 });
             });
@@ -2070,38 +2030,6 @@ $(document).on("click", ".respmenubtn", function(e){
     });
 
     $(window).on("resize", function() {
-        // setTimeout(function() {
-        //     $("[data-static-chart]").each(function() {
-        //         chartName = $(this).attr("data-static-chart");
-        //         $(this).find(".ct-point").each(function() {
-        //             topOffset = $(this).offset().top;
-        //             leftOffset = $(this).offset().left;
-        //             widthPointHalf = $(".ct_point_bg").width() / 2;
-        //             index = $(this).index(".ct-point");
-        //             pointValue = $(this).attr("ct:value");
-        //             $("[data-static-chart-appends = '"+chartName+"'] .ct_point_bg").each(function() {
-        //             // $(".whiteCircle .ct_point_bg").each(function() {
-        //                 indexCtPointBg = $(this).index(".ct_point_bg");
-        //                 if(pointValue == $(this).attr("data-val") && index == indexCtPointBg) {
-        //                     $(this).offset({ top: ( topOffset - widthPointHalf - 3 ), left: ( leftOffset - widthPointHalf - 3 ) });
-        //                 }
-        //             });
-        //         });
-        //     });
-        // }, 300);
-        // $("#staticChart").find(".ct-point").each(function() {
-        //     topOffset = $(this).offset().top;
-        //     leftOffset = $(this).offset().left;
-        //     widthPointHalf = $(".ct_point_bg").width() / 2;
-        //     index = $(this).index(".ct-point");
-        //     pointValue = $(this).attr("ct:value");
-        //     $(".whiteCircle .ct_point_bg").each(function() {
-        //         indexCtPointBg = $(this).index(".ct_point_bg");
-        //         if(pointValue == $(this).attr("data-val") && index == indexCtPointBg) {
-        //             $(this).offset({ top: ( topOffset - widthPointHalf - 3 ), left: ( leftOffset - widthPointHalf - 3 ) });
-        //         }
-        //     });
-        // });
 
         setTimeout(function() {
             $("[data-static-chart]").each(function() {
@@ -2123,78 +2051,104 @@ $(document).on("click", ".respmenubtn", function(e){
                         $(this).addClass("blue_2");
                     }
                 });
+
+                parent = $(this);
+                chartName = $(this).attr("data-static-chart");
+                $("[data-static-chart = '"+chartName+"']").find(".ct-point").each(function() {
+                    chart = $(this).closest("[data-static-chart]");
+                    index = $(this).index(".ct-point");
+                    ctPoint = $(this);
+                    chartBarBg = chart.find(".chart_bar_bg");
+                    leftCoord = parseInt( $(this).attr("cx") );
+                    barHeight = parseInt( parent.find(".ct-vertical:eq(0)").attr("y1") ) - parseInt( $(this).attr("cy") );
+                    barWidth = parseInt( parent.find(".ct-point:eq(1)").attr("cx") ) - parseInt( parent.find(".ct-point:eq(0)").attr("cx"));
+                    chartBarBg.find(".chart_bar_hover").each(function() {
+                        valIndex = $(this).index(".chart_bar_hover");
+                        if(index == valIndex) {
+                            $(this).css({
+                                "width" : barWidth + "px",
+                                "height" : barHeight + "px",
+                                "left" : leftCoord + "px"
+                            });
+                        }
+                    });
+                });
             });
             if(bodyWidth <= 600) {
                 $(".static_chart .ct-point").attr("r", "8");
             } else {
                 $(".static_chart .ct-point").attr("r", "12");
             }
-
             getScrollbarArrows();
-        }, 500);
-
-        
+        }, 500);        
         
     });
 
     // --------------------
 
-    $(document).on("mouseover", ".ct-point", function(e) {
-        parent = $(this).closest("[data-static-chart]");
-        chartName = parent.attr("data-static-chart");
-        // widthPointHalf = parseInt($(".ct-point").attr("r"));
-        // topOffset = $(this).offset().top;
-        // leftOffset = $(this).offset().left + widthPointHalf;    
-        pointValue = $(this).attr("data-price-val");
-        // tooltipTop = topOffset - $(".ct_point_tooltip").outerHeight() - ( widthPointHalf * .8 );
-        // tooltipLeft = $(".ct_point_tooltip").outerWidth() / 2;
-        $(".ct_point_tooltip .priceValApeend").text(pointValue);
-        valTypeval = $("select[data-valtypechart = '"+chartName+"']").val();
-        $(".ct_point_tooltip .valType").text( valTypeval );
-        // $(".ct_point_tooltip").offset({ top: tooltipTop  , left: (leftOffset - tooltipLeft) });
-        if( $(this).index(".ct-point") < ( parent.find(".ct-point").length - 1 ) ) {
-            barHeight = parseInt( parent.find(".ct-vertical:eq(0)").attr("y1") ) - parseInt( $(this).attr("cy") );
-            barWidth = parseInt( parent.find(".ct-point:eq(1)").attr("cx") ) - parseInt( parent.find(".ct-point:eq(0)").attr("cx"));
-            barChart = parent.find(".chart_bar_bg");
-            barChart.height(barHeight);
-            barChart.width(barWidth);
-            barChart.css({
-                "left" : parseInt( $(this).attr("cx") ) + "px"
-            });
-        }
+    $("[data-valtypechart]").on("change", function() {
+        valType = $(this).val();
+        chartName = $(this).attr("data-valtypechart");
+        chart = $("[data-static-chart = '"+chartName+"']");
+        chart.find(".valType").text(valType);
     });
 
-    $(document).on("click", ".ct-point", function(e) {
-        parent = $(this).closest("[data-static-chart]");
-        chartName = parent.attr("data-static-chart");
-        // widthPointHalf = parseInt($(".ct-point").attr("r"));
-        // topOffset = $(this).offset().top;
-        // leftOffset = $(this).offset().left + widthPointHalf;    
-        pointValue = $(this).attr("data-price-val");
-        // tooltipTop = topOffset - $(".ct_point_tooltip").outerHeight() - ( widthPointHalf * .8 );
-        // tooltipLeft = $(".ct_point_tooltip").outerWidth() / 2;
-        $(".ct_point_tooltip .priceValApeend").text(pointValue);
-        valTypeval = $("select[data-valtypechart = '"+chartName+"']").val();
-        $(".ct_point_tooltip .valType").text( valTypeval );
-        // $(".ct_point_tooltip").offset({ top: tooltipTop  , left: (leftOffset - tooltipLeft) });
-        if( $(this).index(".ct-point") < ( parent.find(".ct-point").length - 1 ) ) {
-            barHeight = parseInt( parent.find(".ct-vertical:eq(0)").attr("y1") ) - parseInt( $(this).attr("cy") );
-            barWidth = parseInt( parent.find(".ct-point:eq(1)").attr("cx") ) - parseInt( parent.find(".ct-point:eq(0)").attr("cx"));
-            barChart = parent.find(".chart_bar_bg");
-            barChart.height(barHeight);
-            barChart.width(barWidth);
-            barChart.css({
-                "left" : parseInt( $(this).attr("cx") ) + "px"
-            });
-        }
-    });
+    // $(document).on("mouseover", ".ct-point", function(e) {
+    //     parent = $(this).closest("[data-static-chart]");
+    //     chartName = parent.attr("data-static-chart");
+    //     // widthPointHalf = parseInt($(".ct-point").attr("r"));
+    //     // topOffset = $(this).offset().top;
+    //     // leftOffset = $(this).offset().left + widthPointHalf;    
+    //     pointValue = $(this).attr("data-price-val");
+    //     // tooltipTop = topOffset - $(".ct_point_tooltip").outerHeight() - ( widthPointHalf * .8 );
+    //     // tooltipLeft = $(".ct_point_tooltip").outerWidth() / 2;
+    //     $(".ct_point_tooltip .priceValApeend").text(pointValue);
+    //     valTypeval = $("select[data-valtypechart = '"+chartName+"']").val();
+    //     $(".ct_point_tooltip .valType").text( valTypeval );
+    //     // $(".ct_point_tooltip").offset({ top: tooltipTop  , left: (leftOffset - tooltipLeft) });
+    //     if( $(this).index(".ct-point") < ( parent.find(".ct-point").length - 1 ) ) {
+    //         barHeight = parseInt( parent.find(".ct-vertical:eq(0)").attr("y1") ) - parseInt( $(this).attr("cy") );
+    //         barWidth = parseInt( parent.find(".ct-point:eq(1)").attr("cx") ) - parseInt( parent.find(".ct-point:eq(0)").attr("cx"));
+    //         barChart = parent.find(".chart_bar_bg");
+    //         barChart.height(barHeight);
+    //         barChart.width(barWidth);
+    //         barChart.css({
+    //             "left" : parseInt( $(this).attr("cx") ) + "px"
+    //         });
+    //     }
+    // });
 
-    $(document).on("mouseleave", ".ct-point", function(e) {
-        $(".ct_point_tooltip").attr("style", "");
-        parent = $(this).closest("[data-static-chart]");
-        barChart = parent.find(".chart_bar_bg");
-        barChart.attr("style", "");
-    });
+    // $(document).on("click", ".ct-point", function(e) {
+    //     parent = $(this).closest("[data-static-chart]");
+    //     chartName = parent.attr("data-static-chart");
+    //     // widthPointHalf = parseInt($(".ct-point").attr("r"));
+    //     // topOffset = $(this).offset().top;
+    //     // leftOffset = $(this).offset().left + widthPointHalf;    
+    //     pointValue = $(this).attr("data-price-val");
+    //     // tooltipTop = topOffset - $(".ct_point_tooltip").outerHeight() - ( widthPointHalf * .8 );
+    //     // tooltipLeft = $(".ct_point_tooltip").outerWidth() / 2;
+    //     $(".ct_point_tooltip .priceValApeend").text(pointValue);
+    //     valTypeval = $("select[data-valtypechart = '"+chartName+"']").val();
+    //     $(".ct_point_tooltip .valType").text( valTypeval );
+    //     // $(".ct_point_tooltip").offset({ top: tooltipTop  , left: (leftOffset - tooltipLeft) });
+    //     if( $(this).index(".ct-point") < ( parent.find(".ct-point").length - 1 ) ) {
+    //         barHeight = parseInt( parent.find(".ct-vertical:eq(0)").attr("y1") ) - parseInt( $(this).attr("cy") );
+    //         barWidth = parseInt( parent.find(".ct-point:eq(1)").attr("cx") ) - parseInt( parent.find(".ct-point:eq(0)").attr("cx"));
+    //         barChart = parent.find(".chart_bar_bg");
+    //         barChart.height(barHeight);
+    //         barChart.width(barWidth);
+    //         barChart.css({
+    //             "left" : parseInt( $(this).attr("cx") ) + "px"
+    //         });
+    //     }
+    // });
+
+    // $(document).on("mouseleave", ".ct-point", function(e) {
+    //     $(".ct_point_tooltip").attr("style", "");
+    //     parent = $(this).closest("[data-static-chart]");
+    //     barChart = parent.find(".chart_bar_bg");
+    //     barChart.attr("style", "");
+    // });
 
     // --------------------
 

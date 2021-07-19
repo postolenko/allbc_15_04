@@ -2217,6 +2217,13 @@
 	    line-height: 21px;
 	}
 
+	.chart_bar_hover:before {
+	    width: 14px;
+	    height: 14px;
+	    top: -9px;
+	    left: -9px;
+	}
+
 	.static_chart .ct-label.ct-horizontal.ct-end {
 	    top: -8px;
 	}
