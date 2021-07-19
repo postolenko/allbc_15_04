@@ -10225,6 +10225,7 @@ select.white_tag option {
 }
 
 .chart_bar_bg .chart_bar_hover {
+    cursor: pointer;
     position: absolute;
     bottom: 0;
     left: 0;
