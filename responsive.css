@@ -2239,11 +2239,6 @@
 	    top: -8px;
 	}
 
-/*	.static_chart_wrapp .chart_footer {
-	    bottom: -25px;
-	    left: 0;
-	}*/
-
 	.static_chart_box .chart_footer {
 	    right: 0;
 	}
@@ -2350,52 +2345,6 @@
 	    font-size: 14px;
 	    line-height: 15px;
 	}
-
-	/*-- Section 7 - BC Page --*/
-
-/*	.gradient_templ_2 > .col {
-	    padding: 5px 0;
-	}
-
-	.gradient_templ_2 > .col_1 {
-	    width: 35%;
-	}
-
-	.gradient_templ_2 > .col_2 {
-	    width: 65%;
-	}*/
-
-/*	.gradient_form {
-		flex-wrap: wrap;
-		-webkit-flex-wrap: wrap;
-	}
-
-	.gradient_form > div:nth-child(1) {
-		width: 100%;
-		padding: 5px 0;
-	}
-
-	.gradient_form > div:nth-child(2) {
-	    width: 55%;
-	    padding-right: 10px;
-	}
-
-	.gradient_form > div:nth-child(3) {
-	    width: 45%;
-	    padding-left: 10px;
-	}
-
-	.gradient_templ_2 > .col_1 p {
-	    font-size: 13px;
-	    line-height: 15px;
-	}
-
-	.tel_number_wrapp_2 a {
-	    font-size: 21px;
-	    line-height: 24px;
-	}*/
-
-	/*-- /Section 7 - BC Page --*/
 
 }
 
@@ -2891,19 +2840,19 @@
 
 	/*-- /Section 4 - BC Page --*/
 
+	/*-- Static Charts --*/
+
+	.chart_bar_hover.lastChart .ct_point_tooltip {
+	    left: -91%;
+	}
+
+	/*-- /Static Charts --*/
+
 }
 
 @media only screen and (max-width: 450px) {
 
 	/*-- Header --*/
-
-/*	.header_site .left {
-	    width: 100%;
-	}
-
-	.header_site .right {
-	    width: 0;
-	}*/
 
 	.logo_wrapp {
 	    padding-right: 0;
@@ -3105,10 +3054,6 @@
 	    left: -28px;
 	}
 
-/*	.static_chart .ct-labels foreignObject:nth-child(12) .ct-end {
-	    left: -35px;
-	}*/
-
 	/*-- /Static Charts --*/
 
 	/*-- Footer --*/
@@ -3272,6 +3217,10 @@
 	.items_sect .right {
     	width: 110px;
 	    padding-left: 0;
+	}
+
+	.chart_bar_hover.lastChart .ct_point_tooltip {
+	    left: -124%;
 	}
 
 }

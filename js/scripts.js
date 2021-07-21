@@ -1987,13 +1987,6 @@ $(document).on("click", ".respmenubtn", function(e){
                                 });
                             }
                         });
-                        // priceVal = $(this).attr("data-price-val");
-                        // chartBarTempl = "<div class='chart_bar_hover' style='width: "+barWidth+"px; height: "+barHeight+"px; left: "+leftCoord+"px '>"+
-                        //                 "<div class='chart_bar'></div>"+
-                        //                 "<div class='ct_point_tooltip'>"+
-                        //                 "<p><span class='priceValApeend'>"+priceVal+"</span><span class='valType'>$/м2/мес</span></p>"+
-                        //                 "</div></div>";
-                        // chartBarBg.append(chartBarTempl);
                     }
                 });
             });
@@ -2103,6 +2096,23 @@ $(document).on("click", ".respmenubtn", function(e){
         chartName = $(this).attr("data-valtypechart");
         chart = $("[data-static-chart = '"+chartName+"']");
         chart.find(".valType").text(valType);
+    });
+
+    // --------------------
+
+    $(".chart_bar_hover").on("mouseover", function() {
+        parent = $(this).closest(".static_chart");
+        maxRightCoord = parent.offset().left + parent.width() - 20;
+        maxLeftCoord = parent.offset().left;
+        tooltip = $(this).find(".ct_point_tooltip");
+        tooltipRightCoord = tooltip.offset().left + tooltip.outerWidth();
+        tooltipLeftCoord = tooltip.offset().left;
+        if(tooltipRightCoord >= maxRightCoord) {
+            $(this).addClass("lastChart");
+        }
+        if(tooltipLeftCoord <= maxLeftCoord) {
+            $(this).addClass("firstChart");
+        }
     });
 
     // --------------------

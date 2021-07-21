@@ -10308,6 +10308,24 @@ select.white_tag option {
     -webkit-transform: translate(-50%, 0);
 }
 
+.chart_bar_hover.lastChart .ct_point_tooltip {
+    left: -40%;
+}
+
+.chart_bar_hover.lastChart .ct_point_tooltip:before {
+    left: 62%;
+}
+
+.chart_bar_hover.firstChart .ct_point_tooltip {
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    left: -10px;
+}
+
+.chart_bar_hover.firstChart .ct_point_tooltip:before {
+    left: 14px;
+}
+
 .static_chart_box {
     position: relative;
 }
