@@ -9770,7 +9770,7 @@ p.metro_p {
 
 .chart_slider_wrapp .charts_slider_arrows {
     position: absolute;
-    top: 2px;
+    top: 3px;
     left: -1px;
     z-index: 2;
 }
@@ -9817,10 +9817,6 @@ p.metro_p {
 
 .tabs_arrows .mCSB_buttonRight {
     margin-left: 5px;
-}
-
-.tabs_title {
-
 }
 
 .static_chart_header_2 .tabs_title {
