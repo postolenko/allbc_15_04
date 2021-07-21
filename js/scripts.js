@@ -2105,63 +2105,42 @@ $(document).on("click", ".respmenubtn", function(e){
         chart.find(".valType").text(valType);
     });
 
-    // $(document).on("mouseover", ".ct-point", function(e) {
-    //     parent = $(this).closest("[data-static-chart]");
-    //     chartName = parent.attr("data-static-chart");
-    //     // widthPointHalf = parseInt($(".ct-point").attr("r"));
-    //     // topOffset = $(this).offset().top;
-    //     // leftOffset = $(this).offset().left + widthPointHalf;    
-    //     pointValue = $(this).attr("data-price-val");
-    //     // tooltipTop = topOffset - $(".ct_point_tooltip").outerHeight() - ( widthPointHalf * .8 );
-    //     // tooltipLeft = $(".ct_point_tooltip").outerWidth() / 2;
-    //     $(".ct_point_tooltip .priceValApeend").text(pointValue);
-    //     valTypeval = $("select[data-valtypechart = '"+chartName+"']").val();
-    //     $(".ct_point_tooltip .valType").text( valTypeval );
-    //     // $(".ct_point_tooltip").offset({ top: tooltipTop  , left: (leftOffset - tooltipLeft) });
-    //     if( $(this).index(".ct-point") < ( parent.find(".ct-point").length - 1 ) ) {
-    //         barHeight = parseInt( parent.find(".ct-vertical:eq(0)").attr("y1") ) - parseInt( $(this).attr("cy") );
-    //         barWidth = parseInt( parent.find(".ct-point:eq(1)").attr("cx") ) - parseInt( parent.find(".ct-point:eq(0)").attr("cx"));
-    //         barChart = parent.find(".chart_bar_bg");
-    //         barChart.height(barHeight);
-    //         barChart.width(barWidth);
-    //         barChart.css({
-    //             "left" : parseInt( $(this).attr("cx") ) + "px"
-    //         });
-    //     }
-    // });
-
-    // $(document).on("click", ".ct-point", function(e) {
-    //     parent = $(this).closest("[data-static-chart]");
-    //     chartName = parent.attr("data-static-chart");
-    //     // widthPointHalf = parseInt($(".ct-point").attr("r"));
-    //     // topOffset = $(this).offset().top;
-    //     // leftOffset = $(this).offset().left + widthPointHalf;    
-    //     pointValue = $(this).attr("data-price-val");
-    //     // tooltipTop = topOffset - $(".ct_point_tooltip").outerHeight() - ( widthPointHalf * .8 );
-    //     // tooltipLeft = $(".ct_point_tooltip").outerWidth() / 2;
-    //     $(".ct_point_tooltip .priceValApeend").text(pointValue);
-    //     valTypeval = $("select[data-valtypechart = '"+chartName+"']").val();
-    //     $(".ct_point_tooltip .valType").text( valTypeval );
-    //     // $(".ct_point_tooltip").offset({ top: tooltipTop  , left: (leftOffset - tooltipLeft) });
-    //     if( $(this).index(".ct-point") < ( parent.find(".ct-point").length - 1 ) ) {
-    //         barHeight = parseInt( parent.find(".ct-vertical:eq(0)").attr("y1") ) - parseInt( $(this).attr("cy") );
-    //         barWidth = parseInt( parent.find(".ct-point:eq(1)").attr("cx") ) - parseInt( parent.find(".ct-point:eq(0)").attr("cx"));
-    //         barChart = parent.find(".chart_bar_bg");
-    //         barChart.height(barHeight);
-    //         barChart.width(barWidth);
-    //         barChart.css({
-    //             "left" : parseInt( $(this).attr("cx") ) + "px"
-    //         });
-    //     }
-    // });
-
-    // $(document).on("mouseleave", ".ct-point", function(e) {
-    //     $(".ct_point_tooltip").attr("style", "");
-    //     parent = $(this).closest("[data-static-chart]");
-    //     barChart = parent.find(".chart_bar_bg");
-    //     barChart.attr("style", "");
-    // });
-
     // --------------------
+    //  Chart Slider
+    // --------------------
+
+    $("[data-chart-slider-arrow]").on("click", function(e) {
+        e.preventDefault();
+        chartName = $(this).attr("data-chart-slider-arrow");
+        chartSlider = $("[data-chart-slider = '"+chartName+"']");        
+        indexActiveSlide = chartSlider.find(".chart_slide.active").index(".chart_slide");
+        chartSlidesCount = chartSlider.find(".chart_slide").length;
+        chartSlider.find(".chart_slide").removeClass("active");
+        if( $(this).hasClass("next") ) {
+            nextSlideIndex = indexActiveSlide + 1;
+            if(nextSlideIndex < chartSlidesCount) {
+                chartSlider.find(".chart_slide:eq("+nextSlideIndex+")").addClass('active');
+            } else {
+                chartSlider.find(".chart_slide:eq(0)").addClass('active');
+            }            
+        }
+        if( $(this).hasClass("prev") ) {
+            nextSlideIndex = indexActiveSlide - 1;
+            if(nextSlideIndex >= 0) {
+                chartSlider.find(".chart_slide:eq("+nextSlideIndex+")").addClass('active');
+            } else {
+                chartSlider.find(".chart_slide:eq("+ (chartSlidesCount - 1) +")").addClass('active');
+            }
+        }
+    });
+
+    // -------------------
+
+    $(".chart_tab").on("click", function() {
+        parent = $(this).closest(".chart_tabs_scrollbar");
+        parent.find(".chart_tab").removeClass("active");
+        $(this).addClass("active");
+    });
+
 
 });

@@ -9757,6 +9757,22 @@ p.metro_p {
 .static_chart_header_2 {
     display: flex;
     display: -webkit-flex;
+    padding-left: 60px;
+}
+
+.chart_slider_wrapp {
+    position: relative;
+}
+
+.charts_slider_arrows {
+    width: 60px;
+}
+
+.chart_slider_wrapp .charts_slider_arrows {
+    position: absolute;
+    top: 2px;
+    left: -1px;
+    z-index: 2;
 }
 
 .tabs_arrows {
@@ -9794,10 +9810,6 @@ p.metro_p {
     background-position: center;
     background-image: url(img/scroll_left_arrow.png);
 }
-
-/*.right_tabs_arrow {
-    background-image: url(img/scroll_left_arrow.png);
-}*/
 
 .tabs_arrows .mCSB_buttonLeft {
     margin-right: 5px;
@@ -10033,7 +10045,8 @@ p.metro_p {
 }
 
 .static_chart .ct-grid {
-    stroke: #f4f4f4;
+    /*stroke: #f4f4f4;*/
+    stroke: #eaeaea;
     stroke-width: 2px;
     stroke-dasharray: 0;
 }
@@ -10050,11 +10063,6 @@ p.metro_p {
     position: relative;
     left: -10px;
 }
-
-/*.static_chart .ct-labels foreignObject:nth-child(12) .ct-end {
-    position: relative;
-    left: -46px;
-}*/
 
 .static_chart .ct-series-a .ct-line {
     stroke-width: 1px;
@@ -10300,29 +10308,37 @@ select.white_tag option {
     -webkit-transform: translate(-50%, 0);
 }
 
-.chart_footer {
-    text-align: right;
+.static_chart_box {
+    position: relative;
 }
 
-.static_chart_wrapp .chart_footer {
-    width: 100%;
+.static_chart_box .chart_footer {
+    width: 110px;
     position: absolute;
-    bottom: -34px;
-    left: 36px;
+    bottom: 38px;
+    right: -47px;
+    z-index: 2;
+}
+
+.chart_footer .white_tag {
+    width: 120px;
+    padding: 4px 15px 4px 15px;
+}
+
+.chart_footer select.white_tag {
+    background-position: calc(100% - 19px) center;
+    font-size: 15px;
+    line-height: 1;
 }
 
 .chart_descript {
-    padding: 48px 0 20px 0;
+    padding: 24px 0 20px 0;
 }
 
 .chart_descript p {
     font-size: 16px;
     line-height: 1.2;
     color: #939393;
-}
-
-.top_chart_descript {
-
 }
 
 .top_chart_descript p {
@@ -10357,6 +10373,103 @@ select.white_tag option {
     color: #8d8d8d;
 }
 
+.chart_slider {
+
+}
+
+.chart_slider .chart_slide {
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    -webkit-transition-property: opacity;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+    -moz-transition-property: opacity;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+    -ms-transition-property: opacity;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+    -o-transition-property: opacity;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+    transition-property: opacity;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.chart_slider .chart_slide.active {
+    height: auto;
+    opacity: 1;
+}
+
+.chart_arrow {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    background-color: transparent;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(img/scroll_right_arrow.png);
+}
+
+.chart_arrow.prev:hover {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}
+
+.chart_arrow:hover {
+    background-image: url(img/scroll_left_arrow.png);
+}
+
+.chart_arrow.next {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}
+
+.chart_arrow.next:hover {
+    transform: rotate(0);
+    -webkit-transform: rotate(0);
+}
+
+.charts_slider_arrows .next {
+    margin-left: 6px;
+}
+
+.tabs_arrows .mCSB_buttonLeft,
+.tabs_arrows .mCSB_buttonRight {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    background-color: transparent;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(img/scroll_right_arrow.png);
+}
+
+.tabs_arrows .mCSB_buttonLeft:hover {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}
+
+.tabs_arrows .mCSB_buttonLeft:hover,
+.tabs_arrows .mCSB_buttonRight:hover {
+    background-image: url(img/scroll_left_arrow.png);
+}
+
+.tabs_arrows .mCSB_buttonRight {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}
+
+.tabs_arrows .mCSB_buttonRight:hover {
+    transform: rotate(0);
+    -webkit-transform: rotate(0);
+}
 
 /*-- /Static Charts --*/
 

@@ -1566,10 +1566,9 @@
 		top: 3px;
 	}
 
-/*	.static_chart .ct-labels foreignObject:nth-child(12) .ct-end {
-	    left: -27px;
-	    top: -11px;
-	}*/
+	.static_chart_box .chart_footer {
+	    bottom: -21px;
+	}
 
 	/*-- /Static Charts --*/
 
@@ -2224,10 +2223,6 @@
 	    padding: 5px 10px 4px 10px;
 	}
 
-/*	.chart_bar_bg .ct_point_tooltip {
-	    top: -50px;
-	}*/
-
 	.ct_point_tooltip p {
 	    font-size: 15px;
 	    line-height: 21px;
@@ -2244,9 +2239,13 @@
 	    top: -8px;
 	}
 
-	.static_chart_wrapp .chart_footer {
+/*	.static_chart_wrapp .chart_footer {
 	    bottom: -25px;
 	    left: 0;
+	}*/
+
+	.static_chart_box .chart_footer {
+	    right: 0;
 	}
 
 	.static_chart_wrapp .top_chart_descript {
