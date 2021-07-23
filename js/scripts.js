@@ -147,23 +147,23 @@ function getfilterNavParams() {
 }
 
 function getCardParams() {
-    innerWrappHeightArr = [];
-    $(".cardsHeight .bc_card").css({
-        "height" : "auto"
-    });
-    $(".cardsHeight .bc_card").each(function() {
-        // if( mouseover == false ) {
-            innerWrapp = $(this).find(".inner_content");
-            innerWrappHeight = $(this).height();
-            innerWrappHeightArr.push(innerWrappHeight);
-        // }
-    });
-    maxHeight = Math.max.apply(null, innerWrappHeightArr);
-        // setTimeout(function() {
+    setTimeout(function() {
+        if( mouseover == false ) {
+            innerWrappHeightArr = [];
+            $(".cardsHeight .bc_card").css({
+                "height" : "auto"
+            });
+            $(".cardsHeight .bc_card").each(function() {        
+                innerWrapp = $(this).find(".inner_content");
+                innerWrappHeight = $(this).height();
+                innerWrappHeightArr.push(innerWrappHeight);
+            });
+            maxHeight = Math.max.apply(null, innerWrappHeightArr);    
             $(".cardsHeight .bc_card").css({
                 "height" : maxHeight + "px"
             });
-        // }, 300);
+        }
+    }, 300);
 }
 
 // function getMapParams2() {
@@ -298,6 +298,8 @@ var filtersCoord,
 
 var innerWrapp;
 
+var mouseover = false;
+
 $(window).resize(function() {
     bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
     getAdaptivePositionElements();
@@ -305,7 +307,7 @@ $(window).resize(function() {
     getMapParams();
     getBarsChart();
     getfilterNavParams();
-    // getCardParams();
+    getCardParams();
     // getMapParams2();
     // -------------
     $(".promo_slider .slide").css({
@@ -385,6 +387,17 @@ $(document).ready(function() {
     //     });
     //     console.log(maxHeight);
     // });
+
+    $(".cardsHeight").on('mouseover', function(e) {
+        e.preventDefault();
+        mouseover = true;
+    });
+
+    $(".cardsHeight").on('mouseleave', function(e) {
+        e.preventDefault();
+        mouseover = false;
+        getCardParams();
+    });
 
     // -------------
 
@@ -1665,7 +1678,9 @@ $(document).on("click", ".respmenubtn", function(e){
         e.preventDefault();
         parent = $(this).closest(".dropdown_row_wrapp");
         dropdown = parent.find(".dropdown_row_content");
+        parentWrapp = $(this).closest(".table_body");
         if(dropdown.height() <= 0) {
+            parentWrapp.find(".dropdown_row_wrapp, .dropdown_row_title_sub").removeClass("active");
             slider = parent.find(".slider_5");                                   
             slider.not(".slick-initialized").slick({
                 dots: false,

@@ -2,7 +2,8 @@
 
 	.bc_main_sect {
 		padding: 0 0 150px 0;
-	    min-height: calc( 100vh - 100px );
+		max-height: 768px;
+		height: calc( 100vh - 100px );
 	}
 
 }
@@ -1260,6 +1261,7 @@
 
 	.filter_resp_wrapp {
 	    z-index: 12 !important;
+	    min-height: 100vh;
 	}
 
 	.pagination li a {

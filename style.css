@@ -8310,7 +8310,7 @@ input.arrow_down {
 }
 
 .sort_slider_wrapp {
-    height: 384px;
+    min-height: 384px;
 }
 
 .sort_slider_arrows .row {
