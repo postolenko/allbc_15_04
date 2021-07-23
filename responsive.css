@@ -268,12 +268,6 @@
 	    top: 20px;
 	}
 
-/*	.static_chart .ct-labels foreignObject:nth-child(12) .ct-end {
-	    position: relative;
-	    left: -24px;
-	    top: -4px;
-	}*/
-
 	.static_chart_wrapp:after {
 	    bottom: 94px;
 	    right: -4px;
@@ -288,10 +282,6 @@
 	    width: 18px;
 	    height: 18px;
 	}
-
-/*	.ct_point_bg:hover .ct_point_tooltip {
-	    margin-left: 13px;
-	}*/
 
 	/*-- /Static Charts --*/
 
@@ -458,6 +448,19 @@
 
 	.item_wrapp.visible_1024 {
 	    display: inline-block;
+	}
+
+	.inlines_wrapp {
+	    margin: 0;
+	}
+
+	.inlines_wrapp .inline {
+	    padding: 3px 0;
+	}
+
+	.pill_checlbox label {
+	    padding: 3px 10px;
+	    font-size: 14px;
 	}
 
 	/*-- /Section 1 - Info Side Page --*/
