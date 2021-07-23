@@ -558,6 +558,37 @@
 
 	/*-- /Static Charts --*/
 
+	/*-- Section 2 - Tables Page --*/
+
+	.table_header_two_cols {
+		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+	}
+
+	.table_header_two_cols > .col_1 {
+	    width: 100%;
+	    padding-right: 0;
+	    order: 2;
+	}
+
+	.table_header_two_cols > .col_2 {
+	    width: 100%;
+	    padding-left: 0;
+	    padding-bottom: 10px;
+	    order: 1;
+	}
+
+	.table_header_two_cols:before {
+		display: none;
+	}
+
+	.inlines_4 {
+		justify-content: flex-start;
+		-webkit-justify-content: flex-start;
+	}
+
+	/*-- /Section 2 - Tables Page --*/
+
 }
 
 @media only screen and (max-width: 900px) {
