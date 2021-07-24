@@ -290,19 +290,21 @@
 	.footer__main {
 		flex-wrap: wrap;
 		-webkit-flex-wrap: wrap;
-	    justify-content: center;
-	    -webkit-justify-content: center;
+	    /*justify-content: center;*/
+	    /*-webkit-justify-content: center;*/
 	}
 
 	.footer__main__left {
-	    max-width: 100%;
-	    justify-content: center;
-	    -webkit-justify-content: center;
-	    padding: 20px 0;
+	    /*max-width: 100%;*/
+	    width: 45%;
+/*	    justify-content: flex-start;
+	    -webkit-justify-content: flex-start;*/
+	    padding: 20px 10px 20px 0;
 	}
 
 	.footer__main__right {
-		padding: 20px 0;
+		width: 55%;
+		padding: 20px 0 20px 10px;
 	}
 
 	.footer__main__left .footer__main__links__col {
@@ -931,6 +933,10 @@
 
 	/*-- Footer --*/
 
+	.footer {
+	    padding-bottom: 70px;
+	}
+
 	.footer_templ .col:nth-child(2) {
 	    width: 100%;
 	    padding: 10px 0;
@@ -940,6 +946,10 @@
 	    width: 100%;
 	    padding: 10px 0;
 	    text-align: center;
+	}
+
+	.footer__main__contact__input input {
+	    width: 100%;
 	}
 
 	/*-- /Footer --*/
@@ -1610,8 +1620,18 @@
 
 	/*-- Footer --*/
 
+	.footer__main__left {
+	    display: block;
+	    width: 36%;
+	}
+
 	.footer__main__right {
-	    max-width: 100%;
+	    width: 64%;
+	}
+
+	.footer__main__left .footer__main__links__col {
+	    padding: 0;
+	    width: 100%;
 	}
 
 	/*-- /Footer --*/
@@ -2297,8 +2317,13 @@
 	    margin-bottom: 0;
 	}
 
+	.footer__main__left {
+		width: 52%;
+	}
+
 	.footer__main__right {
 		display: block;
+		width: 48%;
 	}
 
 	.footer__bottom {
@@ -2317,6 +2342,10 @@
 
 	.footer__main__contact__input {
 	    margin-bottom: 25px;
+	}
+
+	.footer__main__contact {
+	    padding-left: 0;
 	}
 
 	/*-- /Footer --*/
@@ -3100,6 +3129,52 @@
 
 	.footer__main__left {
 		display: block;
+		width: 100%;
+		max-width: 100%;
+		text-align: center;
+		padding: 10px 0;
+	}
+
+	.footer__main__right {
+		display: block;
+		width: 100%;
+		max-width: 100%;
+		text-align: center;
+		padding: 10px 0;
+	}
+
+	.footer__main__bussines {
+	    max-width: 100%;
+	    width: 100%;
+	    padding: 10px 0;
+	}
+
+	.footer__main__bussines p {
+	    text-align: center;
+	}
+
+	.footer__main__bussines__col {
+		margin: 10px auto;
+	}
+
+	.footer__main__bussines__btn {
+		margin: 10px auto;
+	}
+
+	.footer__main__contact__input {
+		width: 100%;
+	}
+
+	.footer__license p {
+		text-align: center;
+	}
+
+	.footer__links {
+		margin: 0 auto;
+	}
+
+	.footer__main__contact {
+		align-items: center;
 	}
 
 	/*-- /Footer --*/
