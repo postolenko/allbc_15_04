@@ -1059,6 +1059,14 @@
 
 	/*-- /Section 5 - BC Page --*/
 
+	/*-- Section 3 - BC Page --*/
+
+	.contacts_brokers {
+		margin: 0;
+	}
+
+	/*-- /Section 3 - BC Page --*/
+
 	/*-- Section 5 - BC Page Broker --*/
 
 	.three_cols.three_cols_broker > .col_3 > div {
