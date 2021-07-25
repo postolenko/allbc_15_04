@@ -246,7 +246,7 @@
 
 	/*-- Section 7 - BC Page --*/
 
-	.gradient_templ_2 {
+/*	.gradient_templ_2 {
 		flex-wrap: wrap;
 		-webkit-flex-wrap: wrap;
 		justify-content: center;
@@ -269,7 +269,7 @@
 	.gradient_form > div:nth-child(1) {
 	    padding-left: 0;
 	    padding-right: 10px;
-	}
+	}*/
 
 	/*-- /Section 7 - BC Page --*/
 
@@ -367,6 +367,43 @@
 	.gradient_templ > .col:nth-child(3) {
 	    width: 45%;
 	}
+
+	/*-- Section 7 - BC Page --*/
+
+	.gradient_form > div:nth-child(1) {
+		display: none;
+	}
+
+	.gradient_form > div:nth-child(2) {
+	    width: calc( 100% - 170px);
+	}
+
+	.gradient_form > div:nth-child(3) {
+	    width: 170px;
+	}
+
+	.gradient_templ_2 > .col_1 p {
+	    font-size: 13px;
+	    line-height: 18px;
+	}
+
+	.tel_number_wrapp_2 {
+	    margin-top: 4px;
+	}
+
+	.gradient_templ_2 > .col_1 {
+	    width: 15%;
+	}
+
+	.gradient_templ_2 > .col_2 {
+	    width: 37%;
+	}
+
+	.gradient_templ_2 > .col_3 {
+	    width: 48%;
+	}
+
+	/*-- /Section 7 - BC Page --*/
 
 	/*-- Footer --*/
 
@@ -494,6 +531,15 @@
 	}
 
 	/*-- /Section 3 - BC Page --*/
+
+	/*-- Section 7 - BC Page --*/
+
+	.tel_number_wrapp_2 a {
+	    font-size: 24px;
+	    line-height: 29px;
+	}
+
+	/*-- /Section 7 - BC Page --*/
 
 }
 
@@ -654,6 +700,36 @@
 	}
 
 	/*-- /Section 2 - Tables Page --*/
+
+	/*-- Section 7 - BC Page --*/
+
+	.gradient_templ_2 > .col {
+	    padding: 10px 5px;
+	}
+
+	.gradient_templ_2 > .col_1 {
+	    width: 16%;
+	    padding-left: 0;
+	}
+
+	.gradient_templ_2 > .col_2 {
+	    width: 37%;
+	}
+
+	.gradient_templ_2 > .col_3 {
+	    width: 47%;
+	    padding-right: 0;
+	}
+
+	.tel_number_wrapp_2 a {
+	    font-size: 22px;
+	}
+
+	.tel_number_wrapp_2 {
+	    padding-left: 35px;
+	}
+
+	/*-- /Section 7 - BC Page --*/
 
 }
 
@@ -1556,36 +1632,6 @@
 
 	/*-- /Section 1 - Info Side Page New --*/
 
-	/*-- Gradient Section --*/
-
-/*	.gradient_templ > .col:nth-child(1) {
-	    width: 33%;
-	}
-
-	.gradient_templ > .col:nth-child(2) {
-	    display: block;
-	    width: 16%;
-	}
-
-	.gradient_templ > .col:nth-child(3) {
-	    width: 100%;
-	}
-
-	.gradient_templ > .col:nth-child(4) {
-	    width: 167px;
-	}
-
-	.gradient_templ > .col:nth-child(5) {
-	    width: 160px;
-	}
-
-	.gradient_templ .input_wrapp_2 {
-    	max-width: 480px;
-		margin: 5px auto;
-	}*/
-
-	/*-- /Gradient Section --*/
-
 	/*-- Section 1 - BC Page --*/
 
 	.bc_two_cols {
@@ -1826,6 +1872,29 @@
 	}
 
 /*-- /Section 3 - BC Page --*/
+
+	/*-- Section 7 - BC Page --*/
+
+	.gradient_templ_2 {
+	    flex-wrap: wrap;
+	    -webkit-flex-wrap: wrap;
+	    justify-content: center;
+	    -webkit-justify-content: center;
+	}
+
+	.gradient_templ_2 > .col_1 {
+	    width: 130px;
+	}
+
+	.gradient_templ_2 > .col_2 {
+	    width: 260px;
+	}
+
+	.gradient_templ_2 > .col_3 {
+	    width: 100%;
+	}
+
+	/*-- /Section 7 - BC Page --*/
 
 }
 
