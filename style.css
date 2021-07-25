@@ -3599,6 +3599,20 @@ body.fixed {
     z-index: 4;
 }
 
+#filters .dropdow_item_wrapp.active .dropdown_item_title {
+    border: 1px solid #3eb060 !important;
+    background-color: #3eb060 !important;
+}
+
+#filters .dropdow_item_wrapp.active .item_title_text,
+#filters .dropdow_item_wrapp.active .item_title_text p {
+    color: #fff !important;
+}
+
+#filters .dropdow_item_wrapp.active .dropdown_item_title:before {
+    background-image: url(img/down_arrow_icon_white.svg) !important;
+}
+
 .filter_nav {
     background: #ffffff;
     position: relative;
@@ -5517,11 +5531,13 @@ body.fixed {
 }
 
 .filter_resp {
-    height: calc(100vh - 40px);
+    /*height: calc(100vh - 40px);*/
+    height: 100vh;
     margin-top: auto;
     max-width: 435px;
     overflow-y: auto;
-    padding: 65px 25px 110px 25px;
+    /*padding: 65px 25px 110px 25px;*/
+    padding: 65px 25px 150px 25px;
     background: #ffffff;
     position: relative;
     z-index: 4;
@@ -7870,6 +7886,8 @@ input.arrow_down {
 .dropdown_row_footer {
     display: flex;
     display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
     width: 100%;
 }
 
@@ -7916,6 +7934,11 @@ input.arrow_down {
 
 .dropdown_row_footer .inlines_2 > div {
     padding: 3px 10px;
+}
+
+.dropdown_row_footer .inlines_2 > div p {
+    font-size: 12px;
+    line-height: 16px;
 }
 
 /*-- /Section 3 - BC Page --*/
@@ -9308,6 +9331,22 @@ p.metro_p {
 4deg
 , rgb(135,194,80) 0%, rgb(101,173,224) 100%);
     background-image: -ms-linear-gradient( 4deg, rgb(135,194,80) 0%, rgb(101,173,224) 100%);
+}
+
+.list_3.num li:before {
+    display: none;
+}
+
+.list_3.num li {
+    padding-left: 20px;
+}
+
+.list_3.num li .l_num {
+    font-weight: 600;
+    color: rgb(135,194,80);
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .office_descript_two_cols {

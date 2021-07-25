@@ -300,6 +300,10 @@ var innerWrapp;
 
 var mouseover = false;
 
+var slideImgBox;
+var imagePath;
+var objectSlider;
+
 $(window).resize(function() {
     bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
     getAdaptivePositionElements();
@@ -873,9 +877,9 @@ $(document).on("click", ".respmenubtn", function(e){
     }
 
     if($(".object_slider").length > 0) {
-        var slideImgBox;
-        var imagePath;
-        var objectSlider;
+        // var slideImgBox;
+        // var imagePath;
+        // var objectSlider;
 
         objectSlider = $(".object_slider").not(".slick-initialized").slick({
             dots: false,
@@ -919,6 +923,12 @@ $(document).on("click", ".respmenubtn", function(e){
         } else {
             $("#mapTempl").removeClass("mapVisible");
         }
+        $(".object_slider").slick('reinit');
+        $(".object_slider").each(function() {
+            slideImgBox = $(this).find(".slick-current .img_box");
+            imagePath = $(this).find(".slick-current .img_box").attr("data-imageurl");
+            slideImgBox.find("img").attr("src", imagePath);
+        });
         getCardParams();
         getMapParams();
     });
