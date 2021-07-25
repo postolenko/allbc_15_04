@@ -117,6 +117,46 @@
 
 }
 
+@media only screen and (max-width: 1300px) {
+
+	/*-- Map Cards Templ --*/
+
+	.mapVisible .pagination .prev_arrow span {
+		display: none;
+	}
+
+	.mapVisible .pagination .next_arrow span {
+		display: none;
+	}
+
+	.mapVisible .pagination li.prev_page {
+	    margin-right: 0;
+	}
+
+	.mapVisible .pagination li.next_page {
+	    margin-left: 0;
+	}
+
+	.mapVisible .pagination .prev_arrow {
+		width: 10px;
+	}
+
+	.mapVisible .pagination .next_arrow {
+		width: 10px;
+	}
+
+	.mapVisible .pagination .prev_arrow:before {
+	    left: 0;
+	}
+
+	.mapVisible .pagination .next_arrow:after {
+	    right: 0;
+	}
+
+	/*-- /Map Cards Templ --*/
+
+}
+
 @media only screen and (max-width: 1240px) {
 
 	.row {
@@ -290,15 +330,10 @@
 	.footer__main {
 		flex-wrap: wrap;
 		-webkit-flex-wrap: wrap;
-	    /*justify-content: center;*/
-	    /*-webkit-justify-content: center;*/
 	}
 
 	.footer__main__left {
-	    /*max-width: 100%;*/
 	    width: 45%;
-/*	    justify-content: flex-start;
-	    -webkit-justify-content: flex-start;*/
 	    padding: 20px 10px 20px 0;
 	}
 
@@ -957,6 +992,26 @@
 
 	/*-- /Section 5 - BC Page Broker --*/
 
+	/*-- Map Cards Templ --*/
+
+	.mapVisible .pagination li a {
+		min-width: 29px;
+		min-height: 29px;
+		padding: 0;
+		font-size: 16px;
+		line-height: 29px;
+	}
+
+	.mapVisible .prev_arrow:before {
+		top: 9px;
+	}
+
+	.mapVisible .next_arrow:after {
+		top: 9px;
+	}
+
+	/*-- /Map Cards Templ --*/
+
 	/*-- Footer --*/
 
 	.footer {
@@ -1140,6 +1195,34 @@
 	}
 
 	/*-- /Section 1 - Info Side Page --*/
+
+	/*-- Map Cards Templ --*/
+
+	.pagination li.prev_page {
+	    margin-right: 0;
+	}
+
+	.pagination li.next_page {
+	    margin-left: 0;
+	}
+
+	.pagination li.prev_page a {
+		width: 10px;
+	}
+
+	.pagination li.next_page a {
+		width: 10px;
+	}
+
+	.pagination li.prev_page a span {
+		display: none;
+	}
+
+	.pagination li.next_page a span {
+		display: none;
+	}
+
+	/*-- /Map Cards Templ --*/
 
 }
 
@@ -2357,6 +2440,26 @@
 
 	/*-- /Static Charts --*/
 
+	/*-- Map Cards Templ --*/
+
+	.pagination li a {
+	    font-size: 15px;
+	}
+
+	/*-- /Map Cards Templ --*/
+
+	/*-- Section 1 - Info Side Page New --*/
+
+	.card_table_hover {
+	    display: none !important;
+	}
+
+	.hover_inlines {
+	    display: none !important;
+	}
+
+	/*-- /Section 1 - Info Side Page New --*/
+
 	/*-- Footer --*/
 
 	.footer__main {
@@ -2976,6 +3079,26 @@
 	}
 
 	/*-- /Static Charts --*/
+
+	/*-- Map Cards Templ --*/
+
+	.mapVisible .pagination li a {
+		min-width: 27px;
+		min-height: 27px;
+		padding: 0;
+		font-size: 14px;
+		line-height: 26px;
+	}
+
+	.mapVisible .prev_arrow:before {
+		top: 7px;
+	}
+
+	.mapVisible .next_arrow:after {
+		top: 7px;
+	}
+
+	/*-- /Map Cards Templ --*/
 
 }
 
