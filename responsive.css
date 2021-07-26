@@ -1565,13 +1565,13 @@
 		-webkit-flex-wrap: wrap;
 	}
 
-	.map_cardst_templ.mapVisible .left_col {
+	.map_cardst_templ.mapVisible > .left_col {
 	    width: 100%;
 	    padding-right: 0;
 	    order: 2;
 	}
 
-	.map_cardst_templ.mapVisible .right_col {
+	.map_cardst_templ.mapVisible > .right_col {
 		order: 1;
 	    width: 100%;
 	    height: 500px;

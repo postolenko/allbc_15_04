@@ -75,7 +75,11 @@ function getBarsChart() {
 
 function getMapParams() {
     if( $(".object_map").length > 0 && bodyWidth > 767) {
-        filtersCoord = $(".filter_nav").offset().top + $(".filter_nav").height();
+        if($(".filter_nav").length> 0) {
+            filtersCoord = $(".filter_nav").offset().top + $(".filter_nav").height();
+        } else {
+            filtersCoord = $(document).scrollTop();
+        }        
         mapCoord = $(".object_map").offset().top;        
         if(filtersCoord >= mapCoord) {            
             $(".map_scroll").addClass("fixed");
