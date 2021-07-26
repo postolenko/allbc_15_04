@@ -7971,6 +7971,7 @@ input.arrow_down {
 .contacts_box_two_cols > .col_1 {
     width: 320px;
     padding-right: 10px;
+    padding-top: 28px;
 }
 
 .contacts_box_two_cols > .col_2 {

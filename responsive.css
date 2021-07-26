@@ -1777,6 +1777,19 @@
 
 	/*-- /Static Charts --*/
 
+	/*-- Section 4 - BC Page Broker --*/
+
+	.contacts_broker_cols {
+	    padding: 0 0 25px 0;
+	}
+
+	.contacts_broker_cols > .col_1,
+	.contacts_broker_cols > .col_2 {
+		padding-top: 0;
+	}
+
+	/*-- /Section 4 - BC Page Broker --*/
+
 	/*-- Footer --*/
 
 	.footer__main__left {
