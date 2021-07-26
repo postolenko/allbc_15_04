@@ -8939,6 +8939,10 @@ input.arrow_down {
     padding-top: 15px;
 }
 
+.two_cols_templ_2_2 > .right_col.brokers_wrapp {
+    padding-top: 46px;
+}
+
 .two_cols_templ_2_2 .contacts_scroll.fixed {
     width: 330px;
 }
