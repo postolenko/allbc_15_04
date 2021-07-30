@@ -2181,5 +2181,12 @@ $(document).on("click", ".respmenubtn", function(e){
         $(this).addClass("active");
     });
 
+    // -------------------
+
+    $(".ac_tag .del_tag").on("click", function() {
+        parent = $(this).closest(".ac_tag");
+        parent.remove();
+    });
+
 
 });
