@@ -6922,7 +6922,7 @@ body.fixed {
 }
 
 .dropdown_row_title .cell:nth-child(2) {
-    width: 20%;
+    width: 15%;
 }
 
 .dropdown_row_title .cell:nth-child(3) {
@@ -6930,7 +6930,7 @@ body.fixed {
 }
 
 .dropdown_row_title .cell:nth-child(4) {
-    width: 15%;
+    width: 20%;
 }
 
 .dropdown_row_title .cell:nth-child(5) {
@@ -7079,7 +7079,7 @@ body.fixed {
 }
 
 .dropdown_row_title_sub .cell:nth-child(2) {
-    width: 20%;
+    width: 15%;
 }
 
 .dropdown_row_title_sub .cell:nth-child(3) {
@@ -7087,7 +7087,7 @@ body.fixed {
 }
 
 .dropdown_row_title_sub .cell:nth-child(4) {
-    width: 15%;
+    width: 20%;
 }
 
 .dropdown_row_title_sub .cell:nth-child(5) {

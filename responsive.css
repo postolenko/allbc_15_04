@@ -1818,11 +1818,11 @@
 
 /*-- Section 3 - BC Page --*/
 
-	.dropdown_row_title .cell:nth-child(3) {
+	.dropdown_row_title .cell:nth-child(2) {
 		display: none;
 	}
 
-	.dropdown_row_title .cell:nth-child(4) {
+	.dropdown_row_title .cell:nth-child(3) {
 		display: none;
 	}
 
@@ -1838,11 +1838,11 @@
 		padding: 5px 5px 5px 5px;
 	}
 
-	.dropdown_row_title_sub .cell:nth-child(3) {
+	.dropdown_row_title_sub .cell:nth-child(2) {
 		display: none;
 	}
 
-	.dropdown_row_title_sub .cell:nth-child(4) {
+	.dropdown_row_title_sub .cell:nth-child(3) {
 		display: none;
 	}
 
@@ -1854,24 +1854,24 @@
 	    width: 25%;
 	}
 
-	.dropdown_row_title .cell:nth-child(2) {
-	    width: 42%;
+	.dropdown_row_title .cell:nth-child(4) {
+	    width: 40%;
 	}
 
 	.dropdown_row_title .cell:nth-child(5) {
-	    width: 33%;
+	    width: 35%;
 	}
 
 	.dropdown_row_title_sub .cell:nth-child(1) {
 	    width: 25%;
 	}
 
-	.dropdown_row_title_sub .cell:nth-child(2) {
-	    width: 42%;
+	.dropdown_row_title_sub .cell:nth-child(4) {
+	    width: 40%;
 	}
 
 	.dropdown_row_title_sub .cell:nth-child(5) {
-	    width: 33%;
+	    width: 35%;
 	    padding-right: 30px;
 	}
 
