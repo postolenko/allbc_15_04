@@ -10921,10 +10921,11 @@ select.white_tag option {
 }
 
 .ac_tab {
-    background-color: #f7f7f7;
+    
 }
 
 .ac_tab_inner {
+    background-color: #f7f7f7;
     padding: 9px 30px 9px 15px;
     border-bottom: 1px solid #e7e7e7;
 }
@@ -11111,6 +11112,20 @@ select.white_tag option {
     background-position: center;
     background-size: 90%;
     background-repeat: no-repeat;
+}
+
+.favorites_cards_wrapp {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    min-width: 100%;
+    margin: 4px -3px;
+}
+
+.favorites_cards_wrapp .bc_card {
+    width: calc(33.33% - 6px);
+    margin: 3px;
 }
 
 /*-- /Section 1 - Account Page --*/

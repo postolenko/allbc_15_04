@@ -8,3 +8,4 @@
 # http://postolenko.github.io/allbc_15_04/tables.html
 # http://postolenko.github.io/allbc_15_04/tables_video.html
 # http://postolenko.github.io/allbc_15_04/favorite.html
+# http://postolenko.github.io/allbc_15_04/favorites.html
