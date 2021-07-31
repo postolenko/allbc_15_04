@@ -11367,6 +11367,10 @@ select.white_tag option {
     padding: 0 25px 0 25px;
 }
 
+.kviz_templ > .left_col.left_col_2 .kviz_header {
+    margin: 0 -5px 0 -10px;
+}
+
 .kviz_title_2_2 {
     padding-top: 34px;
 }
