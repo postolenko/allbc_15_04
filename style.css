@@ -6922,11 +6922,11 @@ body.fixed {
 }
 
 .dropdown_row_title .cell:nth-child(2) {
-    width: 15%;
+    width: 10%;
 }
 
 .dropdown_row_title .cell:nth-child(3) {
-    width: 10%;
+    width: 15%;
 }
 
 .dropdown_row_title .cell:nth-child(4) {
@@ -7079,11 +7079,11 @@ body.fixed {
 }
 
 .dropdown_row_title_sub .cell:nth-child(2) {
-    width: 15%;
+    width: 10%;
 }
 
 .dropdown_row_title_sub .cell:nth-child(3) {
-    width: 10%;
+    width: 15%;
 }
 
 .dropdown_row_title_sub .cell:nth-child(4) {
