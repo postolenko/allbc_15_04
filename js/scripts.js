@@ -2207,4 +2207,26 @@ $(document).on("click", ".respmenubtn", function(e){
         parentSlide.prev(".slide").addClass("current");
     });
 
+    // -----------------
+
+    $(".placeholderTextArea").on("click", function(e) {
+        e.preventDefault();
+        if($(this).find("textarea").val() == "") {
+            $(this).addClass("active");
+            $(this).find("textarea").focus();
+        }
+    });
+
+    $(document).on("mouseup", function() {
+        hide_element = $(".placeholderTextArea");
+        if (!hide_element.is(e.target)
+            && hide_element.has(e.target).length === 0) {
+            $(".placeholderTextArea").each(function() {
+                if($(this).find("textarea").val() == "") {
+                    $(this).removeClass("active");
+                }
+            });
+        }
+    });
+
 });
