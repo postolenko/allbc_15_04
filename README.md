@@ -11,3 +11,4 @@
 # http://postolenko.github.io/allbc_15_04/favorites.html
 # http://postolenko.github.io/allbc_15_04/kvizes.html
 # http://postolenko.github.io/allbc_15_04/ac_all_news.html
+# http://postolenko.github.io/allbc_15_04/ld.html
