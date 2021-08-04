@@ -334,6 +334,7 @@ $(window).resize(function() {
 
 $(window).on("load", function() {
     getCardParams();
+    getBarsChart();
 });
 
 $(document).scroll(function() {
@@ -360,7 +361,7 @@ $(document).ready(function() {
     getHeaderParams();
     getAdaptivePositionElements();
     getMapParams();
-    getBarsChart();
+    // getBarsChart();
     getfilterNavParams();
     // getCardParams();
     // getMapParams2();
@@ -2188,5 +2189,22 @@ $(document).on("click", ".respmenubtn", function(e){
         parent.remove();
     });
 
+    // -------------------
+
+    $(".kviz .next_pill").on("click", function(e) {
+        e.preventDefault();
+        parentSlide = $(this).closest(".slide");
+        kvizSlider = parentSlide.closest(".kviz_slider");
+        kvizSlider.find(".slide").removeClass("current");
+        parentSlide.next(".slide").addClass("current");
+    });
+
+    $(".kviz .back_link").on("click", function(e) {
+        e.preventDefault();
+        parentSlide = $(this).closest(".slide");
+        kvizSlider = parentSlide.closest(".kviz_slider");
+        kvizSlider.find(".slide").removeClass("current");
+        parentSlide.prev(".slide").addClass("current");
+    });
 
 });
