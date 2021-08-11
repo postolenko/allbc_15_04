@@ -13,3 +13,4 @@
 # http://postolenko.github.io/allbc_15_04/ac_all_news.html
 # http://postolenko.github.io/allbc_15_04/ld.html
 # http://postolenko.github.io/allbc_15_04/news_line.html
+# http://postolenko.github.io/allbc_15_04/my_news.html
