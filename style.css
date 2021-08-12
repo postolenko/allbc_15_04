@@ -12528,12 +12528,98 @@ p.green_num {
     background-color: #ff0000;
 }
 
-
-
-
 /*-- /Section 1 - My News Page --*/
 
+/*-- Section 1 - Не уходи --*/
 
+.plahka {
+    max-width: 570px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    background-image: -moz-linear-gradient( 90deg, rgb(136,195,78) 0%, rgb(30,175,227) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(136,195,78) 0%, rgb(30,175,227) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(136,195,78) 0%, rgb(30,175,227) 100%);
+    margin: 50px auto;
+    padding: 16px 25px 24px 25px;
+}
+
+.plahka_title {
+    padding: 5px 0 4px 0;
+    text-align: center;
+}
+
+.plahka_title h3 {
+    padding-bottom: 1px;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 50px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.plahka_title p {
+    font-size: 16px;
+    line-height: 18px;
+    color: #fff;
+}
+
+.plahka_descript {
+    text-align: center;
+    max-width: 410px;
+    margin: 0 auto;
+    padding: 9px 0;
+}
+
+.plahka_descript p {
+    font-size: 16px;
+    line-height: 18px;
+    color: #fff;
+}
+
+.plashka_form {
+    display: flex;
+    display: -webkit-flex;
+    margin: 2px 0 8px 0;
+}
+
+.plashka_form > div:nth-child(odd) {
+    width: 50%;
+    padding: 10px 10px 10px 0;
+}
+
+.plashka_form > div:nth-child(even) {
+    width: 50%;
+    padding: 10px 0 10px 10px;
+}
+
+.plashka_form .input_wrapp input {
+    width: 100%;
+    border: 1px solid #e5e5e5;
+}
+
+.submit_pl_wrapp {
+    text-align: center;
+}
+
+.submit_pl_wrapp .orange_pill {
+    min-width: 240px;
+}
+
+.plashka_form_footer {
+    max-width: 290px;
+    margin: 0 auto;
+    padding: 20px 0 10px 0;
+    text-align: center;
+}
+
+.plashka_form_footer p {
+    font-size: 16px;
+    line-height: 18px;
+    color: #fff;
+}
+
+
+/*-- /Section 1 - Не уходи --*/
 
 
 
