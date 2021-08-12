@@ -12620,7 +12620,216 @@ p.green_num {
 
 /*-- /Section 1 - Не уходи --*/
 
+/*-- Section 1 - Editor Page --*/
 
+.tabs_list_two_cols_2 {
+
+}
+
+.tabs_list_two_cols_2 > .col_1 {
+    width: calc(100% - 160px);
+}
+
+.tabs_list_two_cols_2 > .col_2 {
+    width: 160px;
+}
+
+.ac_tabs_list_3 {
+    padding-top: 3px;
+}
+
+.ac_tabs_list_3 li {
+
+}
+
+ .ac_tabs_list_3 li a {
+
+ }
+
+.blue_pill_4 {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    background-color: #1eafe2;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    padding: 4px 5px 4px 5px;
+    font-size: 16px;
+    line-height: 17px;
+    color: #fff;
+    -webkit-transition-property: background;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+    -moz-transition-property: background;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+    -ms-transition-property: background;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+    -o-transition-property: background;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+    transition-property: background;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.blue_pill_4:link,
+.blue_pill_4:visited {
+    background-color: #1eafe2;
+}
+
+.blue_pill_4:active,
+.blue_pill_4.active {
+    background-color: #ff0000;
+}
+
+.blue_pill_4:hover {
+    background-color: #ff0000;
+}
+
+.transparent_pill_5 {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    border: 2px solid #66adde;
+    background-color: #fff;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    padding: 3px 5px 3px 5px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 16px;
+    color: #33312f;
+    -webkit-transition-property: background, color;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+    -moz-transition-property: background, color;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+    -ms-transition-property: background, color;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+    -o-transition-property: background, color;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+    transition-property: background, color;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.transparent_pill_5:link,
+.transparent_pill_5:visited {
+    background-color: #fff;
+    color: #33312f;
+}
+
+.transparent_pill_5:active,
+.transparent_pill_5.active {
+    background-color: #66adde;
+    color: #fff;
+}
+
+.transparent_pill_5:hover {
+    background-color: #66adde;
+    color: #fff;
+}
+
+.tabs_list_two_cols_2 .blue_pill_4 {
+    width: 100%;
+    margin: 1px 0;
+}
+
+.tabs_list_two_cols_2 .transparent_pill_5 {
+    width: 100%;
+    margin: 1px 0;
+}
+
+.ac_tabs_list_3:after {
+    display: none;
+}
+
+.dropdown_row_wrapp_2 {
+    margin: 10px 0;
+    border-bottom: none;
+}
+
+.dropdown_row_wrapp_2 .dropdown_row_content .inner {
+    padding: 9px 50px 10px 50px;
+}
+
+.dropdown_row_title_2 {
+    padding-left: 55px;
+}
+
+.inner_two_cols {
+    display: flex;
+    display: -webkit-flex;
+}
+
+.inner_two_cols > .col_1 {
+    width: 40px;
+}
+
+.inner_two_cols > .col_2 {
+    width: calc(100% - 40px);
+}
+
+.inner_two_cols > .col_1 .ac_checkbox {
+    top: 14px;
+    left: 6px;
+}
+
+.dropdown_row_title_sub_2 {
+    border-top: 1px solid #e8e8e8;
+}
+
+.dropdown_row_title_sub_2 .cell:nth-child(6) {
+    width: 21%;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+}
+
+.dropdown_row_title_sub_2 .cell:nth-child(6) p {
+    width: 100%;
+}
+
+.dropdown_row_wrapp_2.active .dropdown_row_content {
+    height: auto;
+    overflow: unset;
+}
+
+.dropdown_row_footer_2 .col_1 {
+    width: 100%;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+}
+
+.dropdown_row_footer_2 .col_2 {
+    padding-left: 10px;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+}
+
+.more_link_3 {
+    border: 1px solid #75b995;
+    background-color: #02aee5;
+    color: #fff;
+}
+
+.links_inlines {
+    margin: 0 -3px;
+}
+
+.links_inlines > div {
+    padding: 0 3px;
+}
+
+/*-- /Section 1 - Editor Page --*/
 
 
 
