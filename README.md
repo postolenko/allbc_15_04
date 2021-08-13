@@ -16,3 +16,4 @@
 # http://postolenko.github.io/allbc_15_04/my_news.html
 # http://postolenko.github.io/allbc_15_04/plashka.html
 # http://postolenko.github.io/allbc_15_04/editor.html
+# http://postolenko.github.io/allbc_15_04/messages.html
