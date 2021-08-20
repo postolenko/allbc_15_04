@@ -18,3 +18,4 @@
 # http://postolenko.github.io/allbc_15_04/editor.html
 # http://postolenko.github.io/allbc_15_04/messages.html
 # http://postolenko.github.io/allbc_15_04/list_messages.html
+# http://postolenko.github.io/allbc_15_04/statistik.html
