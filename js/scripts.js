@@ -2229,4 +2229,46 @@ $(document).on("click", ".respmenubtn", function(e){
         }
     });
 
+    // ------------------
+
+    $(".removeChart").on("click", function(e) {
+        e.preventDefault();
+        parent = $(this).closest(".statistik_chart_wrapp_2");
+        parent.remove();
+    });
+
+    // -----------------
+
+    $("[data-tab-dropdownmenu]").on("mouseover", function() {
+        menu = $("[data-dropdownmenu = '"+$(this).attr("data-tab-dropdownmenu")+"']");
+        topCoord = $(this).offset().top + 12;
+        leftCoord = $(this).offset().left - 70;
+        menu.addClass("visible");
+        menu.offset({top: topCoord, left: leftCoord});
+    });
+
+    $("[data-tab-dropdownmenu]").on("mouseleave", function() {
+        menu = $("[data-dropdownmenu = '"+$(this).attr("data-tab-dropdownmenu")+"']");
+        leftCoord = -$(window).width()*2;
+        menu.offset({left: leftCoord});
+        menu.removeClass("visible");
+    });
+
+    $("[data-dropdownmenu]").on("mouseover", function() {
+        menuName = $(this).attr("data-dropdownmenu");
+        btn = $("[data-tab-dropdownmenu = '"+menuName+"']");
+        topCoord = btn.offset().top + 12;
+        leftCoord = btn.offset().left - 70;
+        $(this).addClass("visible");
+        $(this).offset({top: topCoord, left: leftCoord});
+    });
+
+    $("[data-dropdownmenu]").on("mouseleave", function() {
+        menuName = $(this).attr("data-dropdownmenu");
+        leftCoord = btn.offset().left - 70;
+        leftCoord = -$(window).width()*2;
+        $(this).offset({left: leftCoord});
+        $(this).removeClass("visible");
+    });
+
 });
