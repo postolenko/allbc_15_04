@@ -13407,7 +13407,6 @@ p.green_num {
 
 .tab_menu {
     display: none;
-    /*display: block;*/
     width: 80px;
     margin-top: 10px;
     padding: 10px 10px;
@@ -13437,7 +13436,6 @@ p.green_num {
     position: absolute;
     top: -15px;
     left: 0;
-    outline: 1px solid red;
 }
 
 .tab_menu ul li {
