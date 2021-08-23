@@ -14055,6 +14055,58 @@ p.green_num {
     padding: 0 0 4px 0;
 }
 
+.bc_edit_two_Cols_8 {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+}
+
+.bc_edit_two_Cols_8 > .left_col {
+    padding-right: 5px;
+}
+
+.bc_edit_two_Cols_8 > .right_col {
+    padding-left: 5px;
+}
+
+.bc_edit_two_Cols_8 h3 {
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 19px;
+    color: #33312f;
+}
+
+.bc_input_2 select {
+    width: 95px;
+}
+
+.align_left select {
+    text-align: left;
+    text-align-last: left;
+}
+
+.bc_input_4 select,
+.bc_input_4 input {
+    width: 185px;
+}
+
+.bc_input_5 select,
+.bc_input_5 input {
+    width: 245px;
+}
+
+.bc_input_6 select,
+.bc_input_6 input {
+    width: 150px;
+}
+
+.bc_input_6 select {
+    text-align: left;
+    text-align-last: left;
+}
+
 /*-- /Section 1 - Edit BC Page --*/
 
 
