@@ -731,6 +731,54 @@
 
 	/*-- /Section 7 - BC Page --*/
 
+	/*-- Section 1 - Account Page --*/
+
+	.account_templ > .right_col {
+	    width: 100%;
+	    padding-left: 0;
+	}
+
+	#acSidebar {
+		height: 100vh;
+		width: 300px;
+		overflow-y: auto;
+		position: fixed;
+		top: 0;
+		left: -200vw;
+		padding: 20px 10px;
+		background-color: #fff;
+		z-index: 10;
+	}
+
+	#acSidebar.visible {
+		left: 0;
+	}
+
+	.sidebar_nav_wrapp {
+		-webkit-box-shadow: 10px 0 5px 0 rgba(0,0,0,.2);
+		-moz-box-shadow: 10px 0 5px 0 rgba(0,0,0,.2);
+		box-shadow: 10px 0 5px 0 rgba(0,0,0,.2);
+	}
+
+	.sidebar_header {
+		display: block;
+	}
+
+	.show_sidebar_menu {
+	    display: inline-block;
+	}
+
+	/*-- /Section 1 - Account Page --*/
+
+	/*-- Section 1 - LD Page --*/
+
+	.ld_templ {
+	    max-width: 100%;
+	    margin-left: 0;
+	}
+
+	/*-- /Section 1 - LD Page --*/
+
 }
 
 @media only screen and (max-width: 900px) {
@@ -2550,6 +2598,20 @@
 
 	/*-- /Section 1 - Info Side Page New --*/
 
+	/*-- Section 1 - LD Page --*/
+
+	.ld_templ {
+		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+	}
+
+	.ld_templ > .col_2 {
+	    width: 100%;
+	    padding-left: 0;
+	}
+
+	/*-- /Section 1 - LD Page --*/
+
 	/*-- Footer --*/
 
 	.footer__main {
@@ -3190,6 +3252,59 @@
 
 	/*-- /Map Cards Templ --*/
 
+	/*-- Section 1 - LD Page --*/
+
+	.two_cols_ld > div:nth-child(odd) {
+	    width: 100%;
+	    padding: 6px 0;
+	}
+
+	.two_cols_ld > div:nth-child(even) {
+	    width: 100%;
+	    padding: 6px 0;
+	}
+
+	.two_cols_ld_2 {
+		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+	}
+
+	.two_cols_ld_2 > div:nth-child(odd) {
+	    width: 100%;
+	    padding-right: 0;
+	}
+
+	.two_cols_ld_2 > div:nth-child(even) {
+	    width: 100%;
+	    padding-left: 0;
+	}
+
+	.uploads_img_thumbs .upload_img_thumb {
+	    width: calc(33.33% - 7px);
+	}
+
+	.uploads_img_thumbs .upload_btn {
+	    width: calc(33.33% - 7px);
+	}
+
+	.link_form {
+		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+	    align-items: flex-start;
+	    -webkit-align-items: flex-start;
+	}
+
+	.link_form > div:nth-child(1) {
+	    width: 100%;
+	    padding-bottom: 10px;
+	}
+
+	.link_form > div:nth-child(2) {
+	    width: calc(100% - 150px);
+	}
+
+	/*-- /Section 1 - LD Page --*/
+
 }
 
 @media only screen and (max-width: 450px) {
@@ -3559,6 +3674,18 @@
 
 	/*-- /Static Charts --*/
 
+	/*-- Section 1 - LD Page --*/
+
+	.uploads_img_thumbs .upload_img_thumb {
+	    width: calc(50% - 7px);
+	}
+
+	.uploads_img_thumbs .upload_btn {
+	    width: calc(50% - 7px);
+	}
+
+	/*-- /Section 1 - LD Page --*/
+
 	/*-- Popups --*/
 
 	.objects_adress p {
@@ -3635,6 +3762,10 @@
 
 	.ch_childrens {
 		display: block !important;
+	}
+
+	.sidebar_bg {
+		display: none !important;
 	}
 
 	/*-- /Section 1 - Info Side Page --*/

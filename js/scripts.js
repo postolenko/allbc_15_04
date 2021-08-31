@@ -2271,4 +2271,25 @@ $(document).on("click", ".respmenubtn", function(e){
         $(this).removeClass("visible");
     });
 
+    // ----------------
+
+    $(".show_sidebar_menu").on("click", function(e) {
+        e.preventDefault();
+        $("#acSidebar").toggleClass("visible");
+        $(".sidebar_bg").toggleClass("visible");
+    });
+
+    $(".sidebar_back, .sidebar_bg").on("click", function(e) {
+        e.preventDefault();
+        $("#acSidebar").removeClass("visible");
+        $(".sidebar_bg").removeClass("visible");
+    });
+
+    $(this).keydown(function(eventObject){
+        if (eventObject.which == 27 ) {
+            $("#acSidebar").removeClass("visible");
+            $(".sidebar_bg").removeClass("visible");
+        }
+    });
+
 });

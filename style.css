@@ -10723,10 +10723,6 @@ select.white_tag option {
     padding-left: 7px;
 }
 
-.contacts_accont {
-
-}
-
 .edit {
     display: block;
     width: 9px;
@@ -10756,10 +10752,6 @@ select.white_tag option {
 
 .sidebar_nav_wrapp {
     padding: 8px 0;
-}
-
-.sidebar_nav {
-
 }
 
 .sidebar_nav li {
@@ -10873,11 +10865,17 @@ select.white_tag option {
     margin: 17px 0;
 }
 
+/*.tabs_scroll {
+    overflow-x: auto;
+}*/
+
 .ac_tabs_list {
     display: flex;
     display: -webkit-flex;
     justify-content: center;
     -webkit-justify-content: center;
+    align-items: flex-end;
+    -webkit-align-items: flex-end;
     min-width: 100%;
     margin: 0 -7px;
     position: relative;
@@ -10923,10 +10921,6 @@ select.white_tag option {
 .ac_tabs_list li a.active {
     background-color: #1eafe2;
     color: #fff;
-}
-
-.ac_tab {
-    
 }
 
 .ac_tab_inner {
@@ -11132,6 +11126,84 @@ select.white_tag option {
 .favorites_cards_wrapp .bc_card {
     width: calc(33.33% - 6px);
     margin: 3px;
+}
+
+.sidebar_header {
+    display: none;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.sidebar_back {
+    position: relative;
+    border: none;
+    background-color: transparent;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 20px;
+    position: relative;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: #000000;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.sidebar_back:before {
+    display: block;
+    content: "";
+    border: 1px solid transparent;
+    width: 15px;
+    height: 18px;
+    background-image: url(img/down_arrow_icon.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    position: absolute;
+    top: 50%;
+    left: -5px;
+    margin-top: -11px;
+}
+
+.sidebar_bg  {
+    display: none;
+    background: rgba(255, 255, 255, .7);
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+
+.sidebar_bg.visible  {
+    display: block;
+}
+
+/*.show_sidebar_menu {
+    display: inline-block;
+    vertical-align: top;
+    border: none;
+    background-color: transparent;
+    color: #000000;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: bold;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 15%);
+    -webkit-box-shadow: 0 1px 2px 0 rgb(0 0 0 / 15%);
+}
+*/
+
+.show_sidebar_menu {
+    display: none;
+}
+
+.show_sidebar_menu {
+    cursor: pointer;
 }
 
 /*-- /Section 1 - Account Page --*/
