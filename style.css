@@ -453,6 +453,10 @@ textarea:focus {
     background-color: #f7f7f7;
 }
 
+.scroll_y_auto {
+    overflow-y: auto;
+}
+
 /*-- Slick --*/
 
 .slick-arrow {
@@ -12694,6 +12698,10 @@ p.green_num {
 
 /*-- Section 1 - Editor Page --*/
 
+.ob_news_item_single.ob_news_item_single_2 {
+    padding: 10px 0 0 0;
+}
+
 .tabs_list_two_cols_2 {
 
 }
@@ -13161,6 +13169,8 @@ p.green_num {
 .messages_sort {
     display: flex;
     display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
     padding: 0 4px;
 }
 
@@ -13994,7 +14004,7 @@ p.green_num {
 }
 
 .bc_edit_item_inlines_4 > div {
-    padding: 0 13px;
+    padding: 5px 13px;
 }
 
 .bc_edit_item_two_cols_7 {

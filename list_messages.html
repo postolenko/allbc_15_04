@@ -202,7 +202,11 @@
 								</div>
 							</div>
 						</div>
-						<div class="sidebar_nav_wrapp">
+						<button type="button" class="show_sidebar_menu orange_pill_3">Меню</button>
+						<div class="sidebar_nav_wrapp" id="acSidebar">
+							<div class="sidebar_header">
+								<button type="button" class="sidebar_back">Скрыть</button>
+							</div>
 							<ul class="sidebar_nav">
 								<li><a href="#">Лента новостей</a></li>
 								<li><a href="#">Мои объекты</a></li>
@@ -229,209 +233,211 @@
 								<a href="#">Архив</a>
 							</li>
 						</ul>
-						<div class="list_news_table checkboxes_array">
-							<div class="list_news_table_row list_news_table_header">
-								<div class="cell">
-									<label class="lm_checkbox main_checkbox"><input type="checkbox" name="lm_ch" /><span></span></label>
+						<div class="scroll_y_auto">
+							<div class="list_news_table checkboxes_array">
+								<div class="list_news_table_row list_news_table_header">
+									<div class="cell">
+										<label class="lm_checkbox main_checkbox"><input type="checkbox" name="lm_ch" /><span></span></label>
+									</div>
+									<div class="cell">
+										<h3>Все</h3>
+									</div>
+									<div class="cell">
+										<h3>Пользователь</h3>
+									</div>
+									<div class="cell">
+										<h3>Объявление</h3>
+									</div>
+									<div class="cell">
+										<ul class="messages_time">
+											<li>Старые</li>
+											<li>Новые</li>
+										</ul>
+									</div>
 								</div>
-								<div class="cell">
-									<h3>Все</h3>
+								<div class="list_news_table_row">
+									<div class="cell">
+										<label class="lm_checkbox ch_childrens"><input type="checkbox" name="lm_ch" /><span></span></label>
+									</div>
+									<div class="cell">
+										<ul class="icon_links_list">
+											<li><a href="#"><img src="img/black_star.svg" alt="" /></a></li>
+											<li><a href="#"><img src="img/download_black.png" alt="" /></a></li>
+										</ul>
+									</div>
+									<div class="cell">
+										<p>Алексей</p>
+									</div>
+									<div class="cell">
+										<p>Кабинет руководителя -комплект позже когда буду там постараюсь сделать замеры</p>
+									</div>
+									<div class="cell">
+										<ul class="messages_time messages_time_2">
+											<li>12.03.21</li>
+											<li>11:32</li>
+										</ul>
+									</div>
 								</div>
-								<div class="cell">
-									<h3>Пользователь</h3>
+								<div class="list_news_table_row">
+									<div class="cell">
+										<label class="lm_checkbox ch_childrens"><input type="checkbox" name="lm_ch" /><span></span></label>
+									</div>
+									<div class="cell">
+										<ul class="icon_links_list">
+											<li><a href="#"><img src="img/black_star.svg" alt="" /></a></li>
+											<li><a href="#"><img src="img/download_black.png" alt="" /></a></li>
+										</ul>
+									</div>
+									<div class="cell">
+										<p>Алексей</p>
+									</div>
+									<div class="cell">
+										<p>Кабинет руководителя -комплект позже когда буду там постараюсь сделать замеры</p>
+									</div>
+									<div class="cell">
+										<ul class="messages_time messages_time_2">
+											<li>12.03.21</li>
+											<li>11:32</li>
+										</ul>
+									</div>
 								</div>
-								<div class="cell">
-									<h3>Объявление</h3>
+								<div class="list_news_table_row">
+									<div class="cell">
+										<label class="lm_checkbox ch_childrens"><input type="checkbox" name="lm_ch" /><span></span></label>
+									</div>
+									<div class="cell">
+										<ul class="icon_links_list">
+											<li><a href="#"><img src="img/black_star.svg" alt="" /></a></li>
+											<li><a href="#"><img src="img/download_black.png" alt="" /></a></li>
+										</ul>
+									</div>
+									<div class="cell">
+										<p>Алексей</p>
+									</div>
+									<div class="cell">
+										<p>Кабинет руководителя -комплект позже когда буду там постараюсь сделать замеры</p>
+									</div>
+									<div class="cell">
+										<ul class="messages_time messages_time_2">
+											<li>12.03.21</li>
+											<li>11:32</li>
+										</ul>
+									</div>
 								</div>
-								<div class="cell">
-									<ul class="messages_time">
-										<li>Старые</li>
-										<li>Новые</li>
-									</ul>
+								<div class="list_news_table_row">
+									<div class="cell">
+										<label class="lm_checkbox ch_childrens"><input type="checkbox" name="lm_ch" /><span></span></label>
+									</div>
+									<div class="cell">
+										<ul class="icon_links_list">
+											<li><a href="#"><img src="img/black_star.svg" alt="" /></a></li>
+											<li><a href="#"><img src="img/download_black.png" alt="" /></a></li>
+										</ul>
+									</div>
+									<div class="cell">
+										<p>Алексей</p>
+									</div>
+									<div class="cell">
+										<p>Кабинет руководителя -комплект позже когда буду там постараюсь сделать замеры</p>
+									</div>
+									<div class="cell">
+										<ul class="messages_time messages_time_2">
+											<li>12.03.21</li>
+											<li>11:32</li>
+										</ul>
+									</div>
 								</div>
-							</div>
-							<div class="list_news_table_row">
-								<div class="cell">
-									<label class="lm_checkbox ch_childrens"><input type="checkbox" name="lm_ch" /><span></span></label>
+								<div class="list_news_table_row">
+									<div class="cell">
+										<label class="lm_checkbox ch_childrens"><input type="checkbox" name="lm_ch" /><span></span></label>
+									</div>
+									<div class="cell">
+										<ul class="icon_links_list">
+											<li><a href="#"><img src="img/black_star.svg" alt="" /></a></li>
+											<li><a href="#"><img src="img/download_black.png" alt="" /></a></li>
+										</ul>
+									</div>
+									<div class="cell">
+										<p>Алексей</p>
+									</div>
+									<div class="cell">
+										<p>Кабинет руководителя -комплект позже когда буду там постараюсь сделать замеры</p>
+									</div>
+									<div class="cell">
+										<ul class="messages_time messages_time_2">
+											<li>12.03.21</li>
+											<li>11:32</li>
+										</ul>
+									</div>
 								</div>
-								<div class="cell">
-									<ul class="icon_links_list">
-										<li><a href="#"><img src="img/black_star.svg" alt="" /></a></li>
-										<li><a href="#"><img src="img/download_black.png" alt="" /></a></li>
-									</ul>
+								<div class="list_news_table_row">
+									<div class="cell">
+										<label class="lm_checkbox ch_childrens"><input type="checkbox" name="lm_ch" /><span></span></label>
+									</div>
+									<div class="cell">
+										<ul class="icon_links_list">
+											<li><a href="#"><img src="img/black_star.svg" alt="" /></a></li>
+											<li><a href="#"><img src="img/download_black.png" alt="" /></a></li>
+										</ul>
+									</div>
+									<div class="cell">
+										<p>Алексей</p>
+									</div>
+									<div class="cell">
+										<p>Кабинет руководителя -комплект позже когда буду там постараюсь сделать замеры</p>
+									</div>
+									<div class="cell">
+										<ul class="messages_time messages_time_2">
+											<li>12.03.21</li>
+											<li>11:32</li>
+										</ul>
+									</div>
 								</div>
-								<div class="cell">
-									<p>Алексей</p>
+								<div class="list_news_table_row">
+									<div class="cell">
+										<label class="lm_checkbox ch_childrens"><input type="checkbox" name="lm_ch" /><span></span></label>
+									</div>
+									<div class="cell">
+										<ul class="icon_links_list">
+											<li><a href="#"><img src="img/black_star.svg" alt="" /></a></li>
+											<li><a href="#"><img src="img/download_black.png" alt="" /></a></li>
+										</ul>
+									</div>
+									<div class="cell">
+										<p>Алексей</p>
+									</div>
+									<div class="cell">
+										<p>Кабинет руководителя -комплект позже когда буду там постараюсь сделать замеры</p>
+									</div>
+									<div class="cell">
+										<ul class="messages_time messages_time_2">
+											<li>12.03.21</li>
+											<li>11:32</li>
+										</ul>
+									</div>
 								</div>
-								<div class="cell">
-									<p>Кабинет руководителя -комплект позже когда буду там постараюсь сделать замеры</p>
-								</div>
-								<div class="cell">
-									<ul class="messages_time messages_time_2">
-										<li>12.03.21</li>
-										<li>11:32</li>
-									</ul>
-								</div>
-							</div>
-							<div class="list_news_table_row">
-								<div class="cell">
-									<label class="lm_checkbox ch_childrens"><input type="checkbox" name="lm_ch" /><span></span></label>
-								</div>
-								<div class="cell">
-									<ul class="icon_links_list">
-										<li><a href="#"><img src="img/black_star.svg" alt="" /></a></li>
-										<li><a href="#"><img src="img/download_black.png" alt="" /></a></li>
-									</ul>
-								</div>
-								<div class="cell">
-									<p>Алексей</p>
-								</div>
-								<div class="cell">
-									<p>Кабинет руководителя -комплект позже когда буду там постараюсь сделать замеры</p>
-								</div>
-								<div class="cell">
-									<ul class="messages_time messages_time_2">
-										<li>12.03.21</li>
-										<li>11:32</li>
-									</ul>
-								</div>
-							</div>
-							<div class="list_news_table_row">
-								<div class="cell">
-									<label class="lm_checkbox ch_childrens"><input type="checkbox" name="lm_ch" /><span></span></label>
-								</div>
-								<div class="cell">
-									<ul class="icon_links_list">
-										<li><a href="#"><img src="img/black_star.svg" alt="" /></a></li>
-										<li><a href="#"><img src="img/download_black.png" alt="" /></a></li>
-									</ul>
-								</div>
-								<div class="cell">
-									<p>Алексей</p>
-								</div>
-								<div class="cell">
-									<p>Кабинет руководителя -комплект позже когда буду там постараюсь сделать замеры</p>
-								</div>
-								<div class="cell">
-									<ul class="messages_time messages_time_2">
-										<li>12.03.21</li>
-										<li>11:32</li>
-									</ul>
-								</div>
-							</div>
-							<div class="list_news_table_row">
-								<div class="cell">
-									<label class="lm_checkbox ch_childrens"><input type="checkbox" name="lm_ch" /><span></span></label>
-								</div>
-								<div class="cell">
-									<ul class="icon_links_list">
-										<li><a href="#"><img src="img/black_star.svg" alt="" /></a></li>
-										<li><a href="#"><img src="img/download_black.png" alt="" /></a></li>
-									</ul>
-								</div>
-								<div class="cell">
-									<p>Алексей</p>
-								</div>
-								<div class="cell">
-									<p>Кабинет руководителя -комплект позже когда буду там постараюсь сделать замеры</p>
-								</div>
-								<div class="cell">
-									<ul class="messages_time messages_time_2">
-										<li>12.03.21</li>
-										<li>11:32</li>
-									</ul>
-								</div>
-							</div>
-							<div class="list_news_table_row">
-								<div class="cell">
-									<label class="lm_checkbox ch_childrens"><input type="checkbox" name="lm_ch" /><span></span></label>
-								</div>
-								<div class="cell">
-									<ul class="icon_links_list">
-										<li><a href="#"><img src="img/black_star.svg" alt="" /></a></li>
-										<li><a href="#"><img src="img/download_black.png" alt="" /></a></li>
-									</ul>
-								</div>
-								<div class="cell">
-									<p>Алексей</p>
-								</div>
-								<div class="cell">
-									<p>Кабинет руководителя -комплект позже когда буду там постараюсь сделать замеры</p>
-								</div>
-								<div class="cell">
-									<ul class="messages_time messages_time_2">
-										<li>12.03.21</li>
-										<li>11:32</li>
-									</ul>
-								</div>
-							</div>
-							<div class="list_news_table_row">
-								<div class="cell">
-									<label class="lm_checkbox ch_childrens"><input type="checkbox" name="lm_ch" /><span></span></label>
-								</div>
-								<div class="cell">
-									<ul class="icon_links_list">
-										<li><a href="#"><img src="img/black_star.svg" alt="" /></a></li>
-										<li><a href="#"><img src="img/download_black.png" alt="" /></a></li>
-									</ul>
-								</div>
-								<div class="cell">
-									<p>Алексей</p>
-								</div>
-								<div class="cell">
-									<p>Кабинет руководителя -комплект позже когда буду там постараюсь сделать замеры</p>
-								</div>
-								<div class="cell">
-									<ul class="messages_time messages_time_2">
-										<li>12.03.21</li>
-										<li>11:32</li>
-									</ul>
-								</div>
-							</div>
-							<div class="list_news_table_row">
-								<div class="cell">
-									<label class="lm_checkbox ch_childrens"><input type="checkbox" name="lm_ch" /><span></span></label>
-								</div>
-								<div class="cell">
-									<ul class="icon_links_list">
-										<li><a href="#"><img src="img/black_star.svg" alt="" /></a></li>
-										<li><a href="#"><img src="img/download_black.png" alt="" /></a></li>
-									</ul>
-								</div>
-								<div class="cell">
-									<p>Алексей</p>
-								</div>
-								<div class="cell">
-									<p>Кабинет руководителя -комплект позже когда буду там постараюсь сделать замеры</p>
-								</div>
-								<div class="cell">
-									<ul class="messages_time messages_time_2">
-										<li>12.03.21</li>
-										<li>11:32</li>
-									</ul>
-								</div>
-							</div>
-							<div class="list_news_table_row">
-								<div class="cell">
-									<label class="lm_checkbox ch_childrens"><input type="checkbox" name="lm_ch" /><span></span></label>
-								</div>
-								<div class="cell">
-									<ul class="icon_links_list">
-										<li><a href="#"><img src="img/black_star.svg" alt="" /></a></li>
-										<li><a href="#"><img src="img/download_black.png" alt="" /></a></li>
-									</ul>
-								</div>
-								<div class="cell">
-									<p>Алексей</p>
-								</div>
-								<div class="cell">
-									<p>Кабинет руководителя -комплект позже когда буду там постараюсь сделать замеры</p>
-								</div>
-								<div class="cell">
-									<ul class="messages_time messages_time_2">
-										<li>12.03.21</li>
-										<li>11:32</li>
-									</ul>
+								<div class="list_news_table_row">
+									<div class="cell">
+										<label class="lm_checkbox ch_childrens"><input type="checkbox" name="lm_ch" /><span></span></label>
+									</div>
+									<div class="cell">
+										<ul class="icon_links_list">
+											<li><a href="#"><img src="img/black_star.svg" alt="" /></a></li>
+											<li><a href="#"><img src="img/download_black.png" alt="" /></a></li>
+										</ul>
+									</div>
+									<div class="cell">
+										<p>Алексей</p>
+									</div>
+									<div class="cell">
+										<p>Кабинет руководителя -комплект позже когда буду там постараюсь сделать замеры</p>
+									</div>
+									<div class="cell">
+										<ul class="messages_time messages_time_2">
+											<li>12.03.21</li>
+											<li>11:32</li>
+										</ul>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -514,6 +520,10 @@
 	</div>
 	<div class="popup_bg"></div>
 	<!-- /Popups -->
+
+	<!-- Sidebar Bg -->
+	<div class="sidebar_bg"></div>
+	<!-- /Sidebar Bg -->
 
 	<link rel="stylesheet" type="text/css" href="responsive.css">
 	<link rel="stylesheet" type="text/css" href="slick/slick.css">
