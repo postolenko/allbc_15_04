@@ -10598,12 +10598,12 @@ select.white_tag option {
 }
 
 .table_header_two_cols > .col_1 {
-    width: 40%;
+    width: 50%;
     padding-right: 10px;
 }
 
 .table_header_two_cols > .col_2 {
-    width: 60%;
+    width: 50%;
     padding-left: 10px;
 }
 
@@ -10617,11 +10617,11 @@ select.white_tag option {
     height: 1px;
     background-color: #e4e4e4;
     position: absolute;
-    bottom: 25px;
+    bottom: 17px;
     left: 0;
 }
 
-.chart_tabs_scrollbar_2 {
+.chart_tabs_scrollbar.chart_tabs_scrollbar_2 {
     margin-top: 0;
     width: 100%;
 }
@@ -10869,10 +10869,6 @@ select.white_tag option {
     margin: 17px 0;
 }
 
-/*.tabs_scroll {
-    overflow-x: auto;
-}*/
-
 .ac_tabs_list {
     display: flex;
     display: -webkit-flex;
@@ -10897,9 +10893,7 @@ select.white_tag option {
 }
 
 .ac_tabs_list li {
-    width: 100%;
-    flex-shrink: 1;
-    -webkit-flex-shrink: 1;
+    min-width: 33.33%;
     padding: 0 7px;
 }
 
