@@ -119,6 +119,10 @@
 
 @media only screen and (max-width: 1300px) {
 
+	.novisible_1300 {
+		display: none !important;
+	}
+
 	/*-- Map Cards Templ --*/
 
 	.mapVisible .pagination .prev_arrow span {

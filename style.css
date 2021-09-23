@@ -11201,6 +11201,91 @@ select.white_tag option {
     cursor: pointer;
 }
 
+/*-- AC Filters --*/
+
+.ac_filters {
+    padding: 0 10px;
+}
+
+.ac_filters .items_sect {
+    margin: 0;
+}
+
+.ac_filters .item_wrapp {
+    padding: 5px 0;
+}
+
+.ac_filters .rotate_btn > span > span {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.ac_filters .rotate_btn {
+    height: 35px;
+    width: 93px;
+    padding: 8px 12px 7px 7px;
+}
+
+.ac_filters .rotate_btn:after {
+    top: 2px;
+    right: -5px;
+}
+
+.ac_filters .item_title_text {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.ac_filters .item_title_text p {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.ac_filters .dropdown_item_title {
+    padding: 6px 19px 5px 8px;
+}
+
+.ac_filters .dropdown_item_title:before {
+    top: 12px;
+    right: 4px;
+}
+
+.ac_filters .orange_pill {
+    min-width: 80px;
+    padding: 9px 14px 6px 15px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.ac_filters .reset_filters {
+    font-size: 13px;
+    line-height: 15px;
+}
+
+.ac_filters .map_checkbox label {
+    padding-right: 43px;
+    font-size: 14px;
+    line-height: 15px;
+}
+
+.ac_filters .map_checkbox {
+    margin: 8px 0 0 0;
+}
+
+.ac_filters .more_filter {
+    padding: 9px 13px 9px 13px;
+    font-size: 14px;
+    line-height: 15px;
+}
+
+.filter_nav.fixed {
+    width: 100%;
+    
+}
+
+/*-- /AC Filters --*/
+
+
 /*-- /Section 1 - Account Page --*/
 
 /*-- Квизы --*/
@@ -12718,14 +12803,6 @@ p.green_num {
 .ac_tabs_list_3 {
     padding-top: 3px;
 }
-
-.ac_tabs_list_3 li {
-
-}
-
- .ac_tabs_list_3 li a {
-
- }
 
 .blue_pill_4 {
     display: inline-block;
