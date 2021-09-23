@@ -2991,6 +2991,14 @@
 
 	/*-- Квизы --*/
 
+	.kviz {
+	    margin: 0;
+	}
+
+	.kviz:before {
+		display: none;
+	}
+
 	.kviz_templ {
 		flex-wrap: wrap;
 		-webkit-flex-wrap: wrap;
@@ -3839,6 +3847,10 @@
 }
 
 @media only screen and (max-width: 450px) {
+
+	.wrapper_2 {
+	    padding-top: 48px;
+	}
 
 	/*-- Header --*/
 

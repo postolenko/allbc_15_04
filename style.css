@@ -1745,7 +1745,6 @@ img.logo_black {
     padding: 6px 15px;
     font-size: 48px;
     line-height: 50px;
-    /*color: #000000;*/
     color: #fff;
     font-weight: 600;
     -webkit-transition-property: background, color;
@@ -1771,7 +1770,6 @@ img.logo_black {
 
 .menu_2 ul li a:link,
 .menu_2 ul li a:visited {
-    /*color: #000000;*/
     color: #fff;
 }
 
@@ -1791,7 +1789,6 @@ img.logo_black {
 .menu_2_white ul li a:link,
 .menu_2_white ul li a:visited {
     background: rgba(62, 176, 96, 0);
-    /*color: #fff;*/
     color: #000;
 }
 
@@ -12272,7 +12269,7 @@ select.white_tag option {
     flex-direction: column;
     -webkit-flex-direction: column;
     width: 175px;
-    padding-left: 0;
+    padding: 0;
     border-radius: 3px 0 0 3px;
     -webkit-border-radius: 3px 0 0 3px;
 }
@@ -12283,7 +12280,7 @@ select.white_tag option {
     border-top: 1px solid #e5e5e5;
     border-bottom: 1px solid #e5e5e5;
     padding-top: 12px;
-    padding-left: 16px;
+    padding-left: 21px;
 }
 
 .ob_news_item > .col_3 {
@@ -12526,7 +12523,14 @@ select.white_tag option {
     border-bottom: 1px solid transparent;
 }
 
-.to_date {
+.data_wrapp_2 p {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: #333;
+}
+
+.data_wrapp_2 p.to_date {
     font-weight: 500;
     font-size: 15px;
     line-height: 16px;
@@ -12668,11 +12672,14 @@ p.green_num {
 }
 
 .submit_pl_wrapp {
+    padding-top: 10px;
     text-align: center;
 }
 
 .submit_pl_wrapp .orange_pill {
     min-width: 240px;
+    font-size: 20px;
+    line-height: 21px;
 }
 
 .plashka_form_footer {

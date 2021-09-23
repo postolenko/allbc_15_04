@@ -1137,6 +1137,8 @@ $(document).on("click", ".respmenubtn", function(e){
         inputVal.html(itemText);
         if(inputVal.attr("id") == "price_sel" ) {
             $(".price_resp").html(itemText);
+            parentBlock.find(".dropdown_select").slideUp(300);
+            parentBlock.removeClass("active");
         }
     });
 
@@ -2291,5 +2293,20 @@ $(document).on("click", ".respmenubtn", function(e){
             $(".sidebar_bg").removeClass("visible");
         }
     });
+
+    // ---------------
+
+// function closeIt()
+// {
+//   if (changes == "true" || files == "true")
+//   {
+//       return "Here you can append a custom message to the default dialog.";
+//   }
+// }
+// window.onbeforeunload = closeIt;
+
+// window.onbeforeunload = function() {
+//      $("[data-popup-link = 'plashka']").trigger("click");
+// }
 
 });

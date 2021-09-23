@@ -1,8 +1,10 @@
-function getJbjectsAdressPosition()  {	
-    var leftOHCoord = $(".map_objects_popup .popup_content").offset().left;
-    $(".map_objects_templ .objects_adress").css({
-        "left" : leftOHCoord + "px"
-    });
+function getJbjectsAdressPosition()  {
+    if($(".map_objects_templ").length > 0) {
+        var leftOHCoord = $(".map_objects_popup .popup_content").offset().left;
+        $(".map_objects_templ .objects_adress").css({
+            "left" : leftOHCoord + "px"
+        });
+    }
 }
 
 if( document.getElementById("object_map") ) {
