@@ -228,6 +228,26 @@
 
 	/*-- /Section 1 - Info Side Page --*/
 
+	/*-- Section 1 - Account Page --*/
+
+	.ac_objects_cards.objects_cards_new .bc_card {
+	    width: calc(50% - 16px);
+	}
+
+	/*-- /Section 1 - Account Page --*/
+
+}
+
+@media only screen and (max-width: 1170px) {
+
+	.novisible_1170 {
+	    display: none !important;
+	}
+
+	.visible_1170 {
+	    display: block;
+	}
+
 }
 
 @media only screen and (max-width: 1124px) {
@@ -745,6 +765,10 @@
 		margin-top: 15px;
 	}
 
+	.ac_objects_cards.objects_cards_new .bc_card {
+	    width: calc(33.33% - 16px);
+	}
+
 	/*-- /Section 1 - Account Page --*/
 
 	/*-- Section 1 - LD Page --*/
@@ -809,6 +833,18 @@
 	}
 
 	/*-- /Section 1 - Statistik Page --*/
+
+}
+
+@media only screen and (max-width: 960px) {
+
+	/*-- Section 1 - Account Page --*/
+
+	.ac_objects_cards.objects_cards_new .bc_card {
+	    width: calc(50% - 16px);
+	}
+
+	/*-- /Section 1 - Account Page --*/
 
 }
 
@@ -1988,8 +2024,16 @@
 		padding-bottom: 10px;
 	}
 
-
 	/*-- /Section 1 - My News Page --*/
+
+	/*-- Section 1 - Account Page --*/
+
+	.mapTempl2#mapTempl.mapVisible .map_scroll {
+	    height: 500px !important;
+	    width: 100% !important;
+	}
+
+	/*-- /Section 1 - Account Page --*/
 
 	/*-- Footer --*/
 
@@ -3063,6 +3107,15 @@
 		padding: 0;
 	}
 
+	.ac_objects_cards.objects_cards_new {
+		margin: 0;
+	}
+
+	.ac_objects_cards.objects_cards_new .bc_card {
+	    width: 100%;
+	    margin: 8px 0;
+	}
+
 	/*-- /Section 1 - Account Page --*/
 
 }
@@ -3847,6 +3900,14 @@
 	}
 
 	/*-- /Section 1 - News Line Page --*/
+
+	/*-- AC Filters --*/
+
+	.ac_filters .map_checkbox {
+	    margin: 13px 0 0 0;
+	}
+
+	/*-- /AC Filters --*/
 
 }
 

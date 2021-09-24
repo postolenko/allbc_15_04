@@ -11278,13 +11278,52 @@ select.white_tag option {
     line-height: 15px;
 }
 
-.filter_nav.fixed {
-    width: 100%;
-    
+.ac_filters {
+    padding: 0;
+}
+
+.filter_nav.fixed .ac_filters {
+    padding: 0 10px;
+}
+
+.ac_filtersю.items_sect .left {
+    width: calc(100% - 120px);
+}
+
+.ac_filtersю.items_sect .right {
+    width: 120px;
+}
+
+.ac_objects_cards.objects_cards_new .bc_card {
+    width: calc(33.33% - 16px);
 }
 
 /*-- /AC Filters --*/
 
+.mapTempl2.mapVisible .objects_cards_new {
+    margin: 0;
+}
+
+.mapTempl2.mapVisible .objects_cards_new .bc_card {
+    width: 100%;
+    margin: 8px 0;
+}
+
+.mapTempl2.mapVisible .pagination li.prev_page {
+    margin-right: 0;
+}
+
+.mapTempl2.mapVisible .pagination .prev_arrow span {
+    display: none;
+}
+
+.mapTempl2.mapVisible .pagination li.next_page {
+    margin-left: 0;
+}
+
+.mapTempl2.mapVisible .pagination .next_arrow span {
+    display: none;
+}
 
 /*-- /Section 1 - Account Page --*/
 

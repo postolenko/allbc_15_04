@@ -86,6 +86,11 @@ function getMapParams() {
             $(".map_scroll").css({
                 "top" : $(".filter_nav").height() + "px"
             });
+            if($("#mapTempl").hasClass("mapTempl2")) {
+                $(".map_scroll").css({
+                    "width" : $(window).width() - ( $("#mapTempl .left_col").offset().left + $("#mapTempl .left_col").outerWidth() ) + "px"
+                });
+            }
             mapScrollBootmCoord = filtersCoord + $(".map_scroll").height();
             bottomCoord = $(".bottom_coord").offset().top;
             if( mapScrollBootmCoord >= bottomCoord ) {
@@ -98,6 +103,11 @@ function getMapParams() {
             $(".map_scroll").css({
                 "top" : 0
             });
+            if($("#mapTempl").hasClass("mapTempl2")) {
+                $(".map_scroll").css({
+                    "width" : "100%"
+                });
+            }
         }
     }
 }
