@@ -23,3 +23,4 @@
 # http://postolenko.github.io/allbc_15_04/edit_bc_2.html
 # http://postolenko.github.io/allbc_15_04/edit_bc_3.html
 # http://postolenko.github.io/allbc_15_04/favorite_2.html
+# http://postolenko.github.io/allbc_15_04/favorite_3.html

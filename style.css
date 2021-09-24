@@ -11325,6 +11325,20 @@ select.white_tag option {
     display: none;
 }
 
+.cancel_btn {
+    display: block;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border: none;
+    background: transparent;
+}
+
+.ac_filters .cancel_btn {
+    position: relative;
+    top: 9px;
+}
+
 /*-- /Section 1 - Account Page --*/
 
 /*-- Квизы --*/

@@ -3907,6 +3907,10 @@
 	    margin: 13px 0 0 0;
 	}
 
+	.ac_filters .cancel_btn {
+	    top: 14px;
+	}
+
 	/*-- /AC Filters --*/
 
 }
@@ -4474,6 +4478,14 @@
 	.chart_bar_hover.lastChart .ct_point_tooltip {
 	    left: -124%;
 	}
+
+	/*-- AC Filters --*/
+
+	.ac_filters .cancel_btn {
+	    top: 0;
+	}
+
+	/*-- /AC Filters --*/
 
 }
 
