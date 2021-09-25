@@ -381,6 +381,11 @@
 		display: none;
 	}
 
+	.dropdown_row_footer {
+	    display: flex;
+	    display: -webkit-flex;
+	}
+
 	/*-- /Section 5 - BC Page --*/
 
 	/*-- Section 7 - BC Page --*/
@@ -1186,6 +1191,10 @@
 
 	.dropdown_row_title_sub .cell:nth-child(6) .more_link_2 {
 		display: block;
+	}
+
+	.dropdown_row_footer {
+		display: none;
 	}
 
 	/*-- /Section 3 - BC Page --*/
@@ -2168,6 +2177,11 @@
 	    right: 5px;
 	}
 
+	.dropdown_row_footer {
+	    display: flex;
+	    display: -webkit-flex;
+	}
+
 	.dropdown_row_footer .col_1 {
 	    width: 36%;
 	    display: flex;
@@ -2181,7 +2195,7 @@
 	    display: block;
 	}
 
-/*-- /Section 3 - BC Page --*/
+	/*-- /Section 3 - BC Page --*/
 
 	/*-- Section 7 - BC Page --*/
 
