@@ -6756,22 +6756,28 @@ body.fixed {
 }
 
 .descript_title h3 {
-    font-size: 24px;
-    line-height: 30px;
+/*    font-size: 24px;
+    line-height: 30px;*/
+    font-size: 26px;
+    line-height: 32px;
     font-weight: bold;
     color: #000;
 }
 
 .descript_box p {
-    font-size: 14px;
-    line-height: 24px;
+/*    font-size: 14px;
+    line-height: 24px;*/
+    font-size: 16px;
+    line-height: 26px;
     font-weight: normal;
     color: #000;
 }
 
 .descript_box_dropdown p {
-    font-size: 14px;
-    line-height: 24px;
+/*    font-size: 14px;
+    line-height: 24px;*/
+    font-size: 16px;
+    line-height: 26px;
     font-weight: normal;
     color: #000;
 }
@@ -6836,8 +6842,10 @@ body.fixed {
 }
 
 .list_title h3 {
-    font-size: 24px;
-    line-height: 30px;
+/*    font-size: 24px;
+    line-height: 30px;*/
+    font-size: 26px;
+    line-height: 32px;
     color: #000;
     font-weight: bold;
 }
@@ -6874,15 +6882,19 @@ body.fixed {
 }
 
 .list_item h3 {
-    font-size: 16px;
-    line-height: 20px;
+/*    font-size: 16px;
+    line-height: 20px;*/
+    font-size: 18px;
+    line-height: 23px;
     color: #000;
     font-weight: bold;
 }
 
 .list_item p {
-    font-size: 14px;
-    line-height: 18px;
+/*    font-size: 14px;
+    line-height: 18px;*/
+    font-size: 16px;
+    line-height: 21px;
     color: #000;
     font-weight: normal;
 }
@@ -6905,8 +6917,10 @@ body.fixed {
 }
 
 .dropdown_rows_header h3 {
-    font-size: 24px;
-    line-height: 30px;
+/*    font-size: 24px;
+    line-height: 30px;*/
+    font-size: 26px;
+    line-height: 32px;
     color: #373737;
 }
 
@@ -7058,7 +7072,8 @@ body.fixed {
     border-bottom: 1px solid #e8e8e8;
     border-left: 1px solid #e8e8e8;
     border-right: 1px solid #e8e8e8;
-    padding: 5px 10px 5px 15px;
+    /*padding: 5px 10px 5px 15px;*/
+    padding: 5px 35px 5px 15px;
     position: relative;
 }
 
@@ -7182,7 +7197,8 @@ body.fixed {
 .dropdown_row_title_sub .dropdown_btn_2 {
     position: absolute;
     top: 50%;
-    right: 30px;
+    /*right: 30px;*/
+    right: 11px;
     margin-top: -9px;
 }
 
@@ -7205,6 +7221,10 @@ body.fixed {
 /*.dropdown_row_wrapp:hover .dropdown_row_content {
     height: auto;
 }*/
+
+.dropdown_row_title_sub .cell:nth-child(6) .more_link_2 {
+    margin-right: 10px;
+}
 
 .dropdown_row_content .inner {
     padding: 9px 50px 20px 50px;
@@ -7284,6 +7304,7 @@ body.fixed {
     display: inline-block;
     vertical-align: top;
     padding: 3px 10px 3px 10px;
+    background-color: #fff;
     border: 1px solid #4ab996;
     border-radius: 3px;
     -webkit-border-radius: 3px;
@@ -7291,7 +7312,6 @@ body.fixed {
     line-height: 16px;
     font-style: italic;
     color: #000;
-    background-color: transparent;
     -webkit-transition-property: background, color;
     -webkit-transition-duration: .3s;
     -webkit-transition-timing-function: ease;
@@ -7318,6 +7338,14 @@ body.fixed {
     background-color: #4ab996;
 }
 
+.dropdown_row_title_sub:hover .more_link_2 {
+    color: #000 !important;
+}
+
+.dropdown_row_title_sub .more_link_2:hover {
+    color: #fff !important;
+}
+
 .photo_gallery_bc_wrapp {
     padding-bottom: 20px;
 }
@@ -7339,8 +7367,10 @@ body.fixed {
 }
 
 .title_two_cols h3 {
-    font-size: 24px;
-    line-height: 40px;
+/*    font-size: 24px;
+    line-height: 40px;*/
+    font-size: 26px;
+    line-height: 32px;
     font-weight: bold;
     color: #000;
 }
@@ -7439,8 +7469,10 @@ body.fixed {
 }
 
 .table_2_header h3 {
-    font-size: 16px;
-    line-height: 24px;
+/*    font-size: 16px;
+    line-height: 24px;*/
+    font-size: 18px;
+    line-height: 25px
     font-weight: bold;
     color: #000;
 }
@@ -7470,8 +7502,10 @@ body.fixed {
 }
 
 .table_2_row p {
-    font-size: 14px;
-    line-height: 18px;
+/*    font-size: 14px;
+    line-height: 18px;*/
+    font-size: 16px;
+    line-height: 20px;
     font-weight: normal;
     color: #000;
 }
@@ -7492,6 +7526,11 @@ body.fixed {
 .location_two_cols > .col_2 {
     width: 55%;
     padding-left: 10px;
+}
+
+.location_text p {
+    font-size: 17px;
+    line-height: 23px;
 }
 
 .card_inlines_2 {
@@ -7962,8 +8001,10 @@ input.arrow_down {
 .contacts_box_header h2 {
     padding: 7px 0;
     text-align: left;
-    font-size: 24px;
-    line-height: 36px;
+/*    font-size: 24px;
+    line-height: 36px;*/
+    font-size: 26px;
+    line-height: 32px;
     font-weight: bold;
     color: #373737;
 }
