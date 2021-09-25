@@ -2571,12 +2571,13 @@
 	    display: -webkit-flex;
 	    align-items: center;
 	    -webkit-align-items: center;
-	    min-height: 70vh;
-	    padding-bottom: 75px;
+	    min-height: 314px;
+	    height: calc( 80vh - 99px );
+	    padding-bottom: 46px;
 	}
 
 	.absolute_position {
-	    top: 45px;
+	    top: 36px;
 	}
 
 	.bc_main_sect > .inner {
@@ -3761,8 +3762,8 @@
 	/*-- Section 1 - BC Page Broker --*/
 
 	.promo_text h1 {
-	    font-size: 27px;
-	    line-height: 37px;
+	    font-size: 23px;
+	    line-height: 31px;
 	}
 
 	.free_offices_wrapp .inlines_2 > div {

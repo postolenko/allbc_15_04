@@ -16221,7 +16221,7 @@ body.fixed {
     position: absolute;
     top: 70px;
     left: 0;
-    z-index: 2;
+    z-index: 4;
 }
 
 .transparent_pill_3 {
