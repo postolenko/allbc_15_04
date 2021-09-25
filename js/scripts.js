@@ -243,8 +243,10 @@ function getpaadingLeft() {
 
 function getOrangePillParams() {
     if($("#orangePill").length > 0) {
-        if($("#orangePill").hasClass("visible_900")) {
+        if($("#orangePill").hasClass("visible_900") ) {
             topOffset = 0;
+        } else if($(".bc_main_sect").length > 0) {
+            topOffset = -1;
         } else {
             topOffset = $(window).height() * .7;
         }
