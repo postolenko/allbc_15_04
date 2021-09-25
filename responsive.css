@@ -363,6 +363,26 @@
 	    width: 45%;
 	}
 
+	/*-- Section 5 - BC Page --*/
+
+	.dropdown_row_title .cell:nth-child(5) {
+	    width: 27%;
+	}
+
+	.dropdown_row_title_sub .cell:nth-child(5) {
+	    width: 27%;
+	}
+
+	.dropdown_row_title_sub .cell:nth-child(6) {
+	    width: 13%;
+	}
+
+	.dropdown_row_title_sub .cell:nth-child(6) .more_link_2 {
+		display: none;
+	}
+
+	/*-- /Section 5 - BC Page --*/
+
 	/*-- Section 7 - BC Page --*/
 
 	.gradient_form > div:nth-child(1) {
@@ -1152,6 +1172,22 @@
 		height: auto !important;
 	}
 
+	.dropdown_row_title .cell:nth-child(5) {
+	    width: 19%;
+	}
+
+	.dropdown_row_title_sub .cell:nth-child(5) {
+	    width: 19%;
+	}
+
+	.dropdown_row_title_sub .cell:nth-child(6) {
+	    width: 21%;
+	}
+
+	.dropdown_row_title_sub .cell:nth-child(6) .more_link_2 {
+		display: block;
+	}
+
 	/*-- /Section 3 - BC Page --*/
 
 	/*-- Section 5 - BC Page --*/
@@ -1860,6 +1896,14 @@
 	}
 
 	/*-- /Section 2 - BC Page --*/
+
+	/*-- Section 3 - BC Page --*/
+
+	.dropdown_row_footer .more_link_2 {
+	    margin-top: 8px;
+	}
+
+	/*-- /Section 3 - BC Page --*/
 
 	/*-- Section 4 - BC Page --*/
 
