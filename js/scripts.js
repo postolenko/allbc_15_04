@@ -1554,6 +1554,31 @@ $(document).on("click", ".respmenubtn", function(e){
     });
 
     // ----------
+
+    $(document).on("click", "[data-popup-link]",  function(e) {
+      e.preventDefault();
+      popupName = $(this).attr("data-popup-link");
+      div = document.createElement('div');
+      div.style.overflowY = 'scroll';
+      div.style.width = '50px';
+      div.style.height = '50px';
+      div.style.visibility = 'hidden';
+      document.body.appendChild(div);
+      scrollWidth = div.offsetWidth - div.clientWidth;
+      document.body.removeChild(div);
+      $("body").addClass("fixed");
+      $("body").css({
+          "position" : "fixed",
+          "top" :  -$(document).scrollTop() + "px",
+          "overflow" : "hidden",
+          "right" : 0,
+          "left" : 0,
+          "bottom" : 0,
+          "padding-right" : scrollWidth + "px"
+      });
+      $(".popup_bg").fadeIn(300);
+      $("[data-popup = '"+ popupName +"']").fadeIn(300);
+    });
     $(".close_popup, .popup_bg").on("click", function(e) {
         e.preventDefault();
         curTop = $("body").css("top");
@@ -2308,17 +2333,40 @@ $(document).on("click", ".respmenubtn", function(e){
 
     // ---------------
 
-// function closeIt()
-// {
-//   if (changes == "true" || files == "true")
-//   {
-//       return "Here you can append a custom message to the default dialog.";
-//   }
-// }
-// window.onbeforeunload = closeIt;
+    // function closeIt()
+    // {
+    //   if (changes == "true" || files == "true")
+    //   {
+    //       return "Here you can append a custom message to the default dialog.";
+    //   }
+    // }
+    // window.onbeforeunload = closeIt;
 
-// window.onbeforeunload = function() {
-//      $("[data-popup-link = 'plashka']").trigger("click");
-// }
+    // window.onbeforeunload = function() {
+    //      $("[data-popup-link = 'plashka']").trigger("click");
+    // }
+
+    // ----------------
+
+    setIntervalShowpopupmouseleave = parseInt( $(".cursorHover").attr("data-showpopupmouseleave") );
+    setIntervalShowpopupsettime = parseInt( $(".cursorHover").attr("data-showpopupsettime") );
+
+    $(document).on("mouseover", ".cursorHover", function() {
+        $(this).addClass("mouseover");
+    });
+
+    $(document).on("mouseleave", ".cursorHover.mouseover", function() {
+        if(!$(".cursorHover").hasClass("popupDone")){
+            setTimeout(function() {
+                console.log("mouseleave");
+                $(".plashkaLink").trigger("click");
+                $(".cursorHover").addClass("popupDone");
+            },setIntervalShowpopupmouseleave);
+        }
+    });
+
+    setTimeout(function() {
+        $(".plashkaLink").trigger("click");
+    },setIntervalShowpopupsettime);
 
 });
