@@ -8402,7 +8402,11 @@ input.arrow_down {
 }
 
 .sort_slider_wrapp {
-    min-height: 384px;
+    height: 384px;
+}
+
+.offices_sort_slider {
+    height: 430px;
 }
 
 .sort_slider_arrows .row {
